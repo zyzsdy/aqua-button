@@ -8,7 +8,7 @@
         <div v-for="category in voices" v-bind:key="category.categoryName">
             <div class="cate-header">{{ $t("voicecategory." + category.categoryName) }}</div>
             <div class="cate-body">
-                <button class="btn btn-primary" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem.path)">
+                <button class="btn btn-new" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem.path)">
                     {{ $t("voice." + voiceItem.name )}}
                 </button>
             </div>
@@ -31,6 +31,11 @@
 }
 .cate-body button{
     margin: 5px;
+}
+.btn-new {
+    color: #fff;
+    background-color: rgb(38, 176, 211);
+    border-color: rgb(211, 38, 211);
 }
 </style>
 

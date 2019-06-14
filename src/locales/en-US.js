@@ -4,7 +4,8 @@ const en_US = {
         info: "Information",
         null: "Empty",
         audioStaff: "Audio Clip: mchong111",
-        toGithub: "Please participate in translation, add audio or make suggestions on Github:"
+        toGithub: "Please participate in translation, add audio or make suggestions on Github:",
+        notOfficial: "This site is a fan work and is not associated with the hololive official."
     },
     action: {
         toggleNavbar: "Toggle navigation bar",

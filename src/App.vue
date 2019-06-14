@@ -1,7 +1,7 @@
 <template>
   <div id="app">
         <Modal></Modal>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
@@ -14,6 +14,10 @@
                 </div>
                 
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg?sub_confirm=1" target="_blank"><img src="resources/youtube_social_icon_red.png" height="18"/></a></li>
+                        <li><a href="https://twitter.com/minatoaqua" target="_blank"><img src="resources/Twitter_Social_Icon_Circle_Color.png" height="18"/></a></li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t("lang." + currentLang)}} <span class="caret"></span></a>
@@ -34,7 +38,8 @@
         <footer class="footer">
             <div class="container-fluid footer-content">
                 <div class="pull-right">
-                    <a href="https://github.com/zyzsdy/aqua-button" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/zyzsdy/aqua-button.svg?style=social"/></a>
+                    <div class="text-right"><a href="https://github.com/zyzsdy/aqua-button" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/zyzsdy/aqua-button.svg?style=social"/></a></div>
+                    <div class="text-right">{{$t("info.notOfficial")}}</div>
                 </div>
                 <div>{{$t("info.audioStaff")}}</div>
                 <div>Zyzsdy 2019 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
@@ -59,6 +64,9 @@ body{
 .footer-content {
     padding-top: 10px;
     color: #666;
+}
+.text-right{
+    text-align: right;
 }
 </style>
 
