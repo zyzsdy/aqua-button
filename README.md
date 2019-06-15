@@ -1,14 +1,12 @@
-# Aqua button
+# Natsuiro Matsuri button
 
-Aqua button [Click here to visit https://aquaminato.moe](https://aquaminato.moe)
-
-[![Build Status](https://travis-ci.org/zyzsdy/aqua-button.svg?branch=master)](https://travis-ci.org/zyzsdy/aqua-button)
+Matsuri button [Click here to visit https://natsuiromatsuri.moe](https://natsuiromatsuri.moe)
 
 Related Links:
 
-* [Aqua Minato's Youtube channel](https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg)
+* [Natsuiro Matsuri's Youtube channel](https://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg)
 
-* [Aqua Minato's Twitter](https://twitter.com/minatoaqua)
+* [Natsuiro Matsuri's Twitter](https://twitter.com/natsuiromatsuri)
 
 ## 参与完善本项目
 

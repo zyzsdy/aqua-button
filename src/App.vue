@@ -15,8 +15,8 @@
                 
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg?sub_confirm=1" target="_blank"><img src="resources/youtube_social_icon_red.png" height="18"/></a></li>
-                        <li><a href="https://twitter.com/minatoaqua" target="_blank"><img src="resources/Twitter_Social_Icon_Circle_Color.png" height="18"/></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg?sub_confirm=1" target="_blank"><img src="resources/youtube_social_icon_red.png" height="18"/></a></li>
+                        <li><a href="https://twitter.com/natsuiromatsuri" target="_blank"><img src="resources/Twitter_Social_Icon_Circle_Color.png" height="18"/></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -38,11 +38,11 @@
         <footer class="footer">
             <div class="container-fluid footer-content">
                 <div class="pull-right">
-                    <div class="text-right"><a href="https://github.com/zyzsdy/aqua-button" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/zyzsdy/aqua-button.svg?style=social"/></a></div>
+                    <div class="text-right"><a href="https://github.com/fzxiao233/matusri-button" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/fzxiao233/matusri-button.svg?style=social"/></a></div>
                     <div class="text-right">{{$t("info.notOfficial")}}</div>
                 </div>
                 <div>{{$t("info.audioStaff")}}</div>
-                <div>Zyzsdy 2019 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
+                <div><span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
             </div>
         </footer>
   </div>
