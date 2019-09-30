@@ -3,7 +3,7 @@ const ja_JP = {
         title: "あくあボタン",
         info: "通知",
         null: "空",
-        audioStaff: "オーディオクリップ: mchong111",
+        audioStaff: "オーディオクリップ: mchong111 CatCoffee",
         toGithub: "Githubで翻訳に参加、音声を追加および提案をしてください。",
         notOfficial: "このサイトはファン作品であり、公式とは関係ありません。"
     },
