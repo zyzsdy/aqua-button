@@ -12,7 +12,11 @@ const zh_CN = {
         close: "关闭",
         copy: "复制",
         control: "操作控制",
-        stopvoice: "停止当前语音"
+        stopvoice: "停止当前语音",
+        randomplay: "帮我选一个",
+        overlap: "重叠播放",
+        playing: "正在播放:",
+        noplay: "暂无播放"
     },
     lang: {
         'zh-CN': "简体中文",

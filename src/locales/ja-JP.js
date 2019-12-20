@@ -12,7 +12,11 @@ const ja_JP = {
         close: "閉じる",
         copy: "コピー",
         control: "コントロール",
-        stopvoice: "現在の声を止める"
+        stopvoice: "現在の声を止める",
+        randomplay: "ランダム再生",
+        overlap: "重複再生",
+        playing: "現在の再生:",
+        noplay: "再生なし"
     },
     lang: {
         'zh-CN': "简体中文",
