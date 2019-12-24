@@ -2,13 +2,27 @@
     <div class="container-fluid" >
         <div>
             <div class="cate-header">{{ $t("action.control")}}</div>
-            <div class="cate-body"><button class="btn btn-info" @click="stopPlay">{{$t("action.stopvoice")}}</button></div>
-            <audio id="player"></audio>
+            <div class="cate-body">
+                <button class="btn btn-info" @click="random">{{ $t("action.randomplay") }}</button>
+                <button class="btn btn-info" @click="stopPlay">{{$t("action.stopvoice") }}</button>
+                <!-- <button class="btn btn-info" :class="{ 'disabled': overlapCheck }" @click="autoPlay">
+                    <input class="checkbox" type="checkbox" v-model="autoCkeck">
+                    <span>自动播放</span>
+                </button> -->
+                <button class="btn btn-info" :class="{ 'disabled': autoCkeck }" @click="overlap" data-toggle="tooltip" data-placement="top" :title="tip">
+                    <input class="checkbox" type="checkbox" v-model="overlapCheck">
+                    <span>{{ $t("action.overlap") }}</span>
+                </button>
+            </div>
+            <div class="cate-body">
+                <span>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</span>
+            </div>
+            <audio id="player" @ended="voiceEnd"></audio>
         </div>
         <div v-for="category in voices" v-bind:key="category.categoryName">
             <div class="cate-header">{{ $t("voicecategory." + category.categoryName) }}</div>
             <div class="cate-body">
-                <button class="btn btn-new" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem.path)">
+                <button class="btn btn-new" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem)">
                     {{ $t("voice." + voiceItem.name )}}
                 </button>
             </div>
@@ -37,6 +51,11 @@
     background-color: rgb(38, 176, 211);
     border-color: rgb(211, 38, 211);
 }
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1px 0 0;
+}
 </style>
 
 
@@ -45,19 +64,67 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 import VoiceList from '../voices.json'
 
+/* eslint-disable */ 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+/* eslint-enable */ 
+
 @Component
 class HomePage extends Vue {
     voices = VoiceList.voices
-    play(path){
-        this.stopPlay();
-        let player = document.getElementById('player');
-        player.src = "voices/" + path;
-        player.play();
+    autoCkeck = false
+    overlapCheck = false
+    tip = '重叠播放无法暂停，而且会创建大量线程，玩够了最好刷新一下'
+    voice = {}
+
+    play(item){
+        if (this.overlapCheck) {
+            let audio = new Audio("voices/" + item.path)
+            this.voice = item
+            audio.play()
+        } else {
+            this.stopPlay();
+            let player = document.getElementById('player');
+            player.src = "voices/" + item.path;
+            this.voice = item
+            player.play();
+        }
     }
     stopPlay(){
         let player = document.getElementById('player');
         player.pause();
+        this.voiceEnd()
     }
+    voiceEnd() {
+        this.voice = {}
+    }
+    random() {
+        let tempList = this.voices[this._randomNum(0, this.voices.length - 1)]
+        this.play(tempList.voiceList[this._randomNum(0, tempList.voiceList.length - 1)])
+    }
+    autoPlay(){
+        if (this.overlapCheck) {
+            return
+        }
+        this.autoCkeck = !this.autoCkeck
+    }
+    overlap() {
+        if (this.autoCkeck) {
+            return
+        }
+        this.overlapCheck = !this.overlapCheck
+    }
+    _randomNum(minNum, maxNum) {
+        switch(arguments.length) {
+            case 1:
+                return parseInt(Math.random() * minNum + 1, 10)
+            case 2:
+                return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
+            default:
+                return 0
+        }
+    } 
 }
 export default HomePage;
 </script>
