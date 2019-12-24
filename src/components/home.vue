@@ -5,11 +5,7 @@
             <div class="cate-body">
                 <button class="btn btn-info" @click="random">{{ $t("action.randomplay") }}</button>
                 <button class="btn btn-info" @click="stopPlay">{{$t("action.stopvoice") }}</button>
-                <!-- <button class="btn btn-info" :class="{ 'disabled': overlapCheck }" @click="autoPlay">
-                    <input class="checkbox" type="checkbox" v-model="autoCkeck">
-                    <span>自动播放</span>
-                </button> -->
-                <button class="btn btn-info" :class="{ 'disabled': autoCkeck }" @click="overlap" data-toggle="tooltip" data-placement="top" :title="tip">
+                <button class="btn btn-info" :class="{ 'disabled': autoCkeck }" @click="overlap" :title="$t('info.overlapTips')">
                     <input class="checkbox" type="checkbox" v-model="overlapCheck">
                     <span>{{ $t("action.overlap") }}</span>
                 </button>
@@ -64,65 +60,58 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 import VoiceList from '../voices.json'
 
-/* eslint-disable */ 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-/* eslint-enable */ 
-
 @Component
 class HomePage extends Vue {
-    voices = VoiceList.voices
-    autoCkeck = false
-    overlapCheck = false
-    tip = '重叠播放无法暂停，而且会创建大量线程，玩够了最好刷新一下'
-    voice = {}
+    voices = VoiceList.voices;
+    autoCkeck = false;
+    overlapCheck = false;
+    voice = {};
 
     play(item){
         if (this.overlapCheck) {
-            let audio = new Audio("voices/" + item.path)
-            this.voice = item
+            let audio = new Audio("voices/" + item.path);
+            this.voice = item;
             audio.play()
         } else {
             this.stopPlay();
             let player = document.getElementById('player');
             player.src = "voices/" + item.path;
-            this.voice = item
+            this.voice = item;
             player.play();
         }
     }
     stopPlay(){
         let player = document.getElementById('player');
         player.pause();
-        this.voiceEnd()
+        this.voiceEnd();
     }
     voiceEnd() {
-        this.voice = {}
+        this.voice = {};
     }
     random() {
-        let tempList = this.voices[this._randomNum(0, this.voices.length - 1)]
-        this.play(tempList.voiceList[this._randomNum(0, tempList.voiceList.length - 1)])
+        let tempList = this.voices[this._randomNum(0, this.voices.length - 1)];
+        this.play(tempList.voiceList[this._randomNum(0, tempList.voiceList.length - 1)]);
     }
     autoPlay(){
         if (this.overlapCheck) {
-            return
+            return;
         }
-        this.autoCkeck = !this.autoCkeck
+        this.autoCkeck = !this.autoCkeck;
     }
     overlap() {
         if (this.autoCkeck) {
-            return
+            return;
         }
-        this.overlapCheck = !this.overlapCheck
+        this.overlapCheck = !this.overlapCheck;
     }
     _randomNum(minNum, maxNum) {
         switch(arguments.length) {
             case 1:
-                return parseInt(Math.random() * minNum + 1, 10)
+                return parseInt(Math.random() * minNum + 1, 10);
             case 2:
-                return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
+                return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
             default:
-                return 0
+                return 0;
         }
     } 
 }
