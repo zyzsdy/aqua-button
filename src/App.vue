@@ -42,7 +42,7 @@
                     <div class="text-right">{{$t("info.notOfficial")}}</div>
                 </div>
                 <div>{{$t("info.audioStaff")}}</div>
-                <div>Zyzsdy 2019 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
+                <div>Zyzsdy 2019-2020 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
             </div>
         </footer>
   </div>
