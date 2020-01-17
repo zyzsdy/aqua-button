@@ -16,6 +16,7 @@ const ja_JP = {
         stopvoice: "再生停止",
         randomplay: "ランダム",
         overlap: "声重なる可能",
+        autoplay: "とまらない",
         playing: "現在再生：",
         noplay: "再生なし"
     },
