@@ -5,15 +5,19 @@
             <div class="cate-body">
                 <button class="btn btn-info" @click="random">{{ $t("action.randomplay") }}</button>
                 <button class="btn btn-info" @click="stopPlay">{{$t("action.stopvoice") }}</button>
-                <button class="btn btn-info" :class="{ 'disabled': autoCkeck }" @click="overlap" :title="$t('info.overlapTips')">
+                <button class="btn btn-info" :class="{ 'disabled': autoCheck }" @click="overlap" :title="$t('info.overlapTips')">
                     <input class="checkbox" type="checkbox" v-model="overlapCheck">
                     <span>{{ $t("action.overlap") }}</span>
+                </button>
+                <button class="btn btn-info" :class="{ 'disabled': overlapCheck }" @click="autoPlay">
+                    <input class="checkbox" type="checkbox" v-model="autoCheck">
+                    <span>{{ $t("action.autoplay") }}</span>
                 </button>
             </div>
             <div class="cate-body">
                 <span>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</span>
             </div>
-            <audio id="player" @ended="voiceEnd"></audio>
+            <audio id="player" @ended="voiceEnd(false)"></audio>
         </div>
         <div v-for="category in voices" v-bind:key="category.categoryName">
             <div class="cate-header">{{ $t("voicecategory." + category.categoryName) }}</div>
@@ -63,7 +67,7 @@ import VoiceList from '../voices.json'
 @Component
 class HomePage extends Vue {
     voices = VoiceList.voices;
-    autoCkeck = false;
+    autoCheck = false;
     overlapCheck = false;
     voice = {};
 
@@ -83,10 +87,14 @@ class HomePage extends Vue {
     stopPlay(){
         let player = document.getElementById('player');
         player.pause();
-        this.voiceEnd();
+        this.voiceEnd(true);
     }
-    voiceEnd() {
-        this.voice = {};
+    voiceEnd(flag) {
+        if(flag !== true && this.autoCheck) {
+            this.random();
+        } else {
+            this.voice = {};
+        }
     }
     random() {
         let tempList = this.voices[this._randomNum(0, this.voices.length - 1)];
@@ -96,10 +104,10 @@ class HomePage extends Vue {
         if (this.overlapCheck) {
             return;
         }
-        this.autoCkeck = !this.autoCkeck;
+        this.autoCheck = !this.autoCheck;
     }
     overlap() {
-        if (this.autoCkeck) {
+        if (this.autoCheck) {
             return;
         }
         this.overlapCheck = !this.overlapCheck;
@@ -113,7 +121,7 @@ class HomePage extends Vue {
             default:
                 return 0;
         }
-    } 
+    }
 }
 export default HomePage;
 </script>
