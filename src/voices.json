@@ -1305,6 +1305,22 @@
                         "zh-CN": "desumasu desumasu",
                         "ja-JP": "デスマスデスマス"
                     }
+                },
+                {
+                    "name": "a20200309-1",
+                    "path": "a20200309-1.mp3",
+                    "description": {
+                        "zh-CN": "Ora ora ora ora 1",
+                        "ja-JP": "オラオラオラオラ 1"
+                    }
+                },
+                {
+                    "name": "a20200309-2",
+                    "path": "a20200309-2.mp3",
+                    "description": {
+                        "zh-CN": "Rua 1",
+                        "ja-JP": "Rua 1"
+                    }
                 }
             ]
         },
