@@ -50,6 +50,10 @@
     color: #fff;
     background-color: rgb(38, 176, 211);
     border-color: rgb(211, 38, 211);
+    max-width: 100%;
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+    white-space: normal !important;
 }
 .checkbox {
     display: inline-block;
