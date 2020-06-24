@@ -1361,6 +1361,54 @@
                         "zh-CN": "（音量注意）收益化byebye 2",
                         "ja-JP": "（音量注意）収益化グッバイ２"
                     }
+                },
+                {
+                    "name": "a20200624-1",
+                    "path": "a20200624-1.mp3",
+                    "description": {
+                        "zh-CN": "阿夸版 Discord铃声",
+                        "ja-JP": "Discord通知音　あくあバージョン"
+                    }
+                },
+                {
+                    "name": "a20200624-2",
+                    "path": "a20200624-2.mp3",
+                    "description": {
+                        "zh-CN": "阿夸版 Line铃声",
+                        "ja-JP": "Line通知音　あくあバージョン"
+                    }
+                },
+                {
+                    "name": "a20200624-3",
+                    "path": "a20200624-3.mp3",
+                    "description": {
+                        "zh-CN": "阿夸版 Skype铃声",
+                        "ja-JP": "Skype通知音　あくあバージョン"
+                    }
+                },
+                {
+                    "name": "a20200624-4",
+                    "path": "a20200624-4.mp3",
+                    "description": {
+                        "zh-CN": "叭",
+                        "ja-JP": "パーーーー"
+                    }
+                },
+                {
+                    "name": "a20200624-5",
+                    "path": "a20200624-5.mp3",
+                    "description": {
+                        "zh-CN": "阿夸版 来电铃声",
+                        "ja-JP": "着信音 あくあバージョン"
+                    }
+                },
+                {
+                    "name": "a20200624-6",
+                    "path": "a20200624-6.mp3",
+                    "description": {
+                        "zh-CN": "奇声",
+                        "ja-JP": "奇声"
+                    }
                 }
             ]
         },
