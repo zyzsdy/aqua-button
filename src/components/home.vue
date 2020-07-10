@@ -1,10 +1,15 @@
 <template>
-    <div class="container-fluid" >
-        <div>
-            <div class="cate-header">{{ $t("action.control")}}</div>
+    <div class="container-fluid">
+        <div class="background">
+            <img src="../../public/resources/BG1.jpeg" width="100%" height="100%" alt="" />
+        </div>
+        <div class="top">
+            
+            <!-- <div class="cate-header">{{ $t("action.control")}}</div>
             <div class="cate-body">
                 <button class="btn btn-info" @click="random">{{ $t("action.randomplay") }}</button>
                 <button class="btn btn-info" @click="stopPlay">{{$t("action.stopvoice") }}</button>
+
                 <button class="btn btn-info" :class="{ 'disabled': autoCheck }" @click="overlap" :title="$t('info.overlapTips')">
                     <input class="checkbox" type="checkbox" v-model="overlapCheck">
                     <span>{{ $t("action.overlap") }}</span>
@@ -13,11 +18,36 @@
                     <input class="checkbox" type="checkbox" v-model="autoCheck">
                     <span>{{ $t("action.autoplay") }}</span>
                 </button>
-            </div>
-            <div class="cate-body">
-                <span>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</span>
-            </div>
-            <audio id="player" @ended="voiceEnd(false)"></audio>
+            </div> -->
+            <el-collapse v-model="this.activeNames" @change="this.handleChange">
+            <el-collapse-item name="1">
+                <template slot="title">
+                    <h3><i class="el-icon-open titleicon"></i>{{$t("action.control")}}</h3>
+                </template>
+                <div class="controlgroup">
+                <br/>
+                <el-row>
+                <el-col :span="8">
+                <el-button type="primary" @click="random">{{$t("action.randomplay")}}</el-button>
+                </el-col>
+                <el-col :span="8">
+                <el-button type="primary" @click="stopPlay">{{$t("action.stopvoice")}}</el-button>
+                </el-col>
+                <el-col :span="8">
+                <el-checkbox style="margin-right:0px" v-model="overlapCheck" @click="overlap" class="checkbox" :class="{'disabled':autoCheck}">{{$t("action.overlap")}}</el-checkbox>
+                </el-col>
+                <el-col :span="8">
+                <el-checkbox style="margin-top:0px" v-model="autoCheck" @click="autoPlay" class="checkbox" :class="{'disabled':overlapCheck}">{{$t("action.autoplay")}}</el-checkbox>
+                </el-col>
+                </el-row>
+                </div>
+                <div class="cate-body" style="margin-top:5px">
+                    <span>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</span>
+                </div>
+                <audio id="player" @ended="voiceEnd(false)"></audio>
+            </el-collapse-item>
+            </el-collapse>
+            <br/>
         </div>
         <div v-for="category in voices" v-bind:key="category.categoryName">
             <div class="cate-header">{{ $t("voicecategory." + category.categoryName) }}</div>
@@ -46,6 +76,35 @@
 .cate-body button{
     margin: 5px;
 }
+.el-col{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.el-button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.titleicon{
+    margin-right: 20px;
+}
+.background{
+    z-index: -1;
+    position: absolute;
+}
+.el-collapse{
+    // background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.8;
+}
+// h3{
+//     font-size: 12px;
+//     text-align: center;
+// }
+// .controlgroup{
+//     align-items: center;
+//     align-self: center;
+// }
 .btn-new {
     color: #fff;
     background-color: rgb(38, 176, 211);
@@ -67,14 +126,13 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 import VoiceList from '../voices.json'
-
 @Component
 class HomePage extends Vue {
     voices = VoiceList.voices;
     autoCheck = false;
     overlapCheck = false;
     voice = {};
-
+    bgSrc = require('../../public/resources/BG1.jpeg') 
     play(item){
         if (this.overlapCheck) {
             let audio = new Audio("voices/" + item.path);
@@ -126,6 +184,10 @@ class HomePage extends Vue {
                 return 0;
         }
     }
+    activeNames = ['1'];
+    handleChange(val){
+            console.log(val)
+        }
 }
 export default HomePage;
 </script>

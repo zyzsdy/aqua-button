@@ -1,23 +1,29 @@
 const en_US = {
     info: {
-        title: "Aqua Button",
+        title: "Okayu Button",
         info: "Information",
         null: "Empty",
-        audioStaff: "Audio Clip: mchong111 CatCoffee",
-        toGithub: "Please participate in translation, add audio or make suggestions on Github:",
-        notOfficial: "This site is a fan work and is not associated with the hololive official."
+        audioStaff: "Fork from zyzsdy, develop by Cyame, deployed by KirinCoffee & Chenxuan353.",
+        toGithub: "Looking forward to your participation in translation, add audio or make suggestions on Github:",
+        notOfficial: "This is merely a fan work with no association with the official.",
+        overlapTips: "There're still a branch of bugs to fix, it will create a new thread once a button is clicked. So please refresh the page occasionally and enjoy it."
     },
     action: {
-        toggleNavbar: "Toggle navigation bar",
-        close: "close",
-        copy: "copy",
-        control: "Player control",
-        stopvoice: "Stop current voice"
+        toggleNavbar: "Switch the Navigator",
+        close: "Close",
+        copy: "Copy",
+        control: "Control",
+        stopvoice: "Stop",
+        randomplay: "Random",
+        overlap: "Allow overlap",
+        autoplay: "Autoplay",
+        playing: "Now Playing: ",
+        noplay: "Nothing is playing now"
     },
     lang: {
-        'zh-CN': "简体中文",
+        'zh-CN': "Chinese",
         'en-US': "English",
-        'ja-JP': "日本語"
+        'ja-JP': "Japanese"
     }
 }
 export default en_US;

@@ -1,9 +1,9 @@
 const ja_JP = {
     info: {
-        title: "あくあボタン",
+        title: "おかゆボタン",
         info: "通知",
-        null: "空",
-        audioStaff: "オーディオクリップ: mchong111 CatCoffee",
+        null: "なし",
+        audioStaff: "開発：zyzsdy 二次開発：茶目 サーバー配置：KirinCoffee 晨轩",
         toGithub: "Githubで翻訳に参加、音声を追加および提案をしてください。",
         notOfficial: "このサイトはファン作品であり、公式とは関係ありません。",
         overlapTips: "声重なる再生モードは手動で停止できません。大量のスレッドを作成するので、後リフレッシュしてください。"
@@ -16,13 +16,13 @@ const ja_JP = {
         stopvoice: "再生停止",
         randomplay: "ランダム",
         overlap: "声重なる可能",
-        autoplay: "とまらない",
+        autoplay: "とまらないホロライブ",
         playing: "現在再生：",
         noplay: "再生なし"
     },
     lang: {
-        'zh-CN': "简体中文",
-        'en-US': "English",
+        'zh-CN': "中国語",
+        'en-US': "英語",
         'ja-JP': "日本語"
     }
 }
