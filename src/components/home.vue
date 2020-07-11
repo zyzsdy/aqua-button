@@ -1,62 +1,48 @@
 <template>
     <div class="container-fluid">
         <div class="background">
-            <img src="../../public/resources/BG1.jpeg" width="100%" height="100%" alt="" />
+            <img src="../../public/resources/BG2.png" width="100%" height="100%" alt="" />
         </div>
         <div class="top">
-            
-            <!-- <div class="cate-header">{{ $t("action.control")}}</div>
-            <div class="cate-body">
-                <button class="btn btn-info" @click="random">{{ $t("action.randomplay") }}</button>
-                <button class="btn btn-info" @click="stopPlay">{{$t("action.stopvoice") }}</button>
-
-                <button class="btn btn-info" :class="{ 'disabled': autoCheck }" @click="overlap" :title="$t('info.overlapTips')">
-                    <input class="checkbox" type="checkbox" v-model="overlapCheck">
-                    <span>{{ $t("action.overlap") }}</span>
-                </button>
-                <button class="btn btn-info" :class="{ 'disabled': overlapCheck }" @click="autoPlay">
-                    <input class="checkbox" type="checkbox" v-model="autoCheck">
-                    <span>{{ $t("action.autoplay") }}</span>
-                </button>
-            </div> -->
             <el-collapse v-model="this.activeNames" @change="this.handleChange">
-            <el-collapse-item name="1">
-                <template slot="title">
-                    <h3><i class="el-icon-open titleicon"></i>{{$t("action.control")}}</h3>
-                </template>
-                <div class="controlgroup">
-                <br/>
-                <el-row>
-                <el-col :span="8">
-                <el-button type="primary" @click="random">{{$t("action.randomplay")}}</el-button>
-                </el-col>
-                <el-col :span="8">
-                <el-button type="primary" @click="stopPlay">{{$t("action.stopvoice")}}</el-button>
-                </el-col>
-                <el-col :span="8">
-                <el-checkbox style="margin-right:0px" v-model="overlapCheck" @click="overlap" class="checkbox" :class="{'disabled':autoCheck}">{{$t("action.overlap")}}</el-checkbox>
-                </el-col>
-                <el-col :span="8">
-                <el-checkbox style="margin-top:0px" v-model="autoCheck" @click="autoPlay" class="checkbox" :class="{'disabled':overlapCheck}">{{$t("action.autoplay")}}</el-checkbox>
-                </el-col>
-                </el-row>
-                </div>
-                <div class="cate-body" style="margin-top:5px">
-                    <span>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</span>
-                </div>
-                <audio id="player" @ended="voiceEnd(false)"></audio>
-            </el-collapse-item>
-            </el-collapse>
+                <el-collapse-item name="1">
+                    <template slot="title">
+                        <i class="el-icon-open titleicon"></i>
+                        <p style="font-size:18px">{{$t("action.control")}}</p>
+                    </template>
+                    <div class="controlgroup">
+                    <br/>
+                        <el-row>
+                            <el-col :span="8">
+                            <el-button class="controlbutton" type="primary" @click="random">{{$t("action.randomplay")}}</el-button>
+                            </el-col>
+                            <el-col :span="8">
+                            <el-button class="controlbutton" type="primary" @click="stopPlay">{{$t("action.stopvoice")}}</el-button>
+                            </el-col>
+                            <el-col :span="8">
+                            <el-checkbox style="margin-right:0px" v-model="overlapCheck" @click="overlap" class="checkbox" :class="{'disabled':autoCheck}">{{$t("action.overlap")}}</el-checkbox>
+                            </el-col>
+                            <el-col :span="8">
+                            <el-checkbox style="margin-top:0px" v-model="autoCheck" @click="autoPlay" class="checkbox" :class="{'disabled':overlapCheck}">{{$t("action.autoplay")}}</el-checkbox>
+                            </el-col>
+                        </el-row>
+                    </div>
+                    <div class="cate-body" style="margin-top:5px">
+                        <span>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</span>
+                    </div>
+                    <audio id="player" @ended="voiceEnd(false)"></audio>
+                </el-collapse-item>
             <br/>
-        </div>
-        <div v-for="category in voices" v-bind:key="category.categoryName">
-            <div class="cate-header">{{ $t("voicecategory." + category.categoryName) }}</div>
-            <div class="cate-body">
-                <button class="btn btn-new" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem)">
-                    {{ $t("voice." + voiceItem.name )}}
-                </button>
-            </div>
-        </div>
+                <div v-for="category in voices" v-bind:key="category.categoryName">
+                <el-collapse-item>
+                    <template slot="title">{{ $t("voicecategory." + category.categoryName) }}</template>
+                    <el-button class="button" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem)">
+                        {{ $t("voice." + voiceItem.name )}}
+                    </el-button>
+                </el-collapse-item>
+                </div>           
+            </el-collapse>
+        </div>       
     </div>
 </template>
 
@@ -81,30 +67,28 @@
     margin-left: auto;
     margin-right: auto;
 }
-.el-button{
+.controlbutton{
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 .titleicon{
     margin-right: 20px;
+    margin-bottom: 8px;
 }
 .background{
     z-index: -1;
     position: absolute;
+    
+    // 平铺
+    // width: 100%;
+    // height: 100%;
 }
 .el-collapse{
-    // background-color: rgba(255, 255, 255, 0.5);
+    background-color: #d777fa;
     opacity: 0.8;
 }
-// h3{
-//     font-size: 12px;
-//     text-align: center;
-// }
-// .controlgroup{
-//     align-items: center;
-//     align-self: center;
-// }
+
 .btn-new {
     color: #fff;
     background-color: rgb(38, 176, 211);
