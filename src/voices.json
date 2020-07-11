@@ -1,22 +1,23 @@
 {
     "voices": [
-        // {
-        //     "categoryName": "actmoe",
-        //     "categoryDescription": {
-        //         "zh-CN": "萌",
-        //         "ja-JP": "もえ"
-        //     },
-        //     "voiceList": [
-        //         {
-        //             "name": "a-1",
-        //             "path": "a-1.mp3",
-        //             "description": {
-        //                 "zh-CN": "kon↑kon↑kon→kon↑kon→kon↓",
-        //                 "en-US": "kon↑kon↑kon→kon↑kon→kon↓",
-        //                 "ja-JP": "kon↑kon↑kon→kon↑kon→kon↓"
-        //             }
-        //         },
-            // ]
-        // },
+        {
+            "categoryName": "actmoe",
+            "categoryDescription": {
+                "zh-CN": "萌",
+                "en-US": "cute",
+                "ja-JP": "もえ"
+            },
+            "voiceList": [
+                {
+                    "name": "a-1",
+                    "path": "a-1.mp3",
+                    "description": {
+                        "zh-CN": "kon↑kon↑kon→kon↑kon→kon↓",
+                        "en-US": "kon↑kon↑kon→kon↑kon→kon↓",
+                        "ja-JP": "kon↑kon↑kon→kon↑kon→kon↓"
+                    }
+                }
+            ]
+        }
     ]
 }
