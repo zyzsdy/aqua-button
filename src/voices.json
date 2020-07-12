@@ -1,20 +1,228 @@
 {
     "voices": [
         {
-            "categoryName": "actmoe",
+            "categoryName": "regigigas",
             "categoryDescription": {
-                "zh-CN": "萌",
-                "en-US": "cute",
-                "ja-JP": "もえ"
+                "zh-CN": "雷吉奇嘎嘎嘎",
+                "en-US": "Regigigas",
+                "ja-JP": "レジギガガガ"
             },
             "voiceList": [
                 {
-                    "name": "a-1",
-                    "path": "a-1.mp3",
+                    "name": "o-1",
+                    "path": "o-1.wav",
                     "description": {
-                        "zh-CN": "kon↑kon↑kon→kon↑kon→kon↓",
-                        "en-US": "kon↑kon↑kon→kon↑kon→kon↓",
-                        "ja-JP": "kon↑kon↑kon→kon↑kon→kon↓"
+                        "zh-CN": "嘎 1",
+                        "en-US": "Ga 1",
+                        "ja-JP": "ガ 1"
+                    }
+                },
+                {
+                    "name": "o-2",
+                    "path": "o-2.wav",
+                    "description": {
+                        "zh-CN": "嘎 2",
+                        "en-US": "Ga 2",
+                        "ja-JP": "ガ 2"
+                    }
+                },
+                {
+                    "name": "o-3",
+                    "path": "o-3.wav",
+                    "description": {
+                        "zh-CN": "嘎 3",
+                        "en-US": "Ga 3",
+                        "ja-JP": "ガ 3"
+                    }
+                },
+                {
+                    "name": "o-4",
+                    "path": "o-4.wav",
+                    "description": {
+                        "zh-CN": "嘎 4",
+                        "en-US": "Ga 4",
+                        "ja-JP": "ガ 4"
+                    }
+                },
+                {
+                    "name": "o-5",
+                    "path": "o-5.wav",
+                    "description": {
+                        "zh-CN": "嘎 5",
+                        "en-US": "Ga 5",
+                        "ja-JP": "ガ 5"
+                    }
+                },
+                {
+                    "name": "o-6",
+                    "path": "o-6.wav",
+                    "description": {
+                        "zh-CN": "嘎 6",
+                        "en-US": "Ga 6",
+                        "ja-JP": "ガ 6"
+                    }
+                },
+                {
+                    "name": "o-7",
+                    "path": "o-7.wav",
+                    "description": {
+                        "zh-CN": "嘎 7",
+                        "en-US": "Ga 7",
+                        "ja-JP": "ガ 7"
+                    }
+                },
+                {
+                    "name": "o-8",
+                    "path": "o-8.wav",
+                    "description": {
+                        "zh-CN": "嘎 8",
+                        "en-US": "Ga 8",
+                        "ja-JP": "ガ 8"
+                    }
+                },
+                {
+                    "name": "o-9",
+                    "path": "o-9.wav",
+                    "description": {
+                        "zh-CN": "嘎 9",
+                        "en-US": "Ga 9",
+                        "ja-JP": "ガ 9"
+                    }
+                },
+                {
+                    "name": "o-10",
+                    "path": "o-10.wav",
+                    "description": {
+                        "zh-CN": "嘎 10",
+                        "en-US": "Ga 10",
+                        "ja-JP": "ガ 10"
+                    }
+                },
+                {
+                    "name": "o-11",
+                    "path": "o-11.wav",
+                    "description": {
+                        "zh-CN": "嘎 11",
+                        "en-US": "Ga 11",
+                        "ja-JP": "ガ 11"
+                    }
+                },
+                {
+                    "name": "o-12",
+                    "path": "o-12.wav",
+                    "description": {
+                        "zh-CN": "嘎 12",
+                        "en-US": "Ga 12",
+                        "ja-JP": "ガ 12"
+                    }
+                },
+                {
+                    "name": "o-13",
+                    "path": "o-13.wav",
+                    "description": {
+                        "zh-CN": "嘎 13",
+                        "en-US": "Ga 13",
+                        "ja-JP": "ガ 13"
+                    }
+                },
+                {
+                    "name": "o-14",
+                    "path": "o-14.wav",
+                    "description": {
+                        "zh-CN": "嘎 14",
+                        "en-US": "Ga 14",
+                        "ja-JP": "ガ 14"
+                    }
+                },
+                {
+                    "name": "o-15",
+                    "path": "o-15.wav",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 1",
+                        "en-US": "Gagagaga 1",
+                        "ja-JP": "ガガガガガ 1"
+                    }
+                },
+                {
+                    "name": "o-16",
+                    "path": "o-16.wav",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 2",
+                        "en-US": "Gagagaga 2",
+                        "ja-JP": "ガガガガガ 2"
+                    }
+                },
+                {
+                    "name": "o-17",
+                    "path": "o-17.wav",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 3",
+                        "en-US": "Gagagaga 3",
+                        "ja-JP": "ガガガガガ 3"
+                    }
+                },
+                {
+                    "name": "o-18",
+                    "path": "o-18.wav",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 4",
+                        "en-US": "Gagagaga 4",
+                        "ja-JP": "ガガガガガ 4"
+                    }
+                },
+                {
+                    "name": "o-19",
+                    "path": "o-19.wav",
+                    "description": {
+                        "zh-CN": "吉 1",
+                        "en-US": "Gi 1",
+                        "ja-JP": "ジ 1"
+                    }
+                },
+                {
+                    "name": "o-20",
+                    "path": "o-20.wav",
+                    "description": {
+                        "zh-CN": "吉 2",
+                        "en-US": "Gi 2",
+                        "ja-JP": "ジ 2"
+                    }
+                },
+                {
+                    "name": "o-21",
+                    "path": "o-21.wav",
+                    "description": {
+                        "zh-CN": "吉 3",
+                        "en-US": "Gi 3",
+                        "ja-JP": "ジ 3"
+                    }
+                },
+                {
+                    "name": "o-22",
+                    "path": "o-22.wav",
+                    "description": {
+                        "zh-CN": "雷 1",
+                        "en-US": "Re 1",
+                        "ja-JP": "レ 1"
+                    }
+                }
+            ]
+        },
+        {
+            "categoryName": "lmao",
+            "categoryDescription": {
+                "zh-CN": "笑声",
+                "en-US": "Laugh",
+                "ja-JP": "笑声"
+            },
+            "voiceList": [
+                {
+                    "name": "o-35",
+                    "path": "o-35.wav",
+                    "description": {
+                        "zh-CN": "屑猫狂笑 1",
+                        "en-US": "Lmao 1",
+                        "ja-JP": "笑すぎ 1"
                     }
                 }
             ]

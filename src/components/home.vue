@@ -5,7 +5,7 @@
         </div>
         <div class="top">
             <el-collapse v-model="this.activeNames" @change="this.handleChange">
-                <el-collapse-item name="0">
+                <el-collapse-item name="controller">
                     <template slot="title">
                         <i class="el-icon-open titleicon"></i>
                         <p style="font-size:18px">{{$t("action.control")}}</p>
@@ -33,14 +33,12 @@
                     <audio id="player" @ended="voiceEnd(false)"></audio>
                 </el-collapse-item>
             <br/>
-                <div v-for="(category,index) in voices" v-bind:key="category.categoryName" :id="index">
-                <el-collapse-item name="index">
+                <el-collapse-item v-for="category in voices" :key="category.categoryName" :name="category.categoryName">
                     <template slot="title">{{ $t("voicecategory." + category.categoryName) }}</template>
                     <el-button class="button" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem)">
                         {{ $t("voice." + voiceItem.name )}}
                     </el-button>
-                </el-collapse-item>
-                </div>           
+                </el-collapse-item>          
             </el-collapse>
         </div>       
     </div>
@@ -168,7 +166,7 @@ class HomePage extends Vue {
                 return 0;
         }
     }
-    activeNames = ['0','1','index'];
+    activeNames = ['controller','lmao','regigigas'];
     handleChange(val){
             console.log(val)
         }

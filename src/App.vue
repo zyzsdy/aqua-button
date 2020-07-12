@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+      <el-container>
+          <!-- <el-header> -->
         <Modal></Modal>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
@@ -32,19 +34,25 @@
 
             </div>
         </nav>
-        <div class="container-fluid main-content">
+        <!-- </el-header> -->
+        <el-main>
+        <!-- <div class="container-fluid main-content"> -->
             <router-view></router-view>
-        </div>
-        <footer class="footer">
+        <!-- </div> -->
+        </el-main>
+        <el-footer class="footer">
+        <!-- <footer class="footer"> -->
             <div class="container-fluid footer-content">
                 <div class="pull-right">
                     <div class="text-right"><a href="https://github.com/Cyame/okayu-button/" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/zyzsdy/aqua-button.svg?style=social"/></a></div>
                     <div class="text-right">{{$t("info.notOfficial")}}</div>
                 </div>
                 <div>{{$t("info.audioStaff")}}</div>
-                <div>Cyame 2020 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
+                <div>Cyame @ 2020 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
             </div>
-        </footer>
+        <!-- </footer> -->
+        </el-footer>
+      </el-container>
   </div>
 </template>
 
