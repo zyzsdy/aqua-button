@@ -3,7 +3,7 @@ const en_US = {
         title: "Okayu Button",
         info: "Information",
         null: "Empty",
-        audioStaff: "Fork from zyzsdy, develop by Cyame, deployed by KirinCoffee & Chenxuan353.",
+        audioStaff: "Fork from zyzsdy, develop by Cyame, deployed by KirinCoffee & Chenxuan353, collaborated by QA & Yukimari  & StarDustFallen",
         toGithub: "Looking forward to your participation in translation, add audio or make suggestions on Github:",
         notOfficial: "This is merely a fan work with no association with the official.",
         overlapTips: "There're still a branch of bugs to fix, it will create a new thread once a button is clicked. So please refresh the page occasionally and enjoy it."

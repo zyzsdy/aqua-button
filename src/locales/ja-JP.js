@@ -3,7 +3,7 @@ const ja_JP = {
         title: "おかゆボタン",
         info: "通知",
         null: "なし",
-        audioStaff: "開発：zyzsdy 二次開発：茶目 サーバー配置：KirinCoffee 晨轩",
+        audioStaff: "開発：zyzsdy 二次開発：茶目 サーバー配置：KirinCoffee 晨轩 協力：QA 雪毬 星尘",
         toGithub: "Githubで翻訳に参加、音声を追加および提案をしてください。",
         notOfficial: "このサイトはファン作品であり、公式とは関係ありません。",
         overlapTips: "声重なる再生モードは手動で停止できません。大量のスレッドを作成するので、後リフレッシュしてください。"

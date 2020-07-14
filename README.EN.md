@@ -8,6 +8,8 @@ Related Links:
 
 * [Nekomata Okayu's Twitter](https://twitter.com/nekomataokayu)
 
+* [Nekomata Okayu's Bilibili space](https://space.bilibili.com/412135222?from=search&seid=730740916312043238)
+
 ## Contributing
 
 Please fork this project for modification, and after completing the modification, initiate a Pull Request in this project.
