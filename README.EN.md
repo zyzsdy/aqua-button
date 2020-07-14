@@ -1,14 +1,14 @@
 # Okayu button
 
-Okayu button [Site(not prepared yet)](https://button.okayu.me)
+Okayu button [Site(not deployed yet)](https://button.okayu.me)
 
 Related Links:
 
-* [Nekomata Okayu's Youtube channel](https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw)
+* [Nekomata Okayu's Youtube Channel](https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw)
 
 * [Nekomata Okayu's Twitter](https://twitter.com/nekomataokayu)
 
-* [Nekomata Okayu's Bilibili space](https://space.bilibili.com/412135222?from=search&seid=730740916312043238)
+* [Nekomata Okayu's Bilibili HomePage](https://space.bilibili.com/412135222?from=search&seid=730740916312043238)
 
 ## Contributing
 

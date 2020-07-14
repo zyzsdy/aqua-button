@@ -1,8 +1,5 @@
 <template>
     <div class="container-fluid">
-        <div class="background">
-            <img src="../../public/resources/BG2.png" width="100%" height="100%" alt="" />
-        </div>
         <div class="top">
             <el-collapse v-model="this.activeNames" @change="this.handleChange">
                 <el-collapse-item name="controller">
@@ -73,14 +70,6 @@
 .titleicon{
     margin-right: 20px;
     margin-bottom: 8px;
-}
-.background{
-    z-index: -1;
-    position: absolute;
-    
-    // 平铺
-    // width: 100%;
-    // height: 100%;
 }
 .el-collapse{
     background-color: #d777fa;

@@ -40,6 +40,8 @@
             <router-view></router-view>
         <!-- </div> -->
         </el-main>
+        <div class="background">
+            <img src="../public/resources/BG2.png" width="100%" height="100%" alt="" />
         <el-footer class="footer">
         <!-- <footer class="footer"> -->
             <div class="container-fluid footer-content">
@@ -52,6 +54,7 @@
             </div>
         <!-- </footer> -->
         </el-footer>
+        </div>
       </el-container>
   </div>
 </template>
@@ -75,6 +78,16 @@ body{
 }
 .text-right{
     text-align: right;
+}
+.background{
+    z-index: -1;
+    position: absolute;
+    // background-image: '../public/resources/BG2.png';
+    // background: no-repeat top;
+    // background-attachment: fixed;
+    // 平铺
+    // width: 100%;
+    // height: 100%;
 }
 </style>
 
