@@ -3,7 +3,7 @@ const zh_CN = {
         title: "饭团猫按钮",
         info: "消息",
         null: "空",
-        audioStaff: "原作：zyzsdy 二次开发：茶目 服务器部署：KirinCoffee 晨轩",
+        audioStaff: "原作：zyzsdy 二次开发：茶目 服务器部署：KirinCoffee 晨轩 协力：QA 雪毬 星尘",
         toGithub: "欢迎在Github参与翻译、增补音频或提出建议",
         notOfficial: "本站为爱好者作品，和Hololive官方无关，如有任何问题，恳请批评指正。",
         overlapTips: "重叠播放无法暂停，而且会创建大量线程，玩够了最好刷新一下~"

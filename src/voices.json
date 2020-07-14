@@ -1,4 +1,4 @@
-{
+﻿{
     "voices": [
         {
             "categoryName": "regigigas",
@@ -204,6 +204,114 @@
                         "zh-CN": "雷 1",
                         "en-US": "Re 1",
                         "ja-JP": "レ 1"
+                    }
+                },
+                {
+                    "name": "o-23",
+                    "path": "o-23.wav",
+                    "description": {
+                        "zh-CN": "雷 2",
+                        "en-US": "Re 2",
+                        "ja-JP": "レ 2"
+                    }
+                },
+                {
+                    "name": "o-24",
+                    "path": "o-24.wav",
+                    "description": {
+                        "zh-CN": "雷 3",
+                        "en-US": "Re 3",
+                        "ja-JP": "レ 3"
+                    }
+                },
+                {
+                    "name": "o-25",
+                    "path": "o-25.wav",
+                    "description": {
+                        "zh-CN": "雷 4",
+                        "en-US": "Re 4",
+                        "ja-JP": "レ 4"
+                    }
+                },
+                {
+                    "name": "o-26",
+                    "path": "o-26.wav",
+                    "description": {
+                        "zh-CN": "雷 5",
+                        "en-US": "Re 5",
+                        "ja-JP": "レ 5"
+                    }
+                },
+                {
+                    "name": "o-27",
+                    "path": "o-27.wav",
+                    "description": {
+                        "zh-CN": "奇 1",
+                        "en-US": "Gi 1",
+                        "ja-JP": "ギ １"
+                    }
+                },
+                {
+                    "name": "o-28",
+                    "path": "o-28.wav",
+                    "description": {
+                        "zh-CN": "奇 2",
+                        "en-US": "Gi 2",
+                        "ja-JP": "ギ 2"
+                    }
+                },
+                {
+                    "name": "o-29",
+                    "path": "o-29.wav",
+                    "description": {
+                        "zh-CN": "奇 3",
+                        "en-US": "Gi 3",
+                        "ja-JP": "ギ 3"
+                    }
+                },
+                {
+                    "name": "o-30",
+                    "path": "o-30.wav",
+                    "description": {
+                        "zh-CN": "奇 4",
+                        "en-US": "Gi 4",
+                        "ja-JP": "ギ 4"
+                    }
+                },
+                {
+                    "name": "o-31",
+                    "path": "o-31.wav",
+                    "description": {
+                        "zh-CN": "奇 5",
+                        "en-US": "Gi 5",
+                        "ja-JP": "ギ 5"
+                    }
+                },
+                {
+                    "name": "o-32",
+                    "path": "o-32.wav",
+                    "description": {
+                        "zh-CN": "雷吉奇 1",
+                        "en-US": "ReJiGi 1",
+                        "ja-JP": "レジギ 1"
+                    }
+                },
+                {
+                    "name": "o-33",
+                    "path": "o-33.wav",
+                    "description": {
+                        "zh-CN": "雷吉奇 2",
+                        "en-US": "ReJiGi 2",
+                        "ja-JP": "レジギ 2"
+                    }
+                },
+                {
+                    "name": "o-34",
+                    "path": "o-34.wav",
+                    "description": {
+                        "zh-CN": "雷吉奇 3",
+                        "en-US": "ReJiGi 3",
+                        "ja-JP": "レジギ 3"
                     }
                 }
             ]

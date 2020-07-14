@@ -1,4 +1,4 @@
-# Aqua button
+# おかゆボタン（监修中）
 
 Aqua button [Click here to visit https://aquaminato.moe](https://aquaminato.moe)
 
