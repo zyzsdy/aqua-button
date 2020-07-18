@@ -58,10 +58,16 @@ Program: MIT
 
 Audio: According to the [Hololive secondary creation licence](https://www.hololive.tv/terms).
 
-This project is a work of enthusiasts and is not related to the hololive official.
+This project is a work of fans and is not related to the hololive official.
 
 ## Special Thanks
 
 This project is supported by MeowSound Idols.
 
 This project is modified based on the [Meamea button](https://github.com/zyzsdy/meamea-button).
+
+### 致各位Fork了本代码库的各位按钮站站长
+
+不必在左下角标识Powered By MeowSound Idols，这不是版权标记的一部分。
+
+Aqua Button（本站）和Meamea Button由MeowSound Idols托管并运营，因此加入了上述标识。
