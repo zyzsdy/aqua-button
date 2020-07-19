@@ -28,9 +28,9 @@ If you are modifying voice, delete the original file after modification.
 
 ### 翻訳仕事を参加
 
-Please help us translate to English and Japanese!
+英語と日本語の翻訳協力をください！
 
-The language files for the main program are in three .js files named the language name in [src/locales](src/locales).
+言語データは.jsファイルで[src/locales](src/locales)にしております.
 
 The language files for voices are in [src/voices.json](src/voices.json).
 
