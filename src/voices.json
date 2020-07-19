@@ -334,6 +334,188 @@
                     }
                 }
             ]
+        },
+        {
+            "categoryName": "grunting",
+            "categoryDescription": {
+                "zh-CN": "咕噜",
+                "ja-JP": "ゴロゴロ",
+                "en-US": "Grunting"
+            },
+            "voiceList": [
+                {
+                    "name": "o-50",
+                    "path": "o-50.wav",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 1",
+                        "en-US": "Grunting 1",
+                        "ja-JP": "ゴロゴロ 1"
+                    }
+                },
+                {
+                    "name": "o-51",
+                    "path": "o-51.wav",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 2",
+                        "en-US": "Grunting 2",
+                        "ja-JP": "ゴロゴロ 2"
+                    }
+                },
+                {
+                    "name": "o-52",
+                    "path": "o-52.wav",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 3",
+                        "en-US": "Grunting 3",
+                        "ja-JP": "ゴロゴロ 3"
+                    }
+                },
+                {
+                    "name": "o-53",
+                    "path": "o-53.wav",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 4",
+                        "en-US": "Grunting 4",
+                        "ja-JP": "ゴロゴロ 4"
+                    }
+                }
+            ]
+        },
+        {
+            "categoryName": "strange-voices",
+            "categoryDescription": {
+                "zh-CN": "奇声/怪叫",
+                "en-US": "Strange Voices",
+                "ja-JP": "変な声"
+            },
+            "voiceList":[
+                {
+                    "name": "o-36",
+                    "path": "o-36.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-37",
+                    "path": "o-37.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-38",
+                    "path": "o-38.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-39",
+                    "path": "o-39.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-40",
+                    "path": "o-40.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-41",
+                    "path": "o-41.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-42",
+                    "path": "o-42.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-43",
+                    "path": "o-43.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-44",
+                    "path": "o-44.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-45",
+                    "path": "o-45.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-46",
+                    "path": "o-46.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-47",
+                    "path": "o-47.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-48",
+                    "path": "o-48.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                },
+                {
+                    "name": "o-49",
+                    "path": "o-49.mav",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                }
+            ]
         }
     ]
 }
