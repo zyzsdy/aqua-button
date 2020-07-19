@@ -1,6 +1,6 @@
 # 粥按钮
 
-粥按钮 [网站链接（尚未部署）](https://button.okayu.me)
+粥按钮 [点此访问（尚未部署）](https://button.okayu.me)
 
 相关链接:
 

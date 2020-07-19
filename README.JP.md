@@ -1,32 +1,32 @@
 # おかゆボタン（监修中）
 
-Aqua button [Click here to visit https://aquaminato.moe](https://aquaminato.moe)
-
-[![Build Status](https://travis-ci.org/zyzsdy/aqua-button.svg?branch=master)](https://travis-ci.org/zyzsdy/aqua-button)
+おかゆボタン [このリンクをおクリックして](https://aquaminato.moe)
 
 Related Links:
 
-* [Aqua Minato's Youtube channel](https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg)
+* [猫又おかゆのYouTubeチャンネル](https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw)
 
-* [Aqua Minato's Twitter](https://twitter.com/minatoaqua)
+* [猫又おかゆのツイータータイムライン]](https://twitter.com/nekomataokayu)
 
-## Contributing
+* [猫又おかゆのビリビリ動画チャンネル](https://space.bilibili.com/412135222?from=search&seid=730740916312043238)
 
-Please fork this project for modification, and after completing the modification, initiate a Pull Request in this project.
+## 贡献
 
-### Add or modify voice
+このレポーをフォックして、またご修正をください。完成のプロジェクトをこちらにプールレクエストをください。
 
-**Description**: All voice meta information is stored in [src/voices.json](src/voices.json). To add or modify these voices, you need to modify this file accordingly.
+### 音声追加と修正
 
-Voice is always in mp3 format and stored in [public/voices](public/voices). The corresponding URL is `voices/`.
+**説明**: 全部の音声データリストは[src/voices.json](src/voices.json)に保存された、音声を追加したうえ, このリストも更新してください。
 
-For new voice, please use software such as MP3GainGUI for volume standardization. Currently the volume standardized value is 80.
+VoiceはMP3やWAVのフォーマットで[public/voices](public/voices)保存しています。相応のURLは `voices/`です。
+
+新規音声が追加したいなら、ソフトウェアを使て、音量が標準の80に調整してください。
 
 Because this site uses a strong cache strategy, except for `index.html`, files with the same filename, even if modified, will **NEVER** be refreshed by the client. Therefore, the filename of the newly voice, whatever it is new or modified, **MUST** be different from any previous filename.
 
 If you are modifying voice, delete the original file after modification.
 
-### Participate in translation
+### 翻訳仕事を参加
 
 Please help us translate to English and Japanese!
 
@@ -42,26 +42,26 @@ This site is developed using Vue + jQuery + Bootstrap 3.
 
 To deploy a local development environment, first install the latest version of Node. Then follow these steps:
 
-1. Clone the code.
+1. このレポーをコーロンして。
 
-2. Go to the code directory and run `npm install`.
+2. プロジェクトフォルダに入って、`npm install`を.
 
-3. Run `npm run serve`. During the code modification process, this local development server can immediately reflect the results of the modification.
+3. `npm run serve`でパソコンにウェブサイトを開け、修正の間に、パソコンのウェブサイトも変われる。
 
 4. To compile the files for deployment, run `npm run build`, which will generate the `dist` directory. This site is completely static, you can directly deploy the entire `dist` directory.
 
 > To contribute your code to this project, you don't have to compile locally. After passing the test in the development server and pushing it to Github, you can directly require a Pull Request to this project.
 
-## LICENCE
+## ライセンス
 
-Program: MIT
+プログラム: MIT
 
-Audio: According to the [Hololive secondary creation licence](https://www.hololive.tv/terms).
+音声: [Hololive secondary creation licence](https://www.hololive.tv/terms)を対応.
 
-This project is a work of enthusiasts and is not related to the hololive official.
+ただのファン作品ですが、本家のホロライブは関係がありません。
 
-## Special Thanks
+## 特別感謝
 
-This project is supported by MeowSound Idols.
+このプロジェクトはMeowSound Idolsをご参考しまいました
 
-This project is modified based on the [Meamea button](https://github.com/zyzsdy/meamea-button).
+[Meamea button](https://github.com/zyzsdy/meamea-button)から修正になっております。
