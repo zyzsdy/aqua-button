@@ -35,26 +35,36 @@
             </div>
         </nav>
         <!-- </el-header> -->
-        <el-main>
+        <el-main class="main-content">
         <!-- <div class="container-fluid main-content"> -->
             <router-view></router-view>
         <!-- </div> -->
         </el-main>
         <div class="background">
-            <img src="../public/resources/BG2.png" width="100%" height="100%" alt="" />
+            <img src="../public/resources/BG2.png" width="100%" height="100%" alt=""/>
+            </div>
         <el-footer class="footer">
         <!-- <footer class="footer"> -->
             <div class="container-fluid footer-content">
                 <div class="pull-right">
-                    <div class="text-right"><a href="https://github.com/Cyame/okayu-button/" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/zyzsdy/aqua-button.svg?style=social"/></a></div>
+                    <div class="text-right"><a href="https://github.com/Cyame/okayu-button/" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/Cyame/okayu-button.svg?style=social"/></a></div>
                     <div class="text-right">{{$t("info.notOfficial")}}</div>
                 </div>
-                <div>{{$t("info.audioStaff")}}</div>
-                <div>Cyame @ 2020 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
+                  <el-popover
+                    placement="top-start"
+                    title="Cyame @ 2020"
+                    trigger="hover">
+                    <div style="margin:auto">
+                    <div>{{$t('info.developer')}}</div>
+                    <div>{{$t('info.deployer')}}</div>
+                    <div>{{$t('info.audioStaff')}}</div>
+                    </div>
+                    <el-button slot="reference">{{$t('info.about')}}</el-button>
+                </el-popover>
             </div>
         <!-- </footer> -->
         </el-footer>
-        </div>
+        
       </el-container>
   </div>
 </template>
@@ -65,12 +75,13 @@ body{
     padding-top: 70px;
 }
 .main-content{
-    min-height: 100vh;
+    // NEED FIXED 跟图有关
+    min-height: 2050px;
 }
 .footer {
     width: 100%;
     height: 60px;
-    background-color: #ebebeb;
+    background-color: whitesmoke;
 }
 .footer-content {
     padding-top: 10px;
@@ -82,9 +93,6 @@ body{
 .background{
     z-index: -1;
     position: absolute;
-    // background-image: '../public/resources/BG2.png';
-    // background: no-repeat top;
-    // background-attachment: fixed;
     // 平铺
     // width: 100%;
     // height: 100%;
@@ -108,7 +116,6 @@ class App extends Vue {
     }
     created(){
         // eslint-disable-next-line 
-        console.log("Produced by MoewSound Idols");
         this.$i18n.locale = localStorage.getItem("lang") || this.$i18n.locale;
     }
     chlang(v){

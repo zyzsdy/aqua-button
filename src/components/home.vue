@@ -24,12 +24,11 @@
                             </el-col>
                         </el-row>
                     </div>
-                    <div class="cate-body" style="margin-top:5px">
+                    <div class="cate-body" style="margin:0 5px">
                         <span>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</span>
                     </div>
                     <audio id="player" @ended="voiceEnd(false)"></audio>
                 </el-collapse-item>
-            <br/>
                 <el-collapse-item v-for="category in voices" :key="category.categoryName" :name="category.categoryName">
                     <template slot="title">{{ $t("voicecategory." + category.categoryName) }}</template>
                     <el-button class="button" v-for="voiceItem in category.voiceList" v-bind:key="voiceItem.name" @click="play(voiceItem)">
