@@ -74,12 +74,17 @@ class HomePage extends Vue {
     autoCheck = false;
     overlapCheck = false;
     voice = {};
+    playingAudio = new Map()
 
     play(item){
         if (this.overlapCheck) {
             let audio = new Audio("voices/" + item.path);
             this.voice = item;
-            audio.play()
+            this.playingAudio.set(item.path, audio);
+            audio.onended = () => {
+                this.playingAudio.delete(item.path);
+            };
+            audio.play();
         } else {
             this.stopPlay();
             let player = document.getElementById('player');
@@ -91,6 +96,10 @@ class HomePage extends Vue {
     stopPlay(){
         let player = document.getElementById('player');
         player.pause();
+        this.playingAudio.forEach(datum => {
+            datum.pause();
+        });
+        this.playingAudio.clear();
         this.voiceEnd(true);
     }
     voiceEnd(flag) {
