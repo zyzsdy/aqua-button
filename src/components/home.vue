@@ -80,9 +80,13 @@ class HomePage extends Vue {
         if (this.overlapCheck) {
             let audio = new Audio("voices/" + item.path);
             this.voice = item;
-            this.playingAudio.set(item.path, audio);
+            let key = item.path;
+            while (this.playingAudio.has(key)) {
+                key = key + "$";
+            }
+            this.playingAudio.set(key, audio);
             audio.onended = () => {
-                this.playingAudio.delete(item.path);
+                this.playingAudio.delete(key);
             };
             audio.play();
         } else {
