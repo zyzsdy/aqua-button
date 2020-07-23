@@ -10,6 +10,5 @@ export default new Router({
   routes: [
     {path: '/', name: 'home', component: HomePage},
     // {path: '*', redirect: '/'}
-  ],
-  mode: 'history'
+  ]
 })
