@@ -1,0 +1,469 @@
+﻿{
+    "voices": [
+        {
+            "categoryName": "regigigas",
+            "categoryDescription": {
+                "zh-CN": "雷吉奇嘎嘎嘎",
+                "en-US": "Regigigas",
+                "ja-JP": "レジギガガガ"
+            },
+            "voiceList": [
+                {
+                    "name": "o-1",
+                    "path": "o-1.mp3",
+                    "description": {
+                        "zh-CN": "嘎 1",
+                        "en-US": "Ga 1",
+                        "ja-JP": "ガ 1"
+                    }
+                },
+                {
+                    "name": "o-2",
+                    "path": "o-2.mp3",
+                    "description": {
+                        "zh-CN": "嘎 2",
+                        "en-US": "Ga 2",
+                        "ja-JP": "ガ 2"
+                    }
+                },
+                {
+                    "name": "o-3",
+                    "path": "o-3.mp3",
+                    "description": {
+                        "zh-CN": "嘎 3",
+                        "en-US": "Ga 3",
+                        "ja-JP": "ガ 3"
+                    }
+                },
+                {
+                    "name": "o-4",
+                    "path": "o-4.mp3",
+                    "description": {
+                        "zh-CN": "嘎 4",
+                        "en-US": "Ga 4",
+                        "ja-JP": "ガ 4"
+                    }
+                },
+                {
+                    "name": "o-5",
+                    "path": "o-5.mp3",
+                    "description": {
+                        "zh-CN": "嘎 5",
+                        "en-US": "Ga 5",
+                        "ja-JP": "ガ 5"
+                    }
+                },
+                {
+                    "name": "o-6",
+                    "path": "o-6.mp3",
+                    "description": {
+                        "zh-CN": "嘎 6",
+                        "en-US": "Ga 6",
+                        "ja-JP": "ガ 6"
+                    }
+                },
+                {
+                    "name": "o-7",
+                    "path": "o-7.mp3",
+                    "description": {
+                        "zh-CN": "嘎 7",
+                        "en-US": "Ga 7",
+                        "ja-JP": "ガ 7"
+                    }
+                },
+                {
+                    "name": "o-8",
+                    "path": "o-8.mp3",
+                    "description": {
+                        "zh-CN": "嘎 8",
+                        "en-US": "Ga 8",
+                        "ja-JP": "ガ 8"
+                    }
+                },
+                {
+                    "name": "o-9",
+                    "path": "o-9.mp3",
+                    "description": {
+                        "zh-CN": "嘎 9",
+                        "en-US": "Ga 9",
+                        "ja-JP": "ガ 9"
+                    }
+                },
+                {
+                    "name": "o-10",
+                    "path": "o-10.mp3",
+                    "description": {
+                        "zh-CN": "嘎 10",
+                        "en-US": "Ga 10",
+                        "ja-JP": "ガ 10"
+                    }
+                },
+                {
+                    "name": "o-11",
+                    "path": "o-11.mp3",
+                    "description": {
+                        "zh-CN": "嘎 11",
+                        "en-US": "Ga 11",
+                        "ja-JP": "ガ 11"
+                    }
+                },
+                {
+                    "name": "o-12",
+                    "path": "o-12.mp3",
+                    "description": {
+                        "zh-CN": "嘎 12",
+                        "en-US": "Ga 12",
+                        "ja-JP": "ガ 12"
+                    }
+                },
+                {
+                    "name": "o-13",
+                    "path": "o-13.mp3",
+                    "description": {
+                        "zh-CN": "嘎 13",
+                        "en-US": "Ga 13",
+                        "ja-JP": "ガ 13"
+                    }
+                },
+                {
+                    "name": "o-14",
+                    "path": "o-14.mp3",
+                    "description": {
+                        "zh-CN": "嘎 14",
+                        "en-US": "Ga 14",
+                        "ja-JP": "ガ 14"
+                    }
+                },
+                {
+                    "name": "o-15",
+                    "path": "o-15.mp3",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 1",
+                        "en-US": "Gagagaga 1",
+                        "ja-JP": "ガガガガガ 1"
+                    }
+                },
+                {
+                    "name": "o-16",
+                    "path": "o-16.mp3",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 2",
+                        "en-US": "Gagagaga 2",
+                        "ja-JP": "ガガガガガ 2"
+                    }
+                },
+                {
+                    "name": "o-17",
+                    "path": "o-17.mp3",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 3",
+                        "en-US": "Gagagaga 3",
+                        "ja-JP": "ガガガガガ 3"
+                    }
+                },
+                {
+                    "name": "o-18",
+                    "path": "o-18.mp3",
+                    "description": {
+                        "zh-CN": "嘎嘎嘎嘎嘎 4",
+                        "en-US": "Gagagaga 4",
+                        "ja-JP": "ガガガガガ 4"
+                    }
+                },
+                {
+                    "name": "o-19",
+                    "path": "o-19.mp3",
+                    "description": {
+                        "zh-CN": "吉 1",
+                        "en-US": "Gi 1",
+                        "ja-JP": "ジ 1"
+                    }
+                },
+                {
+                    "name": "o-20",
+                    "path": "o-20.mp3",
+                    "description": {
+                        "zh-CN": "吉 2",
+                        "en-US": "Gi 2",
+                        "ja-JP": "ジ 2"
+                    }
+                },
+                {
+                    "name": "o-21",
+                    "path": "o-21.mp3",
+                    "description": {
+                        "zh-CN": "吉 3",
+                        "en-US": "Gi 3",
+                        "ja-JP": "ジ 3"
+                    }
+                },
+                {
+                    "name": "o-22",
+                    "path": "o-22.mp3",
+                    "description": {
+                        "zh-CN": "雷 1",
+                        "en-US": "Re 1",
+                        "ja-JP": "レ 1"
+                    }
+                },
+                {
+                    "name": "o-23",
+                    "path": "o-23.mp3",
+                    "description": {
+                        "zh-CN": "雷 2",
+                        "en-US": "Re 2",
+                        "ja-JP": "レ 2"
+                    }
+                },
+                {
+                    "name": "o-24",
+                    "path": "o-24.mp3",
+                    "description": {
+                        "zh-CN": "雷 3",
+                        "en-US": "Re 3",
+                        "ja-JP": "レ 3"
+                    }
+                },
+                {
+                    "name": "o-25",
+                    "path": "o-25.mp3",
+                    "description": {
+                        "zh-CN": "雷 4",
+                        "en-US": "Re 4",
+                        "ja-JP": "レ 4"
+                    }
+                },
+                {
+                    "name": "o-26",
+                    "path": "o-26.mp3",
+                    "description": {
+                        "zh-CN": "雷 5",
+                        "en-US": "Re 5",
+                        "ja-JP": "レ 5"
+                    }
+                },
+                {
+                    "name": "o-27",
+                    "path": "o-27.mp3",
+                    "description": {
+                        "zh-CN": "奇 1",
+                        "en-US": "Gi 1",
+                        "ja-JP": "ギ １"
+                    }
+                },
+                {
+                    "name": "o-28",
+                    "path": "o-28.mp3",
+                    "description": {
+                        "zh-CN": "奇 2",
+                        "en-US": "Gi 2",
+                        "ja-JP": "ギ 2"
+                    }
+                },
+                {
+                    "name": "o-29",
+                    "path": "o-29.mp3",
+                    "description": {
+                        "zh-CN": "奇 3",
+                        "en-US": "Gi 3",
+                        "ja-JP": "ギ 3"
+                    }
+                },
+                {
+                    "name": "o-30",
+                    "path": "o-30.mp3",
+                    "description": {
+                        "zh-CN": "奇 4",
+                        "en-US": "Gi 4",
+                        "ja-JP": "ギ 4"
+                    }
+                },
+                {
+                    "name": "o-31",
+                    "path": "o-31.mp3",
+                    "description": {
+                        "zh-CN": "奇 5",
+                        "en-US": "Gi 5",
+                        "ja-JP": "ギ 5"
+                    }
+                },
+                {
+                    "name": "o-32",
+                    "path": "o-32.mp3",
+                    "description": {
+                        "zh-CN": "雷吉奇 1",
+                        "en-US": "ReJiGi 1",
+                        "ja-JP": "レジギ 1"
+                    }
+                },
+                {
+                    "name": "o-33",
+                    "path": "o-33.mp3",
+                    "description": {
+                        "zh-CN": "雷吉奇 2",
+                        "en-US": "ReJiGi 2",
+                        "ja-JP": "レジギ 2"
+                    }
+                },
+                {
+                    "name": "o-34",
+                    "path": "o-34.mp3",
+                    "description": {
+                        "zh-CN": "雷吉奇 3",
+                        "en-US": "ReJiGi 3",
+                        "ja-JP": "レジギ 3"
+                    }
+                }
+            ]
+        },
+        {
+            "categoryName": "lmao",
+            "categoryDescription": {
+                "zh-CN": "笑声",
+                "en-US": "Laugh",
+                "ja-JP": "笑声"
+            },
+            "voiceList": [
+                {
+                    "name": "o-35",
+                    "path": "o-35.mp3",
+                    "description": {
+                        "zh-CN": "屑猫狂笑 1",
+                        "en-US": "Lmao 1",
+                        "ja-JP": "笑すぎ 1"
+                    }
+                },
+                {
+                    "name": "o-39",
+                    "path": "o-39.mp3",
+                    "description": {
+                        "zh-CN" : "怪笑"
+                    }
+                },
+                {
+                    "name": "o-40",
+                    "description": {
+                        "zh-CN": "打嗝"
+                    }
+                }
+            ]
+        },
+        {
+            "categoryName": "grunting",
+            "categoryDescription": {
+                "zh-CN": "咕噜",
+                "ja-JP": "ゴロゴロ",
+                "en-US": "Grunting"
+            },
+            "voiceList": [
+                {
+                    "name": "o-50",
+                    "path": "o-50.mp3",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 1",
+                        "en-US": "Grunting 1",
+                        "ja-JP": "ゴロゴロ 1"
+                    }
+                },
+                {
+                    "name": "o-51",
+                    "path": "o-51.mp3",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 2",
+                        "en-US": "Grunting 2",
+                        "ja-JP": "ゴロゴロ 2"
+                    }
+                },
+                {
+                    "name": "o-52",
+                    "path": "o-52.mp3",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 3",
+                        "en-US": "Grunting 3",
+                        "ja-JP": "ゴロゴロ 3"
+                    }
+                },
+                {
+                    "name": "o-53",
+                    "path": "o-53.mp3",
+                    "description":{
+                        "zh-CN": "咕噜咕噜 4",
+                        "en-US": "Grunting 4",
+                        "ja-JP": "ゴロゴロ 4"
+                    }
+                }
+            ]
+        },
+        {
+            "categoryName": "strange-voices",
+            "categoryDescription": {
+                "zh-CN": "奇声/怪叫",
+                "en-US": "Strange Voices",
+                "ja-JP": "変な声"
+            },
+            "voiceList":[
+                {
+                    "name": "o-36",
+                    "path": "o-36.mp3",
+                    "description":{
+                        "zh-CN": "吃瘪悲鸣 1",
+                        "en-US": "sob 1",
+                        "ja-JP": "不憫 1"
+                    }
+                }
+            ]
+        },
+        {
+            "categoryName": "uncategorized",
+            "categoryDescription":{
+                "zh-CN": "未分类",
+                "en-US": "Uncategorized",
+                "ja-JP": "未分类"
+            },
+            "voiceList":[
+                {
+                    "name": "o-41",
+                    "description": {
+                        "zh-CN": "好的"
+                    }
+                },
+                {
+                    "name": "o-42",
+                    "description": {
+                        "zh-CN": "好的没问题"
+                    }
+                },
+                {
+                    "name": "o-43",
+                    "description": {
+                        "zh-CN": "咳"
+                    }
+                },
+                {
+                    "name": "o-44",
+                    "description": {
+                        "zh-CN": "美味美味"
+                    }
+                },
+                {
+                    "name": "o-45",
+                    "description": {
+                        "zh-CN": "蘑菇蘑菇"
+                    }
+                },
+                {
+                    "name": "o-46",
+                    "description": {
+                        "zh-CN": "有了"
+                    }
+                },
+                {
+                    "name": "o-47",
+                    "description": {
+                        "zh-CN": "手毬喵"
+                    }
+                }
+            ]
+        }
+    ]
+}
