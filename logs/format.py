@@ -15,6 +15,9 @@ rawVoice = pd.read_csv(os.path.join(dirName,'voice.csv'))
 # dataFrame obj
 
 
+#reform category
+
+category =  rawCategory.to_dict(orient="index")
 
 
 # 读入Voice
@@ -35,10 +38,21 @@ for index in range(len(voice)):
 
 
 
-print(type(voice))
-print(voice)
+# print(type(voice))
+# print(voice)
 
 
 
 
 # append
+
+result = {}
+result["voices"] = []
+
+for item in category.items():
+    result["voices"].append(item)
+
+
+print(result)
+with open("autogen-voices.json",'w') as out:
+    json.dump(result)
