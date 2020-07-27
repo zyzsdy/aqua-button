@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-      <el-container>
-          <!-- <el-header> -->
         <Modal></Modal>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
@@ -17,15 +15,15 @@
                 
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw" target="_blank"><img src="resources/youtube_social_icon_red.png" height="18"/></a></li>
-                        <li><a href="https://twitter.com/nekomataokayu" target="_blank"><img src="resources/Twitter_Social_Icon_Circle_Color.png" height="18"/></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg?sub_confirm=1" target="_blank"><img src="resources/youtube_social_icon_red.png" height="18"/></a></li>
+                        <li><a href="https://twitter.com/minatoaqua" target="_blank"><img src="resources/Twitter_Social_Icon_Circle_Color.png" height="18"/></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t("lang." + currentLang)}} <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="javascript:;" @click="chlang('zh-CN')">{{$t("lang.zh-CN")}}</a></li>
-                                <li><a href="javascript:;" @click="chlang('en-US')">{{$t("lang.en-US")}}</a></li>
+                                <!--<li><a href="javascript:;" @click="chlang('en-US')">{{$t("lang.en-US")}}</a></li>-->
                                 <li><a href="javascript:;" @click="chlang('ja-JP')">{{$t("lang.ja-JP")}}</a></li>
                             </ul>
                         </li>
@@ -34,38 +32,19 @@
 
             </div>
         </nav>
-        <!-- </el-header> -->
-        <el-main class="main-content">
-        <!-- <div class="container-fluid main-content"> -->
+        <div class="container-fluid main-content">
             <router-view></router-view>
-        <!-- </div> -->
-        </el-main>
-        <div class="background">
-            <img src="../public/resources/BG2.png" width="100%" height="100%" alt=""/>
-            </div>
-        <el-footer class="footer">
-        <!-- <footer class="footer"> -->
+        </div>
+        <footer class="footer">
             <div class="container-fluid footer-content">
                 <div class="pull-right">
-                    <div class="text-right"><a href="https://github.com/Cyame/okayu-button/" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/Cyame/okayu-button.svg?style=social"/></a></div>
+                    <div class="text-right"><a href="https://github.com/zyzsdy/aqua-button" target="_blank">{{$t("info.toGithub")}} <img src="https://img.shields.io/github/stars/zyzsdy/aqua-button.svg?style=social"/></a></div>
                     <div class="text-right">{{$t("info.notOfficial")}}</div>
                 </div>
-                  <el-popover
-                    placement="top-start"
-                    title="Cyame @ 2020"
-                    trigger="hover">
-                    <div style="margin:auto">
-                    <div>{{$t('info.developer')}}</div>
-                    <div>{{$t('info.deployer')}}</div>
-                    <div>{{$t('info.audioStaff')}}</div>
-                    </div>
-                    <el-button slot="reference">{{$t('info.about')}}</el-button>
-                </el-popover>
+                <div>{{$t("info.audioStaff")}}</div>
+                <div>Zyzsdy 2019-2020 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div>
             </div>
-        <!-- </footer> -->
-        </el-footer>
-        
-      </el-container>
+        </footer>
   </div>
 </template>
 
@@ -75,13 +54,12 @@ body{
     padding-top: 70px;
 }
 .main-content{
-    // NEED FIXED 跟图有关
-    min-height: 2050px;
+    min-height: 100vh;
 }
 .footer {
     width: 100%;
     height: 60px;
-    background-color: whitesmoke;
+    background-color: #ebebeb;
 }
 .footer-content {
     padding-top: 10px;
@@ -89,13 +67,6 @@ body{
 }
 .text-right{
     text-align: right;
-}
-.background{
-    z-index: -1;
-    position: absolute;
-    // 平铺
-    // width: 100%;
-    // height: 100%;
 }
 </style>
 
@@ -116,6 +87,7 @@ class App extends Vue {
     }
     created(){
         // eslint-disable-next-line 
+        console.log("Produced by MoewSound Idols");
         this.$i18n.locale = localStorage.getItem("lang") || this.$i18n.locale;
     }
     chlang(v){

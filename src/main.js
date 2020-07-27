@@ -1,14 +1,12 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import router from './router'
+
 import App from './App.vue'
 
 import en_US from './locales/en-US'
 import zh_CN from './locales/zh-CN'
 import ja_JP from './locales/ja-JP'
-
-import elementUI from 'element-ui'
-import '../public/theme/index.css'
 
 import $ from 'jquery'
 global.jQuery = global.$ = $;
@@ -59,7 +57,7 @@ Vue.config.productionTip = false
 
 Vue.use(VueI18n)
 Vue.use(GlobalConst);
-Vue.use(elementUI)
+
 const messages = {
   'en-US': emen_US,
   'zh-CN': emzh_CN,
@@ -70,9 +68,9 @@ let locale = 'zh-CN';
 if(/ja/i.test(navigator.language)){
   locale = 'ja-JP';
 }
-else if(/en/i.test(navigator.language)){
-  locale = 'en-US';
-}
+// else if(/en/i.test(navigator.language)){
+//   locale = 'en-US';
+// }
 
 const i18n = new VueI18n({
   locale,
