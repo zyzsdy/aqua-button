@@ -20,3 +20,9 @@ yarn-error.log*
 *.sw*
 
 dist
+
+# temp files
+
+autogen-voices.json
+logs/autogen-voices.json
+.DS_Store
