@@ -2,7 +2,7 @@ import json
 import os
 import sys
 import pandas as pd
-
+# from collections import Counter
 
 # 路径处理
 
@@ -37,18 +37,44 @@ print(category)
 # 读入Voice
 voice = rawVoice.to_dict(orient="index")
 
+voiceDescription_CN = {}
 
 # Start from "1"
 for index in range(len(voice)):
     voice[index]["name"] = "o-" + str(index + 1)
     voice[index]["path"] = "o-" + str(index + 1) + ".mp3"
     voice[index]["description"] = {}
+    # Conflict Dealing
+    if voice[index]["cn"] in voiceDescription_CN.keys():
+        voice[index]["us"] = voice[index]["us"] + " " + str(voiceDescription_CN[voice[index]["cn"]])
+        voice[index]["jp"] = voice[index]["jp"] + " " + str(voiceDescription_CN[voice[index]["cn"]])
+        voiceDescription_CN[voice[index]["cn"]] += 1
+        voice[index]["cn"] = voice[index]["cn"] + " " + str(voiceDescription_CN[voice[index]["cn"]]-1)
+    else:
+        voiceDescription_CN[voice[index]["cn"]] = 2
+
     voice[index]["description"]["zh-CN"] = voice[index]["cn"]
     voice[index]["description"]["ja-JP"] = voice[index]["jp"]
     voice[index]["description"]["en-US"] = voice[index]["us"]
     del voice[index]["cn"]
     del voice[index]["jp"]
     del voice[index]["us"]
+
+# ADD 1
+for key,item in voiceDescription_CN.items():
+    if item != 2:
+        for vk,vi in voice.items():
+            if vi["description"]["zh-CN"] == key:
+                vi["description"]["en-US"] = vi["description"]["en-US"] + " 1"
+                vi["description"]["ja-JP"] = vi["description"]["ja-JP"] + " 1"
+                vi["description"]["zh-CN"] = vi["description"]["zh-CN"] + " 1"
+
+
+# for k,item in voice.items():
+#     item[""]
+
+# print("=conflict=")
+# a = dict(Counter(voice))
 
 print(voice)
 
