@@ -22,20 +22,7 @@
 </template>
 
 <script>
-import { getCurrentInstance } from 'vue'
-
 export default {
-  setup () {
-    const { ctx } = getCurrentInstance()
-
-    const test = () => {
-      ctx.$mitt.emit('test', '')
-    }
-
-    return {
-      test
-    }
-  }
 }
 </script>
 

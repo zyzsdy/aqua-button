@@ -1,17 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import mitt from 'mitt'
 
 import { createI18n } from 'vue-i18n'
 import VoiceList from './voices.json'
 import Locales from './assets/locales'
 
 const app = createApp(App)
-
-const emitter = mitt()
-
-app.config.globalProperties.$mitt = emitter
 
 const CN = { ...Locales['zh-CN'], voice: {}, voicecategory: {} }
 const JP = { ...Locales['ja-JP'], voice: {}, voicecategory: {} }

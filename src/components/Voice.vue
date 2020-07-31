@@ -17,7 +17,7 @@
 
 <script>
 import VoiceList from '../voices.json'
-import { ref, getCurrentInstance } from 'vue'
+import { ref } from 'vue'
 import Card from './common/Card'
 import VBtn from './common/VoiveBtn'
 
@@ -27,12 +27,6 @@ export default {
     VBtn
   },
   setup () {
-    const { ctx } = getCurrentInstance()
-
-    ctx.$mitt.on('test', e => {
-      console.log('test', e)
-    })
-
     const voices = VoiceList.voices
     const voive = ref({})
 
