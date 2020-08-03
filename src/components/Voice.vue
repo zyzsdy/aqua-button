@@ -12,13 +12,13 @@
         </div>
       </card>
     </template>
-    <audio ref="voice" @canplay="canPlay" @timeupdate="timeUpdate" @ended="voiceEnd"></audio>
+    <audio ref="player" @canplay="canPlay" @timeupdate="timeUpdate" @ended="voiceEnd"></audio>
   </div>
 </template>
 
 <script>
 import VoiceList from '../voices.json'
-import { reactive, inject, onMounted, getCurrentInstance, computed, ref } from 'vue'
+import { reactive, inject, computed, ref } from 'vue'
 import Card from './common/Card'
 import VBtn from './common/VoiveBtn'
 import mitt from '../assets/js/mitt'
@@ -29,24 +29,20 @@ export default {
     VBtn
   },
   setup () {
-    const { ctx } = getCurrentInstance()
     const setting = inject('setting')
 
     const voices = VoiceList.voices
-    let player = null
     const overlapPlayList = {}
     const overlapShowList = reactive([])
 
-    onMounted(() => {
-      player = ctx.$refs.voice
-    })
+    const player = ref(null)
 
     const play = (data) => {
       if (!setting.overlap) {
-        player.pause()
-        player.src = 'voices/' + data.path
+        player.value.pause()
+        player.value.src = 'voices/' + data.path
         setting.nowPlay = data
-        player.play()
+        player.value.play()
       } else {
         const key = new Date().getTime()
         overlapShowList.push(data.name)
@@ -109,7 +105,7 @@ export default {
         delete overlapPlayList[key]
       }
       overlapShowList.length = 0
-      player.pause()
+      player.value.pause()
       voiceEnd()
     })
 
@@ -119,6 +115,7 @@ export default {
 
     return {
       setting,
+      player,
       overlapShowList,
       voices,
       play,
