@@ -7,18 +7,18 @@
         </template>
         <div class="content">
           <template v-for="voice in item.voiceList">
-            <v-btn :key="voice.name" :text="$t('voice.' + voice.name)" @click="play(voice)" />
+            <v-btn :key="voice.name" :text="$t('voice.' + voice.name)" :playing="overlapShowList.includes(voice.name)" :progress="setting && setting.nowPlay && setting.nowPlay.name === voice.name ? progress : 0" @click="play(voice)" />
           </template>
         </div>
       </card>
     </template>
-    <audio ref="voice" @ended="voiceEnd"></audio>
+    <audio ref="voice" @canplay="canPlay" @timeupdate="timeUpdate" @ended="voiceEnd"></audio>
   </div>
 </template>
 
 <script>
 import VoiceList from '../voices.json'
-import { ref, onMounted, getCurrentInstance } from 'vue'
+import { reactive, inject, onMounted, getCurrentInstance, computed, ref } from 'vue'
 import Card from './common/Card'
 import VBtn from './common/VoiveBtn'
 import mitt from '../assets/js/mitt'
@@ -30,37 +30,68 @@ export default {
   },
   setup () {
     const { ctx } = getCurrentInstance()
+    const setting = inject('setting')
 
     const voices = VoiceList.voices
-    const nowPlay = ref(null)
-
     let player = null
+    const overlapPlayList = {}
+    const overlapShowList = reactive([])
 
     onMounted(() => {
       player = ctx.$refs.voice
     })
 
     const play = (data) => {
-      if (!overlap.value && nowPlay.value) {
+      if (!setting.overlap) {
         player.pause()
+        player.src = 'voices/' + data.path
+        setting.nowPlay = data
+        player.play()
+      } else {
+        const key = new Date().getTime()
+        overlapShowList.push(data.name)
+        overlapPlayList[key] = new Audio('voices/' + data.path)
+        overlapPlayList[key].addEventListener('ended', () => {
+          delete overlapPlayList[key]
+          if (overlapShowList.includes(data.name)) {
+            overlapShowList.splice(overlapShowList.indexOf(data.name), 1)
+          }
+        }, {
+          capture: false,
+          passive: false,
+          once: true
+        })
+        overlapPlayList[key].play()
       }
-      player.src = 'voices/' + data.path
-      nowPlay.value = data
-      mitt.emit('nowPlay', ctx.$t('voice.' + data.name))
-      player.play()
     }
 
+    const duration = ref(0)
+    const currentTime = ref(0)
+
+    const canPlay = (e) => {
+      duration.value = e.target.duration
+    }
+
+    const timeUpdate = (e) => {
+      currentTime.value = e.target.currentTime
+    }
+
+    const progress = computed(() => {
+      return (currentTime.value / duration.value) * 100
+    })
+
     const voiceEnd = () => {
-      if (autoRandom.value) {
+      duration.value = 0
+      currentTime.value = 0
+      if (setting.autoRandom) {
         randomPlay()
         return
       }
-      if (loop.value) {
-        play(nowPlay.value)
+      if (setting.loop) {
+        play(setting.nowPlay)
         return
       }
-      nowPlay.value = null
-      mitt.emit('nowPlay', null)
+      setting.nowPlay = null
     }
 
     mitt.on('randomPlay', () => {
@@ -73,18 +104,13 @@ export default {
     }
 
     mitt.on('stopPlay', () => {
+      for (const key in overlapPlayList) {
+        overlapPlayList[key].pause()
+        delete overlapPlayList[key]
+      }
+      overlapShowList.length = 0
       player.pause()
       voiceEnd()
-    })
-
-    const overlap = ref(false)
-    const autoRandom = ref(false)
-    const loop = ref(false)
-
-    mitt.on('setting', setting => {
-      overlap.value = setting.overlap
-      autoRandom.value = setting.autoRandom
-      loop.value = setting.loop
     })
 
     const _getrRandomInt = (max) => {
@@ -92,9 +118,13 @@ export default {
     }
 
     return {
+      setting,
+      overlapShowList,
       voices,
-      nowPlay,
       play,
+      canPlay,
+      timeUpdate,
+      progress,
       voiceEnd
     }
   }

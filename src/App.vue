@@ -9,6 +9,7 @@
 <script>
 import VHeader from './views/Header'
 import Control from './components/Control'
+import { provide, reactive } from 'vue'
 
 export default {
   components: {
@@ -16,7 +17,15 @@ export default {
     Control
   },
   setup () {
+    // 播放状态
+    const setting = reactive({
+      nowPlay: null,
+      overlap: false,
+      autoRandom: false,
+      loop: false
+    })
 
+    provide('setting', setting)
   }
 }
 </script>

@@ -9,7 +9,6 @@
       </template>
       <div class="content">
         <p>直播动态尚未完成</p>
-        <p>播放功能尚未完成</p>
       </div>
     </card>
   </div>

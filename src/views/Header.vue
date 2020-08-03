@@ -48,6 +48,7 @@ export default {
 
 <style lang="stylus" scoped>
 .header
+  z-index 1
   display flex
   align-items center
   position sticky
