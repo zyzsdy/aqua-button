@@ -95,6 +95,8 @@ export default {
   background rgba(255, 255, 255, 0.7)
   .playing
     margin 10px 0
+    width 80%
+    text-align center
     color rgba(255,0,128,0.5)
   .btn
     display flex

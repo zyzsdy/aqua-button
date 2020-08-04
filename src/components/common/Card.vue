@@ -11,8 +11,8 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 .card-wrapper
-  margin 5px
-  border-radius 4px
+  margin 10px 5px
+  border-radius 5px
   border 1px solid #EBEEF5
   background-color #FFF
   overflow hidden
