@@ -1,11 +1,13 @@
 <template>
   <div class="btn" :class="{'playing': playing}">
-    <div class="bg" ref="bg" :style="{'width': progress + '%'}"></div>
-    <span>{{text}}</span>
+    <div class="bg" ref="btnBg"></div>
+    <span :class="{'shake': duration !== 0}">{{text}}</span>
   </div>
 </template>
 
 <script>
+import { ref, watch } from 'vue'
+
 export default {
   props: {
     text: {
@@ -16,9 +18,45 @@ export default {
       type: Boolean,
       default: false
     },
-    progress: {
+    duration: {
       type: Number,
       default: 0
+    }
+  },
+  setup (props) {
+    const btnBg = ref(null)
+
+    watch(() => {
+      return props.duration
+    }, () => {
+      playAnimation()
+    })
+
+    let timer = null
+
+    const reset = () => {
+      btnBg.value.style.transition = 'width 0.3s linear'
+      btnBg.value.style.width = '0'
+    }
+
+    const playAnimation = () => {
+      if (props.duration !== 0) {
+        btnBg.value.style.transition = `width ${props.duration}s linear`
+        btnBg.value.style.width = '100%'
+        timer = setTimeout(() => {
+          reset()
+        }, props.duration * 1000)
+      } else {
+        if (timer) {
+          clearTimeout(timer)
+          timer = null
+          reset()
+        }
+      }
+    }
+
+    return {
+      btnBg
     }
   }
 }
@@ -66,6 +104,15 @@ export default {
     animation shake 3s linear infinite
   &:hover
     background #5bc0de
+
+.shake
+  animation shake 3s linear infinite
+
+@keyframes playing
+  0%
+    width 0
+  100%
+    width 100%
 
 @keyframes shake
   0%

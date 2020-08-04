@@ -1,8 +1,8 @@
 <template>
   <div class="control">
-    <div class="playing">{{setting.overlap ? '重叠播放开启中~' : setting.nowPlay ? $t('voice.' + setting.nowPlay.name) : '当前没有播放哦~'}}</div>
+    <div class="playing">{{title}}</div>
     <div class="btn">
-      <div class="icon" @click="randomPlay">
+      <div class="icon" :title="$t('action.randomplay')" @click="randomPlay">
         <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M689.066667 170.666667c-40.533333 0-132.266667 19.2-177.066667 119.466666C467.2 189.866667 377.6 170.666667 334.933333 170.666667 211.2 170.666667 128 266.666667 128 373.333333 128 631.466667 512 853.333333 512 853.333333s384-221.866667 384-480c0-106.666667-83.2-202.666667-206.933333-202.666666z"></path></svg>
       </div>
       <div class="icon" @click="stopPlay">
@@ -22,12 +22,28 @@
 </template>
 
 <script>
-import { inject } from 'vue'
+import { inject, getCurrentInstance, computed } from 'vue'
 import mitt from '../assets/js/mitt'
 
 export default {
   setup () {
+    const { ctx } = getCurrentInstance()
+
     const setting = inject('setting')
+
+    const title = computed(() => {
+      if (setting.overlap) {
+        return '重叠播放开启中~'
+      } else if (setting.nowPlay) {
+        return ctx.$t('voice.' + setting.nowPlay.name)
+      } else if (setting.autoRandom) {
+        return '随机连播开启中~'
+      } else if (setting.loop) {
+        return '洗脑循环开启中~'
+      } else {
+        return '当前没有播放哦~'
+      }
+    })
 
     const randomPlay = () => {
       mitt.emit('randomPlay')
@@ -56,6 +72,7 @@ export default {
     }
 
     return {
+      title,
       setting,
       randomPlay,
       stopPlay,

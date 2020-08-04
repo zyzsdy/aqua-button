@@ -1,5 +1,6 @@
 <template>
-  <div class="live-wrapper">
+  <!--由于未找到合适的代理方法所以暂时不启用该功能-->
+  <div class="live-wrapper" style="display: none">
     <card>
       <template v-slot:header>
         <div class="title">

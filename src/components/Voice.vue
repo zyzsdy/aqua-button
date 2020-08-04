@@ -7,18 +7,18 @@
         </template>
         <div class="content">
           <template v-for="voice in item.voiceList">
-            <v-btn :key="voice.name" :text="$t('voice.' + voice.name)" :playing="overlapShowList.includes(voice.name)" :progress="setting && setting.nowPlay && setting.nowPlay.name === voice.name ? progress : 0" @click="play(voice)" />
+            <v-btn :key="voice.name" :text="$t('voice.' + voice.name)" :playing="overlapShowList.includes(voice.name)" :duration="setting && setting.nowPlay && setting.nowPlay.name === voice.name ? duration : 0" @click="play(voice)" />
           </template>
         </div>
       </card>
     </template>
-    <audio ref="player" @canplay="canPlay" @timeupdate="timeUpdate" @ended="voiceEnd"></audio>
+    <audio ref="player" @canplay="canPlay" @ended="voiceEnd"></audio>
   </div>
 </template>
 
 <script>
 import VoiceList from '../voices.json'
-import { reactive, inject, computed, ref } from 'vue'
+import { reactive, inject, ref } from 'vue'
 import Card from './common/Card'
 import VBtn from './common/VoiveBtn'
 import mitt from '../assets/js/mitt'
@@ -37,12 +37,23 @@ export default {
 
     const player = ref(null)
 
+    let timer = null
+
     const play = (data) => {
       if (!setting.overlap) {
         player.value.pause()
-        player.value.src = 'voices/' + data.path
-        setting.nowPlay = data
-        player.value.play()
+        duration.value = 0
+        if (setting.nowPlay && setting.nowPlay.name === data.name) {
+          timer = setTimeout(() => {
+            player.value.src = 'voices/' + data.path
+            setting.nowPlay = data
+            player.value.play()
+          }, 300)
+        } else {
+          player.value.src = 'voices/' + data.path
+          setting.nowPlay = data
+          player.value.play()
+        }
       } else {
         const key = new Date().getTime()
         overlapShowList.push(data.name)
@@ -62,23 +73,13 @@ export default {
     }
 
     const duration = ref(0)
-    const currentTime = ref(0)
 
     const canPlay = (e) => {
       duration.value = e.target.duration
     }
 
-    const timeUpdate = (e) => {
-      currentTime.value = e.target.currentTime
-    }
-
-    const progress = computed(() => {
-      return (currentTime.value / duration.value) * 100
-    })
-
     const voiceEnd = () => {
       duration.value = 0
-      currentTime.value = 0
       if (setting.autoRandom) {
         randomPlay()
         return
@@ -105,8 +106,12 @@ export default {
         delete overlapPlayList[key]
       }
       overlapShowList.length = 0
+      if (timer) {
+        clearTimeout(timer)
+        timer = null
+      }
       player.value.pause()
-      voiceEnd()
+      setting.nowPlay = null
     })
 
     const _getrRandomInt = (max) => {
@@ -120,8 +125,7 @@ export default {
       voices,
       play,
       canPlay,
-      timeUpdate,
-      progress,
+      duration,
       voiceEnd
     }
   }
