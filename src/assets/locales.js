@@ -2,48 +2,50 @@ const local = {
   'zh-CN': {
     info: {
       title: '夸按钮',
-      info: '信息',
-      null: '空',
-      audioStaff: '音频剪辑: mchong111 CatCoffee',
       toGithub: '请在Github参与翻译、增补音频或提出建议',
-      notOfficial: '本站为爱好者作品，和hololive官方没有关联',
-      overlapTips: '重叠播放无法暂停，而且会创建大量线程，玩够了最好刷新一下'
+      notOfficial: '本站为爱好者作品，和hololive官方没有关联'
     },
     action: {
-      toggleNavbar: '切换导航栏',
-      close: '关闭',
-      copy: '复制',
-      control: '操作控制',
-      stopvoice: '停止',
       randomplay: '帮我选一个',
+      stopvoice: '停止',
       overlap: '允许声音重叠',
-      autoplay: '播放不要停下来',
-      playing: '正在播放：',
-      noplay: '暂无播放'
+      overlapTip: '重叠播放开启中~',
+      autoRandom: '播放不要停下来',
+      autoRandomTip: '随机连播开启中~',
+      loop: '洗脑循环',
+      loopTip: '洗脑循环开启中~',
+      noplay: '当前没有播放哦~'
+    },
+    live: {
+      title: '直播动态',
+      upcoming: '计划中的直播',
+      noLive: '还没有发现正在或计划中的直播哦~',
+      error: '直播计划获取异常X'
     },
     lang: '日本語に切り替え'
   },
   'ja-JP': {
     info: {
       title: 'あくあボタン',
-      info: '通知',
-      null: '空',
-      audioStaff: 'オーディオクリップ: mchong111 CatCoffee',
       toGithub: 'Githubで翻訳に参加、音声を追加および提案をしてください。',
-      notOfficial: 'このサイトはファン作品であり、公式とは関係ありません。',
-      overlapTips: '声重なる再生モードは手動で停止できません。大量のスレッドを作成するので、後リフレッシュしてください。'
+      notOfficial: 'このサイトはファン作品であり、公式とは関係ありません。'
     },
     action: {
-      toggleNavbar: 'ナビゲーションバーを切り替える',
-      close: '閉じる',
-      copy: 'コピー',
-      control: 'コントロール',
-      stopvoice: '再生停止',
       randomplay: 'ランダム',
+      stopvoice: '再生停止',
       overlap: '声重なる可能',
-      autoplay: 'とまらない',
-      playing: '現在再生：',
+      overlapTip: '声重なる可能',
+      autoRandom: 'とまらない',
+      autoRandomTip: 'とまらない',
+      loop: 'ループ',
+      loopTip: 'ループ~',
       noplay: '再生なし'
+    },
+    live: {
+      title: '生放送',
+      upcoming: '予定生放送',
+      noLive: 'ライブ放送が見つからなかったか、計画されていません',
+      error: '生放送プランが異常X'
     },
     lang: '切换至简体中文'
   }

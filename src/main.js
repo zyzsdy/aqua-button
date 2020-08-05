@@ -6,8 +6,6 @@ import { createI18n } from 'vue-i18n'
 import VoiceList from './voices.json'
 import Locales from './assets/locales'
 
-const app = createApp(App)
-
 const CN = { ...Locales['zh-CN'], voice: {}, voicecategory: {} }
 const JP = { ...Locales['ja-JP'], voice: {}, voicecategory: {} }
 
@@ -41,4 +39,4 @@ const i18n = createI18n({
   }
 })
 
-app.use(router).use(i18n).mount('#app')
+createApp(App).use(router).use(i18n).mount('#app')

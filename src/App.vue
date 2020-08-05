@@ -3,18 +3,21 @@
     <v-header />
     <router-view/>
     <control />
+    <v-footer />
   </div>
 </template>
 
 <script>
 import VHeader from './views/Header'
-import Control from './components/Control'
+import Control from './views/Control'
+import VFooter from './views/Footer'
 import { provide, reactive } from 'vue'
 
 export default {
   components: {
     VHeader,
-    Control
+    Control,
+    VFooter
   },
   setup () {
     // 播放状态
@@ -33,6 +36,7 @@ export default {
 <style lang="stylus">
 body
   margin 0
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
 
 ::-webkit-scrollbar
   width 7px

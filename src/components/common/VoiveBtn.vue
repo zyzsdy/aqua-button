@@ -63,6 +63,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~@/assets/style/base.styl'
+
 .btn
   position relative
   overflow hidden
@@ -70,9 +72,9 @@ export default {
   height 34px
   border-radius 18px
   margin 5px
-  color #fff
-  background rgba(255,0,128,0.404)
-  box-shadow 0px 1px 5px 0px rgba(255,0,128,0.404)
+  color $btn-text-color
+  background $main-color
+  box-shadow 0px 1px 5px 0px $main-color
   user-select none
   cursor pointer
   transition box-shadow 0.25s
@@ -82,7 +84,7 @@ export default {
     left 0
     width 0
     height 100%
-    background #5bc0de
+    background $sub-color
   span
     display block
     position relative
@@ -91,19 +93,19 @@ export default {
     line-height 34px
     padding 0 15px
   &:hover
-    background rgba(255,0,128,0.35)
-    box-shadow 0px 2px 10px 0px rgba(255,0,128,0.404)
+    background $hover-color
+    box-shadow 0px 2px 10px 0px $main-color
     span
       animation shake 3s linear infinite
   &:active
-    background rgba(255,0,128,0.5)
+    background $title-color
 
 .playing
-  background #5bc0de
+  background $sub-color
   span
     animation shake 3s linear infinite
   &:hover
-    background #5bc0de
+    background $sub-color
 
 .shake
   animation shake 3s linear infinite
