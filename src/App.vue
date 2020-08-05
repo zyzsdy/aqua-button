@@ -22,6 +22,7 @@ export default {
   setup () {
     // 播放状态
     const setting = reactive({
+      loading: true,
       nowPlay: null,
       overlap: false,
       autoRandom: false,
@@ -34,6 +35,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@import '~@/assets/style/base.styl'
+
 body
   margin 0
   -webkit-tap-highlight-color rgba(0, 0, 0, 0)
@@ -45,13 +48,13 @@ body
 ::-webkit-scrollbar-track
   box-shadow inset 0 0 6px rgba(0, 0, 0, 0.3)
   -webkit-box-shadow inset 0 0 6px rgba(0, 0, 0, 0.3)
-  background-color rgba(255,0,128,.404)
+  background-color $main-color
 
 ::-webkit-scrollbar-thumb
   box-shadow inset 0 0 6px rgba(0, 0, 0, .1)
   -webkit-box-shadow inset 0 0 6px rgba(0, 0, 0, .1)
-  background-color #5bc0de
+  background-color $sub-color
 
 ::-webkit-scrollbar-thumb:active
-  background-color rgba(255,0,128,.404)
+  background-color $main-color
 </style>

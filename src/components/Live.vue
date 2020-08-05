@@ -9,32 +9,34 @@
       </template>
       <div class="content">
         <p v-if="(!live && !upcoming) || (live.length === 0 && upcoming.length === 0)" class="title">{{$t('live.noLive')}}</p>
-        <div class="default" v-else>
-          <template v-for="item in live">
-            <div :key="item.id" class="live">
-              <l-icon />
-              <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="live-title" target="_blank">
-                {{item.title}}
-                <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
-              </a>
-            </div>
-          </template>
-          <div class="line" v-if="live.length > 0 && upcoming.length > 0"></div>
-          <div class="upcoming-content" v-if="upcoming.length > 0">
-            <div>{{$t('live.upcoming')}}:</div>
-            <template v-for="item in upcoming">
-              <div :key="item.id" class="upcoming">
-                <div>
-                  <div class="upcoming-time">{{new Date(item.live_schedule).toLocaleString()}}</div>
-                  <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="upcoming-title" target="_blank">
+          <div ref="liveRef" style="transition: opacity 0.5s; opacity: 0">
+            <div v-if="live.length > 0">
+              <template v-for="item in live">
+                <div :key="item.id" class="live">
+                  <l-icon />
+                  <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="live-title" target="_blank">
                     {{item.title}}
                     <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
                   </a>
                 </div>
-              </div>
-            </template>
+              </template>
+            </div>
+            <div class="line" v-if="live.length > 0 && upcoming.length > 0"></div>
+            <div class="upcoming-content" v-if="upcoming.length > 0">
+              <div>{{$t('live.upcoming')}}:</div>
+              <template v-for="item in upcoming">
+                <div :key="item.id" class="upcoming">
+                  <div>
+                    <div class="upcoming-time">{{new Date(item.live_schedule).toLocaleString()}}</div>
+                    <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="upcoming-title" target="_blank">
+                      {{item.title}}
+                      <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
+                    </a>
+                  </div>
+                </div>
+              </template>
+            </div>
           </div>
-        </div>
       </div>
     </card>
   </div>
@@ -55,8 +57,9 @@ export default {
     const { ctx } = getCurrentInstance()
 
     const title = ref(null)
-    const live = ref(null)
-    const upcoming = ref(null)
+    const live = ref([])
+    const upcoming = ref([])
+    const liveRef = ref(null)
 
     onMounted(() => {
       title.value = ctx.$t('live.title')
@@ -67,6 +70,7 @@ export default {
             live.value = res.data.live
             upcoming.value = res.data.upcoming
           }
+          liveRef.value.style.opacity = 1
         })
         .catch(() => {
           title.value = ctx.$t('live.error')
@@ -76,7 +80,8 @@ export default {
     return {
       title,
       live,
-      upcoming
+      upcoming,
+      liveRef
     }
   }
 }
@@ -100,7 +105,8 @@ export default {
   .content
     padding 10px
     .title
-      margin 10px
+      margin 5px
+      line-height 20px
     .default
       padding 10px
     .live

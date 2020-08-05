@@ -1,6 +1,11 @@
 <template>
   <div class="control">
-    <div class="playing">{{title}}</div>
+    <div class="playing">
+      <transition name="fade">
+        <loading v-if="setting.nowPlay && setting.loading" class="loading" />
+      </transition>
+      {{title}}
+    </div>
     <div class="btn">
       <div class="icon" :title="$t('action.randomplay')" @click="randomPlay">
         <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M689.066667 170.666667c-40.533333 0-132.266667 19.2-177.066667 119.466666C467.2 189.866667 377.6 170.666667 334.933333 170.666667 211.2 170.666667 128 266.666667 128 373.333333 128 631.466667 512 853.333333 512 853.333333s384-221.866667 384-480c0-106.666667-83.2-202.666667-206.933333-202.666666z"></path></svg>
@@ -24,8 +29,12 @@
 <script>
 import { inject, getCurrentInstance, computed } from 'vue'
 import mitt from '../assets/js/mitt'
+import Loading from '../components/common/Loading'
 
 export default {
+  components: {
+    Loading
+  },
   setup () {
     const { ctx } = getCurrentInstance()
 
@@ -96,10 +105,17 @@ export default {
   bottom 0
   background rgba(255, 255, 255, 0.7)
   .playing
+    position relative
     margin 10px 0
-    width 80%
+    max-width 80%
+    line-height 21px
     text-align center
     color $title-color
+    .loading
+      position absolute
+      left -23px
+      top 0
+      height 100%
   .btn
     display flex
     align-items center
@@ -123,4 +139,11 @@ export default {
         background $title-color
     .icon-active
       background $sub-color
+
+.fade-enter-active, .fade-leave-active
+  transition opacity 0.5s
+.fade-enter, .fade-leave-to
+  opacity 0
+.fade-enter-to, .fade-leave
+  opacity 1
 </style>

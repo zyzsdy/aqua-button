@@ -7,11 +7,13 @@
 </template>
 
 <style lang="stylus" scoped>
+@import '~@/assets/style/base.styl'
+
 anim()
   width 20%
   height 100%
   margin auto
-  background rgba(255,0,128,.404)
+  background $main-color
   animation live 2s linear infinite
   animation-direction alternate
 

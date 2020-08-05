@@ -39,10 +39,16 @@ export default {
 
     let timer = null
 
+    const reset = () => {
+      setting.loading = true
+      setting.nowPlay = null
+      duration.value = 0
+    }
+
     const play = (data) => {
       if (!setting.overlap) {
+        reset()
         player.value.pause()
-        duration.value = 0
         if (setting.nowPlay && setting.nowPlay.name === data.name) {
           timer = setTimeout(() => {
             player.value.src = 'voices/' + data.path
@@ -76,19 +82,18 @@ export default {
 
     const canPlay = (e) => {
       duration.value = e.target.duration
+      setting.loading = false
     }
 
     const voiceEnd = () => {
-      duration.value = 0
+      reset()
       if (setting.autoRandom) {
         randomPlay()
         return
       }
       if (setting.loop) {
         play(setting.nowPlay)
-        return
       }
-      setting.nowPlay = null
     }
 
     mitt.on('randomPlay', () => {
@@ -110,8 +115,8 @@ export default {
         clearTimeout(timer)
         timer = null
       }
+      reset()
       player.value.pause()
-      setting.nowPlay = null
     })
 
     const _getrRandomInt = (max) => {

@@ -6,6 +6,8 @@ import { createI18n } from 'vue-i18n'
 import VoiceList from './voices.json'
 import Locales from './assets/locales'
 
+import './assets/style/transition.styl'
+
 const CN = { ...Locales['zh-CN'], voice: {}, voicecategory: {} }
 const JP = { ...Locales['ja-JP'], voice: {}, voicecategory: {} }
 
