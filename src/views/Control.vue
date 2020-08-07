@@ -1,6 +1,6 @@
 <template>
   <div class="control">
-    <div class="playing">
+    <div class="playing" ref="titleRef">
       <transition name="fade">
         <loading v-if="setting.nowPlay && setting.loading" class="tip" />
       </transition>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { inject, getCurrentInstance, computed } from 'vue'
+import { ref, inject, getCurrentInstance, computed, watch } from 'vue'
 import mitt from '../assets/js/mitt'
 import Loading from '../components/common/Loading'
 import Error from '../components/common/Error'
@@ -56,6 +56,24 @@ export default {
         return ctx.$t('action.loopTip')
       } else {
         return ctx.$t('action.noplay')
+      }
+    })
+
+    const titleRef = ref(null)
+
+    let timer = null
+
+    watch(() => {
+      return setting.error
+    }, () => {
+      if (setting.error) {
+        timer = setTimeout(() => {
+          titleRef.value.style.textDecoration = 'line-through'
+        }, 500)
+      } else {
+        clearTimeout(timer)
+        timer = null
+        titleRef.value.style.textDecoration = 'none'
       }
     })
 
@@ -86,6 +104,7 @@ export default {
     }
 
     return {
+      titleRef,
       title,
       setting,
       randomPlay,

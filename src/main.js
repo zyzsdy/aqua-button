@@ -3,8 +3,8 @@ import App from './App.vue'
 import router from './router'
 
 import { createI18n } from 'vue-i18n'
-import VoiceList from './voices.json'
-import Locales from './assets/locales'
+import VoiceList from './translate/voices.json'
+import Locales from './translate/locales'
 
 import './assets/style/transition.styl'
 
