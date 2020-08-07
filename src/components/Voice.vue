@@ -48,17 +48,16 @@ export default {
 
     const play = (data) => {
       if (!setting.overlap) {
-        reset()
         player.value.pause()
         if (setting.nowPlay && setting.nowPlay.name === data.name) {
+          duration.value = 0
           timer = setTimeout(() => {
-            player.value.src = 'voices/' + data.path
-            setting.nowPlay = data
+            player.value.currentTime = 0
           }, 300)
         } else {
+          reset()
           player.value.src = 'voices/' + data.path
           setting.nowPlay = data
-          player.value.play()
         }
       } else {
         const key = new Date().getTime()
