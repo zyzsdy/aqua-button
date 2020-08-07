@@ -98,7 +98,7 @@ export default {
     span
       animation shake 3s linear infinite
   &:active
-    background $title-color
+    background $active-color
 
 .playing
   background $sub-color

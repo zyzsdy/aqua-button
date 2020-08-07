@@ -8,35 +8,35 @@
         </div>
       </template>
       <div class="content">
-        <p v-if="(!live && !upcoming) || (live.length === 0 && upcoming.length === 0)" class="title">{{$t('live.noLive')}}</p>
-          <div ref="liveRef" style="transition: opacity 0.5s; opacity: 0">
-            <div v-if="live.length > 0">
-              <template v-for="item in live">
-                <div :key="item.id" class="live">
-                  <l-icon />
-                  <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="live-title" target="_blank">
+        <p v-if="live.length === 0 && upcoming.length === 0" class="tip">{{tip}}</p>
+        <transition-group name="fade">
+          <div v-if="live.length > 0">
+            <template v-for="item in live">
+              <div :key="item.id" class="live">
+                <l-icon />
+                <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="live-title" target="_blank">
+                  {{item.title}}
+                  <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
+                </a>
+              </div>
+            </template>
+          </div>
+          <div class="line" v-if="live.length > 0 && upcoming.length > 0"></div>
+          <div class="upcoming-content" v-if="upcoming.length > 0">
+            <div>{{$t('live.upcoming')}}:</div>
+            <template v-for="item in upcoming">
+              <div :key="item.id" class="upcoming">
+                <div>
+                  <div class="upcoming-time">{{new Date(item.live_schedule).toLocaleString()}}</div>
+                  <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="upcoming-title" target="_blank">
                     {{item.title}}
                     <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
                   </a>
                 </div>
-              </template>
-            </div>
-            <div class="line" v-if="live.length > 0 && upcoming.length > 0"></div>
-            <div class="upcoming-content" v-if="upcoming.length > 0">
-              <div>{{$t('live.upcoming')}}:</div>
-              <template v-for="item in upcoming">
-                <div :key="item.id" class="upcoming">
-                  <div>
-                    <div class="upcoming-time">{{new Date(item.live_schedule).toLocaleString()}}</div>
-                    <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="upcoming-title" target="_blank">
-                      {{item.title}}
-                      <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
-                    </a>
-                  </div>
-                </div>
-              </template>
-            </div>
+              </div>
+            </template>
           </div>
+        </transition-group>
       </div>
     </card>
   </div>
@@ -46,7 +46,7 @@
 import Card from './common/Card'
 import LIcon from './common/LiveIcon'
 import axios from 'axios'
-import { ref, getCurrentInstance, onMounted } from 'vue'
+import { ref, getCurrentInstance, onMounted, computed } from 'vue'
 
 export default {
   components: {
@@ -56,32 +56,36 @@ export default {
   setup () {
     const { ctx } = getCurrentInstance()
 
-    const title = ref(null)
     const live = ref([])
     const upcoming = ref([])
-    const liveRef = ref(null)
+
+    const noLive = ref(false)
+    const error = ref(false)
 
     onMounted(() => {
-      title.value = ctx.$t('live.title')
-
       axios.get('https://api.konkon.icu/v1/live?channel_id=30')
         .then(res => {
           if (res.status === 200) {
-            live.value = res.data.live
+            live.value = res.data.upcoming
             upcoming.value = res.data.upcoming
           }
-          liveRef.value.style.opacity = 1
+          noLive.value = true
         })
         .catch(() => {
-          title.value = ctx.$t('live.error')
+          error.value = true
         })
     })
 
+    const tip = computed(() => {
+      if (noLive.value) return ctx.$t('live.noLive')
+      if (error.value) return ctx.$t('live.error')
+      return ctx.$t('live.loading')
+    })
+
     return {
-      title,
+      tip,
       live,
-      upcoming,
-      liveRef
+      upcoming
     }
   }
 }
@@ -104,7 +108,7 @@ export default {
       fill $main-color
   .content
     padding 10px
-    .title
+    .tip
       margin 5px
       line-height 20px
     .default
@@ -115,7 +119,7 @@ export default {
       .live-title
         display flex
         align-items center
-        color $main-color
+        color $title-color
         margin 10px
         user-select none
         cursor pointer
