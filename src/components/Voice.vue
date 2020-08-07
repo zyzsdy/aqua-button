@@ -12,7 +12,7 @@
         </div>
       </card>
     </template>
-    <audio ref="player" @canplay="canPlay" @ended="voiceEnd"></audio>
+    <audio ref="player" @ended="voiceEnd" @canplaythrough="canplaythrough" @error="error"></audio>
   </div>
 </template>
 
@@ -43,6 +43,7 @@ export default {
       setting.loading = true
       setting.nowPlay = null
       duration.value = 0
+      setting.error = false
     }
 
     const play = (data) => {
@@ -53,7 +54,6 @@ export default {
           timer = setTimeout(() => {
             player.value.src = 'voices/' + data.path
             setting.nowPlay = data
-            player.value.play()
           }, 300)
         } else {
           player.value.src = 'voices/' + data.path
@@ -80,9 +80,15 @@ export default {
 
     const duration = ref(0)
 
-    const canPlay = (e) => {
+    const canplaythrough = (e) => {
       duration.value = e.target.duration
       setting.loading = false
+      player.value.play()
+    }
+
+    const error = () => {
+      setting.loading = false
+      setting.error = true
     }
 
     const voiceEnd = () => {
@@ -129,7 +135,8 @@ export default {
       overlapShowList,
       voices,
       play,
-      canPlay,
+      canplaythrough,
+      error,
       duration,
       voiceEnd
     }

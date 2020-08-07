@@ -23,6 +23,7 @@ export default {
     // 播放状态
     const setting = reactive({
       loading: true,
+      error: false,
       nowPlay: null,
       overlap: false,
       autoRandom: false,

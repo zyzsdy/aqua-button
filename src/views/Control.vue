@@ -2,7 +2,10 @@
   <div class="control">
     <div class="playing">
       <transition name="fade">
-        <loading v-if="setting.nowPlay && setting.loading" class="loading" />
+        <loading v-if="setting.nowPlay && setting.loading" class="tip" />
+      </transition>
+      <transition name="fade-delay">
+        <error v-if="setting.nowPlay && setting.error" class="tip" />
       </transition>
       {{title}}
     </div>
@@ -30,10 +33,12 @@
 import { inject, getCurrentInstance, computed } from 'vue'
 import mitt from '../assets/js/mitt'
 import Loading from '../components/common/Loading'
+import Error from '../components/common/Error'
 
 export default {
   components: {
-    Loading
+    Loading,
+    Error
   },
   setup () {
     const { ctx } = getCurrentInstance()
@@ -111,7 +116,7 @@ export default {
     line-height 21px
     text-align center
     color $title-color
-    .loading
+    .tip
       position absolute
       left -23px
       top 0

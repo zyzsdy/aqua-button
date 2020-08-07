@@ -17,6 +17,7 @@ const local = {
       noplay: '当前没有播放哦~'
     },
     live: {
+      loading: '直播动态获取中···',
       title: '直播动态',
       upcoming: '计划中的直播',
       noLive: '还没有发现正在或计划中的直播哦~',
@@ -42,6 +43,7 @@ const local = {
       noplay: '再生なし'
     },
     live: {
+      loading: '生放送で取得中···',
       title: '生放送',
       upcoming: '予定生放送',
       noLive: 'ライブ放送が見つからなかったか、計画されていません',
