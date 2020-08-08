@@ -91,13 +91,13 @@ export default {
     }
 
     const voiceEnd = () => {
+      if (setting.loop) {
+        play(setting.nowPlay)
+        return
+      }
       reset()
       if (setting.autoRandom) {
         randomPlay()
-        return
-      }
-      if (setting.loop) {
-        play(setting.nowPlay)
       }
     }
 
