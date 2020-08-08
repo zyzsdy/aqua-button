@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import VoiceList from '../translate/voices.json'
+import VoiceList from '../../public/translate/voices.json'
 import { reactive, inject, ref } from 'vue'
 import Card from './common/Card'
 import VBtn from './common/VoiveBtn'

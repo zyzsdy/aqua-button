@@ -66,7 +66,7 @@ export default {
       axios.get('https://api.konkon.icu/v1/live?channel_id=30')
         .then(res => {
           if (res.status === 200) {
-            live.value = res.data.upcoming
+            live.value = res.data.live
             upcoming.value = res.data.upcoming
           }
           noLive.value = true
