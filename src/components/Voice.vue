@@ -12,7 +12,7 @@
         </div>
       </card>
     </div>
-    <audio ref="player" @ended="voiceEnd" @canplay="canplay" @timeupdate="timeupdate" @error="error"></audio>
+    <audio ref="player" @ended="voiceEnd" @canplay="canplay" @error="error"></audio>
   </div>
 </template>
 
@@ -30,6 +30,7 @@ export default {
   },
   setup () {
     const { ctx } = getCurrentInstance()
+    const isQuark = navigator.userAgent.toLowerCase().includes('quark')
 
     const setting = inject('setting')
 
@@ -39,26 +40,46 @@ export default {
 
     const player = ref(null)
 
-    let timer = null
+    let timeout = null
+    let interval = null
 
     const reset = () => {
+      if (isQuark) {
+        overlapShowList.length = 0
+      } else {
+        resetInterval()
+        currentTime.value = 0
+        duration.value = 0
+      }
       setting.loading = true
       setting.nowPlay = null
-      duration.value = 0
       setting.error = false
+    }
+
+    const resetInterval = () => {
+      if (interval) {
+        clearInterval(interval)
+        interval = null
+      }
     }
 
     const play = (data) => {
       if (!setting.overlap) {
+        if (isQuark) {
+          overlapShowList.push(data.name)
+        }
         player.value.pause()
+        resetInterval()
         if (setting.nowPlay && setting.nowPlay.name === data.name) {
           player.value.currentTime = 0
           player.value.pause()
-          timer = setTimeout(() => {
+          timeout = setTimeout(() => {
             player.value.play()
-          }, 350)
+          }, 600)
         } else {
-          reset()
+          if (setting.nowPlay) {
+            reset()
+          }
           player.value.src = `voices/${data.path}`
           setting.nowPlay = data
           player.value.play()
@@ -85,7 +106,7 @@ export default {
     const currentTime = ref(0)
 
     const progress = computed(() => {
-      const num = Number((currentTime.value / duration.value * 100).toFixed(0))
+      const num = Number(((currentTime.value / duration.value) * 100).toFixed(0))
       if (num !== Infinity && !isNaN(num)) {
         return num
       } else {
@@ -94,12 +115,17 @@ export default {
     })
 
     const canplay = (e) => {
-      duration.value = e.target.duration
       setting.loading = false
-    }
-
-    const timeupdate = (e) => {
-      currentTime.value = e.target.currentTime
+      if (!isQuark) {
+        duration.value = e.target.duration
+        interval = setInterval(() => {
+          if (e) {
+            currentTime.value = e.target.currentTime
+          } else {
+            resetInterval()
+          }
+        }, 100)
+      }
     }
 
     const error = () => {
@@ -108,6 +134,8 @@ export default {
     }
 
     const voiceEnd = () => {
+      resetInterval()
+      currentTime.value = duration.value
       if (setting.loop) {
         play(setting.nowPlay)
         return
@@ -122,9 +150,20 @@ export default {
       randomPlay()
     })
 
+    let errTimes = 0
+
     const randomPlay = () => {
-      const tempList = voices[_getrRandomInt(voices.length - 1)]
-      play(tempList.voiceList[_getrRandomInt(tempList.voiceList.length - 1)])
+      const randomList = voices[_getrRandomInt(voices.length - 1)]
+      const randomVoice = randomList.voiceList[_getrRandomInt(randomList.voiceList.length - 1)]
+      if (_needToShow(randomList.categoryDescription) && _needToShow(randomVoice.description)) {
+        errTimes = 0
+        play(randomVoice)
+      } else if (errTimes >= 5) {
+        // 连续五次不存在停止随机
+      } else {
+        ++errTimes
+        randomPlay()
+      }
     }
 
     mitt.on('stopPlay', () => {
@@ -133,9 +172,9 @@ export default {
         delete overlapPlayList[key]
       }
       overlapShowList.length = 0
-      if (timer) {
-        clearTimeout(timer)
-        timer = null
+      if (timeout) {
+        clearTimeout(timeout)
+        timeout = null
       }
       reset()
       player.value.pause()
@@ -158,7 +197,6 @@ export default {
       play,
       progress,
       canplay,
-      timeupdate,
       error,
       voiceEnd,
       _needToShow
