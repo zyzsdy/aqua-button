@@ -1,24 +1,24 @@
 <template>
   <div>
-    <template v-for="item in voices">
-      <card :key="item.categoryName">
+    <div v-for="item in voices" :key="item.categoryName">
+      <card v-if="_needToShow(item.categoryDescription)">
         <template v-slot:header>
           <div class="category">{{ $t("voicecategory." + item.categoryName) }}</div>
         </template>
         <div class="content">
-          <template v-for="voice in item.voiceList">
-            <v-btn :key="voice.name" :text="$t('voice.' + voice.name)" :playing="overlapShowList.includes(voice.name)" :duration="setting && setting.nowPlay && setting.nowPlay.name === voice.name ? duration : 0" @click="play(voice)" />
-          </template>
+          <div v-for="voice in item.voiceList" :key="voice.name">
+            <v-btn v-if="_needToShow(voice.description)" :text="$t('voice.' + voice.name)" :playing="overlapShowList.includes(voice.name)" :progress="setting && setting.nowPlay && setting.nowPlay.name === voice.name ? progress : 0" @click="play(voice)" />
+          </div>
         </div>
       </card>
-    </template>
-    <audio ref="player" @ended="voiceEnd" @canplaythrough="canplaythrough" @error="error"></audio>
+    </div>
+    <audio ref="player" @ended="voiceEnd" @canplay="canplay" @timeupdate="timeupdate" @error="error"></audio>
   </div>
 </template>
 
 <script>
+import { reactive, inject, ref, getCurrentInstance, computed } from 'vue'
 import VoiceList from '../../public/translate/voices.json'
-import { reactive, inject, ref } from 'vue'
 import Card from './common/Card'
 import VBtn from './common/VoiveBtn'
 import mitt from '../assets/js/mitt'
@@ -29,6 +29,8 @@ export default {
     VBtn
   },
   setup () {
+    const { ctx } = getCurrentInstance()
+
     const setting = inject('setting')
 
     const voices = VoiceList.voices
@@ -50,19 +52,21 @@ export default {
       if (!setting.overlap) {
         player.value.pause()
         if (setting.nowPlay && setting.nowPlay.name === data.name) {
-          duration.value = 0
+          player.value.currentTime = 0
+          player.value.pause()
           timer = setTimeout(() => {
-            player.value.currentTime = 0
-          }, 300)
+            player.value.play()
+          }, 350)
         } else {
           reset()
-          player.value.src = 'voices/' + data.path
+          player.value.src = `voices/${data.path}`
           setting.nowPlay = data
+          player.value.play()
         }
       } else {
         const key = new Date().getTime()
         overlapShowList.push(data.name)
-        overlapPlayList[key] = new Audio('voices/' + data.path)
+        overlapPlayList[key] = new Audio(`voices/${data.path}`)
         overlapPlayList[key].addEventListener('ended', () => {
           delete overlapPlayList[key]
           if (overlapShowList.includes(data.name)) {
@@ -78,11 +82,24 @@ export default {
     }
 
     const duration = ref(0)
+    const currentTime = ref(0)
 
-    const canplaythrough = (e) => {
+    const progress = computed(() => {
+      const num = Number((currentTime.value / duration.value * 100).toFixed(0))
+      if (num !== Infinity && !isNaN(num)) {
+        return num
+      } else {
+        return 0
+      }
+    })
+
+    const canplay = (e) => {
       duration.value = e.target.duration
       setting.loading = false
-      player.value.play()
+    }
+
+    const timeupdate = (e) => {
+      currentTime.value = e.target.currentTime
     }
 
     const error = () => {
@@ -128,21 +145,28 @@ export default {
       return Math.floor(Math.random() * Math.floor(max))
     }
 
+    const _needToShow = (description) => {
+      const locale = ctx.$i18n.locale
+      return description[locale] !== undefined
+    }
+
     return {
       setting,
       player,
       overlapShowList,
       voices,
       play,
-      canplaythrough,
+      progress,
+      canplay,
+      timeupdate,
       error,
-      duration,
-      voiceEnd
+      voiceEnd,
+      _needToShow
     }
   }
 }
-</script>
 
+</script>
 <style lang="stylus" scoped>
 .category
   font-size 24px

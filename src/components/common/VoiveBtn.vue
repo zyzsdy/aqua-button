@@ -1,7 +1,7 @@
 <template>
   <div class="btn" :class="{'playing': playing}">
     <div class="bg" ref="btnBg"></div>
-    <span :class="{'shake': duration !== 0}">{{text}}</span>
+    <span :class="{'shake': progress && progress !== 0}">{{text}}</span>
   </div>
 </template>
 
@@ -18,42 +18,32 @@ export default {
       type: Boolean,
       default: false
     },
-    duration: {
+    progress: {
       type: Number,
       default: 0
     }
   },
   setup (props) {
     const btnBg = ref(null)
-
-    watch(() => {
-      return props.duration
-    }, () => {
-      playAnimation()
-    })
-
     let timer = null
 
-    const reset = () => {
-      btnBg.value.style.transition = 'width 0.3s linear'
-      btnBg.value.style.width = '0'
-    }
-
-    const playAnimation = () => {
-      if (props.duration !== 0) {
-        btnBg.value.style.transition = `width ${props.duration}s linear`
-        btnBg.value.style.width = '100%'
+    watch(() => {
+      return props.progress
+    }, () => {
+      if (props.progress === 0) {
         timer = setTimeout(() => {
-          reset()
-        }, props.duration * 1000)
+          btnBg.value.style.transition = 'width 0.3s linear'
+          btnBg.value.style.width = '0'
+        }, 200)
       } else {
         if (timer) {
-          clearTimeout(timer)
           timer = null
-          reset()
+          clearTimeout(timer)
         }
+        btnBg.value.style.transition = 'width 0.25s linear'
+        btnBg.value.style.width = props.progress + 5 + '%'
       }
-    }
+    })
 
     return {
       btnBg
