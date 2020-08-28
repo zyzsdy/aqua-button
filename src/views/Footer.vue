@@ -3,11 +3,12 @@
     <div class="author">
       <div>©2019-2020</div>
       <a href="https://github.com/zyzsdy" target="_blank">Zyzsdy</a>
+      <a>&</a>
       <a href="https://github.com/blacktunes" target="_blank">Blacktunes</a>
     </div>
     <div class="text-right">
       <div class="git">
-        <i-btn class="btn" :url="githubUrl" :img="require('../assets/image/github-fill.svg')" />
+        <i-btn class="btn" :url="githubUrl" :img="require('../assets/image/github-fill.png')" />
         <a :href="githubUrl" target="_blank">
           {{$t("info.toGithub")}}
         </a>
@@ -33,11 +34,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-a
-  margin-left 5px
-  color #888
-  text-decoration none
-
 .footer
   display flex
   justify-content space-between

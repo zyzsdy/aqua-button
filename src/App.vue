@@ -11,6 +11,7 @@
 import VHeader from './views/Header'
 import Control from './views/Control'
 import VFooter from './views/Footer'
+import { other } from '../public/translate/locales'
 import { provide, reactive } from 'vue'
 
 export default {
@@ -31,6 +32,8 @@ export default {
     })
 
     provide('setting', setting)
+
+    console.log(`%c${other.consoleTip}%c `, 'font-size:20px;color:rgba(255,0,128,0.404)', `padding-right:58%;padding-top:100%;background:url('${location.origin}/image/${other.consoleImg}') no-repeat;background-size:100% 100%`)
   }
 }
 </script>
@@ -41,6 +44,11 @@ export default {
 body
   margin 0
   -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+
+a
+  margin-left 5px
+  color #888
+  text-decoration none
 
 ::-webkit-scrollbar
   width 7px

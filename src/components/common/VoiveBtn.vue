@@ -32,14 +32,12 @@ export default {
     }, () => {
       if (props.progress === 0) {
         timer = setTimeout(() => {
-          btnBg.value.style.transition = 'width 0.3s linear'
+          btnBg.value.style.transition = 'width 0.2s linear'
           btnBg.value.style.width = '0'
-        }, 200)
+        }, 100)
       } else {
-        if (timer) {
-          timer = null
-          clearTimeout(timer)
-        }
+        clearTimeout(timer)
+        timer = null
         btnBg.value.style.transition = 'width 0.25s linear'
         btnBg.value.style.width = props.progress + 5 + '%'
       }
@@ -58,10 +56,9 @@ export default {
 .btn
   position relative
   overflow hidden
+  min-height 34px
   box-sizing border-box
-  height 34px
   border-radius 18px
-  margin 5px
   color $btn-text-color
   background $main-color
   box-shadow 0px 1px 5px 0px $main-color
@@ -69,10 +66,11 @@ export default {
   cursor pointer
   transition box-shadow 0.25s
   .bg
-    position relative
+    position absolute
     top 0
     left 0
     width 0
+    min-height 34px
     height 100%
     background $sub-color
   span
@@ -82,6 +80,7 @@ export default {
     left 0
     line-height 34px
     padding 0 15px
+    word-break break-all
   &:hover
     background $hover-color
     box-shadow 0px 2px 10px 0px $main-color
@@ -91,14 +90,21 @@ export default {
     background $active-color
 
 .playing
-  background $sub-color
+  background $sub-color !important
   span
-    animation shake 3s linear infinite
-  &:hover
-    background $sub-color
+    animation shake 3s linear infinite !important
 
 .shake
   animation shake 3s linear infinite
+
+@media only screen and (max-width: 600px)
+  .btn:hover
+    background $main-color
+    box-shadow none
+    span
+      animation none
+  .btn:active
+    background $active-color
 
 @keyframes playing
   0%
@@ -108,17 +114,17 @@ export default {
 
 @keyframes shake
   0%
-    line-height 34px
+    transform translateY(0px)
   20%
-    line-height 34px
+    transform translateY(0px)
   25%
-    line-height 30px
+    transform translateY(-4px)
   30%
-    line-height 34px
+    transform translateY(0px)
   35%
-    line-height 30px
+    transform translateY(-4px)
   40%
-    line-height 34px
+    transform translateY(0px)
   100%
-    line-height 34px
+    transform translateY(0px)
 </style>

@@ -24,5 +24,5 @@
     border-bottom 1px solid #EBEEF5
     padding 5px
   .card-text
-    padding 5px 10px
+    padding 15px 10px
 </style>

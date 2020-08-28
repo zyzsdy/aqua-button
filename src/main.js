@@ -32,6 +32,9 @@ for (const voiceCategoryList of VoiceList.voices) {
   }
 }
 
+CN.voiceTotal = Object.keys(CN.voice).length.toString()
+JP.voiceTotal = Object.keys(JP.voice).length.toString()
+
 const i18n = createI18n({
   legacy: true,
   locale: /ja/i.test(navigator.language) ? 'ja-JP' : 'zh-CN',

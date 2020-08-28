@@ -16,7 +16,7 @@
                 <l-icon />
                 <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="live-title" target="_blank">
                   {{item.title}}
-                  <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
+                  <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.png') : require('../assets/image/bilibili-fill.png')">
                 </a>
               </div>
             </template>
@@ -30,7 +30,7 @@
                   <div class="upcoming-time">{{new Date(item.live_schedule).toLocaleString()}}</div>
                   <a :href="item.channel.yt_channel_id ? 'https://www.youtube.com/channel/' + item.channel.yt_channel_id : 'https://live.bilibili.com/' + item.channel.bb_space_id" class="upcoming-title" target="_blank">
                     {{item.title}}
-                    <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.svg') : require('../assets/image/bilibili-fill.svg')">
+                    <img :src="item.channel.yt_channel_id ? require('../assets/image/youtube-fill.png') : require('../assets/image/bilibili-fill.png')">
                   </a>
                 </div>
               </div>

@@ -25,15 +25,15 @@ export default {
     const btnList = [
       {
         url: 'https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg?sub_confirm=1',
-        img: require('../assets/image/youtube-fill.svg')
+        img: require('../assets/image/youtube-fill.png')
       },
       {
         url: 'https://twitter.com/minatoaqua',
-        img: require('../assets/image/twitter-fill.svg')
+        img: require('../assets/image/twitter-fill.png')
       },
       {
         url: 'https://space.bilibili.com/375504219',
-        img: require('../assets/image/bilibili-fill.svg')
+        img: require('../assets/image/bilibili-fill.png')
       }
     ]
 
@@ -87,7 +87,7 @@ export default {
     flex-shrink 0
     color #eee
     font-size 20px
-    margin-right 20px
+    margin-right 10px
     user-select none
   .btn
     flex-shrink 0

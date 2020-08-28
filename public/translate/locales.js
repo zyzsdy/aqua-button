@@ -3,7 +3,8 @@ const local = {
     info: {
       title: '夸按钮',
       toGithub: '请在Github参与翻译、增补音频或提出建议',
-      notOfficial: '本站为爱好者作品，和hololive官方没有关联'
+      notOfficial: '本站为爱好者作品，和hololive官方没有关联',
+      fullName: '凑阿库娅'
     },
     action: {
       randomplay: '帮我选一个',
@@ -23,13 +24,15 @@ const local = {
       noLive: '还没有发现正在或计划中的直播哦~',
       error: '直播计划获取异常X'
     },
+    voiceTotalTip: '当前语音量',
     lang: '日本語に切り替え'
   },
   'ja-JP': {
     info: {
       title: 'あくあボタン',
       toGithub: 'Githubで翻訳に参加、音声を追加および提案をしてください。',
-      notOfficial: 'このサイトはファン作品であり、公式とは関係ありません。'
+      notOfficial: 'このサイトはファン作品であり、公式とは関係ありません。',
+      fullName: '湊あくあ'
     },
     action: {
       randomplay: 'ランダム',
@@ -49,7 +52,16 @@ const local = {
       noLive: 'ライブ放送が見つからなかったか、計画されていません',
       error: '生放送プランが異常X'
     },
+    voiceTotalTip: '現在の音声数',
     lang: '切换至简体中文'
   }
 }
+
+const other = {
+  consoleTip: 'Aqua Maji Tenshi!',
+  consoleImg: 'Minato_Aqua.png',
+  artwork: 'aqua.jpg'
+}
+
 export default local
+export { other }
