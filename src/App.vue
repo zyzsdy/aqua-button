@@ -1,18 +1,19 @@
 <template>
   <div id="app">
     <v-header />
-    <router-view/>
-    <control />
+    <router-view style="min-height: calc(100vh - 48px - 67px)" />
+    <control v-if="showControl" />
     <v-footer />
   </div>
 </template>
 
 <script>
-import VHeader from './views/Header'
-import Control from './views/Control'
-import VFooter from './views/Footer'
-import { other } from '../public/translate/locales'
-import { provide, reactive } from 'vue'
+import { provide, reactive, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import Setting from '@/../public/setting/setting.json'
+import VHeader from '@/views/Header.vue'
+import Control from '@/views/Control.vue'
+import VFooter from '@/views/Footer.vue'
 
 export default {
   components: {
@@ -20,9 +21,8 @@ export default {
     Control,
     VFooter
   },
-  setup () {
-    // 播放状态
-    const setting = reactive({
+  setup() {
+    const playSetting = reactive({
       loading: true,
       error: false,
       nowPlay: null,
@@ -30,17 +30,46 @@ export default {
       autoRandom: false,
       loop: false
     })
+    provide('playSetting', playSetting)
 
-    provide('setting', setting)
+    const searchData = reactive({
+      value: '',
+      list: [],
+      index: 0
+    })
+    provide('searchData', searchData)
 
-    console.log(`%c${other.consoleTip}%c `, 'font-size:20px;color:rgba(255,0,128,0.404)', `padding-right:58%;padding-top:100%;background:url('${location.origin}/image/${other.consoleImg}') no-repeat;background-size:100% 100%`)
+    const isShowSearch = ref(false)
+    provide('isShowSearch', isShowSearch)
+
+    // 是否显示控制栏
+    const route = useRoute()
+    const showControl = ref(false)
+    watch(route, () => {
+      // 路由改变后重置搜索
+      isShowSearch.value = false
+      if (!isShowSearch.value) {
+        searchData.value = ''
+        searchData.list.length = 0
+      }
+
+      if (route.path === '/') {
+        showControl.value = true
+      } else {
+        showControl.value = false
+      }
+    })
+
+    console.log(`%c${Setting.consoleShow.consoleTip}%c `, `font-size:20px;color:${Setting.consoleShow.consoleTipColor}`, `padding-right:${Setting.consoleShow.consoleImgWidth};padding-top:${Setting.consoleShow.consoleImgHeight};background:url('${location.origin}/other/${Setting.consoleShow.consoleImg}') no-repeat;background-size:100% 100%`)
+
+    return {
+      showControl
+    }
   }
 }
 </script>
 
 <style lang="stylus">
-@import '~@/assets/style/base.styl'
-
 body
   margin 0
   -webkit-tap-highlight-color rgba(0, 0, 0, 0)
@@ -60,8 +89,8 @@ a
   background-color $main-color
 
 ::-webkit-scrollbar-thumb
-  box-shadow inset 0 0 6px rgba(0, 0, 0, .1)
-  -webkit-box-shadow inset 0 0 6px rgba(0, 0, 0, .1)
+  box-shadow inset 0 0 6px rgba(0, 0, 0, 0.1)
+  -webkit-box-shadow inset 0 0 6px rgba(0, 0, 0, 0.1)
   background-color $sub-color
 
 ::-webkit-scrollbar-thumb:active

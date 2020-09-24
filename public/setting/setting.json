@@ -1,0 +1,32 @@
+{
+  "header": {
+    "youtube": "https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg?sub_confirm=1",
+    "twitter": "https://twitter.com/minatoaqua",
+    "bilibili": "https://space.bilibili.com/375504219"
+  },
+  "footer": {
+    "author": [
+      {
+        "name": "Zyzsdy",
+        "url": "https://github.com/zyzsdy"
+      },
+      {
+        "name": "Blacktunes",
+        "url": "https://github.com/blacktunes"
+      }
+    ],
+    "info": [],
+    "githubUrl": "https://github.com/blacktunes/new-aqua-button"
+  },
+  "live": 30,
+  "consoleShow": {
+    "consoleTip": "Aqua Maji Tenshi!",
+    "consoleTipColor": "rgba(255,0,128,0.404)",
+    "consoleImg": "Minato_Aqua.png",
+    "consoleImgWidth": "58%",
+    "consoleImgHeight": "100%"
+  },
+  "mediaSession": {
+    "artwork": "aqua.jpg"
+  }
+}

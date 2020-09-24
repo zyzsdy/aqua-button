@@ -1,4 +1,12 @@
+const path = require('path')
+
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/aqua-button/' : '/',
-  productionSourceMap: false
+  productionSourceMap: false,
+  css: {
+    loaderOptions: {
+      stylus: {
+        import: [path.join(__dirname, './public/setting/color.styl')]
+      }
+    }
+  }
 }

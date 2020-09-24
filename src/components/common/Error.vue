@@ -4,15 +4,7 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style lang="stylus" scoped>
-
-@import '~@/assets/style/base.styl'
 .error
   display flex
   align-items center
