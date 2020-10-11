@@ -60,7 +60,17 @@ export default {
       }
     })
 
-    console.log(`%c${Setting.consoleShow.consoleTip}%c `, `font-size:20px;color:${Setting.consoleShow.consoleTipColor}`, `padding-right:${Setting.consoleShow.consoleImgWidth};padding-top:${Setting.consoleShow.consoleImgHeight};background:url('${location.origin}/other/${Setting.consoleShow.consoleImg}') no-repeat;background-size:100% 100%`)
+    if (Setting.console && (Setting.console.text || Setting.console.img)) {
+      const text = Setting.console.text || ''
+      const size = Setting.console.size || '16px'
+      const color = Setting.console.color || ''
+
+      const width = Setting.console.imgWidth || '100%'
+      const height = Setting.console.imgHeight || '100%'
+      const img = Setting.console.img ? `padding-right:${width};padding-top:${height};background:url('${location.origin}/setting/${Setting.console.img}') no-repeat;background-size:100% 100%` : ''
+
+      console.log(`%c${text}%c `, `font-size:${size};color:${color}`, img)
+    }
 
     return {
       showControl

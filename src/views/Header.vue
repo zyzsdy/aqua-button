@@ -63,20 +63,23 @@ export default {
   setup() {
     const searchData = inject('searchData')
 
-    const btnList = [
-      {
-        url: Setting.header.youtube || false,
-        img: require('../assets/image/youtube-fill.png')
-      },
-      {
-        url: Setting.header.twitter || false,
-        img: require('../assets/image/twitter-fill.png')
-      },
-      {
-        url: Setting.header.bilibili || false,
-        img: require('../assets/image/bilibili-fill.png')
-      }
-    ]
+    let btnList = []
+    if (Setting.header) {
+      btnList = [
+        {
+          url: Setting.header.youtube || false,
+          img: require('../assets/image/youtube-fill.png')
+        },
+        {
+          url: Setting.header.twitter || false,
+          img: require('../assets/image/twitter-fill.png')
+        },
+        {
+          url: Setting.header.bilibili || false,
+          img: require('../assets/image/bilibili-fill.png')
+        }
+      ]
+    }
 
     const logo = ref()
     let isRestart = false

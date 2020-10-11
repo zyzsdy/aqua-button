@@ -19,14 +19,13 @@
     "githubUrl": "https://github.com/blacktunes/new-aqua-button"
   },
   "live": 30,
-  "consoleShow": {
-    "consoleTip": "Aqua Maji Tenshi!",
-    "consoleTipColor": "rgba(255,0,128,0.404)",
-    "consoleImg": "Minato_Aqua.png",
-    "consoleImgWidth": "58%",
-    "consoleImgHeight": "100%"
+  "console": {
+    "text": "Aqua Maji Tenshi!",
+    "size": "20px",
+    "color": "rgba(255,0,128,0.404)",
+    "img": "Minato_Aqua.png",
+    "imgWidth": "58%",
+    "imgHeight": "100%"
   },
-  "mediaSession": {
-    "artwork": "aqua.jpg"
-  }
+  "mediaSession": "aqua.jpg"
 }
