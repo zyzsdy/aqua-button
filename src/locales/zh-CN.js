@@ -22,6 +22,7 @@ const zh_CN = {
     },
     lang: {
         'zh-CN': "简体中文",
+        'zh-TW': "繁體中文",
         'en-US': "English",
         'ja-JP': "日本語"
     }
