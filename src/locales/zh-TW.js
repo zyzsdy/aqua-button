@@ -16,7 +16,7 @@ const zh_TW = {
         stopvoice: "停止",
         randomplay: "幫我選一個",
         overlap: "允許聲音重疊",
-        autoplay: "播放不要停下来",
+        autoplay: "播放不要停下來",
         playing: "正在播放：",
         noplay: "暫無播放"
     },
