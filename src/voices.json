@@ -4,6 +4,7 @@
             "categoryName": "actmoe",
             "categoryDescription": {
                 "zh-CN": "萌",
+                "zh-TW": "萌",
                 "ja-JP": "もえ"
             },
             "voiceList": [
@@ -12,6 +13,7 @@
                     "path": "a-1.mp3",
                     "description": {
                         "zh-CN": "kon↑kon↑kon→kon↑kon→kon↓",
+                        "zh-TW": "kon↑kon↑kon→kon↑kon→kon↓",
                         "ja-JP": "kon↑kon↑kon→kon↑kon→kon↓"
                     }
                 },
@@ -20,6 +22,7 @@
                     "path": "a-2.mp3",
                     "description": {
                         "zh-CN": "哈~哈~哈~哈~哎",
+                        "zh-TW": "哈~哈~哈~哈~哎",
                         "ja-JP": "えっ~えっ~えっ~えっ~え"
                     }
                 },
@@ -28,6 +31,7 @@
                     "path": "a-3.mp3",
                     "description": {
                         "zh-CN": "喷嚏",
+                        "zh-TW": "噴嚏",
                         "ja-JP": "くしゃみ"
                     }
                 },
@@ -36,6 +40,7 @@
                     "path": "a-4.mp3",
                     "description": {
                         "zh-CN": "喷嚏1",
+                        "zh-TW": "噴嚏1",
                         "ja-JP": "くしゃみ1"
                     }
                 },
@@ -44,6 +49,7 @@
                     "path": "a-5.mp3",
                     "description": {
                         "zh-CN": "喷嚏三连",
+                        "zh-TW": "噴嚏三連",
                         "ja-JP": "くしゃみ三連"
                     }
                 },
@@ -52,6 +58,7 @@
                     "path": "a-6.mp3",
                     "description": {
                         "zh-CN": "笨蛋",
+                        "zh-TW": "笨蛋",
                         "ja-JP": "バカ"
                     }
                 },
@@ -60,6 +67,7 @@
                     "path": "a-7.mp3",
                     "description": {
                         "zh-CN": "爸爸　谢谢～",
+                        "zh-TW": "爸爸　謝謝～",
                         "ja-JP": "パパ　ありがとう～"
                     }
                 },
@@ -68,6 +76,7 @@
                     "path": "a-8.mp3",
                     "description": {
                         "zh-CN": "爸爸谢谢",
+                        "zh-TW": "爸爸謝謝",
                         "ja-JP": "パパありがどう"
                     }
                 },
@@ -76,6 +85,7 @@
                     "path": "a-9.mp3",
                     "description": {
                         "zh-CN": "holoholohololive！！",
+                        "zh-TW": "holoholohololive！！",
                         "ja-JP": "ホロホロホロライブ！！"
                     }
                 },
@@ -84,6 +94,7 @@
                     "path": "a-10.mp3",
                     "description": {
                         "zh-CN": "伸懒腰",
+                        "zh-TW": "伸懶腰",
                         "ja-JP": "のび1"
                     }
                 },
@@ -92,6 +103,7 @@
                     "path": "a-11.mp3",
                     "description": {
                         "zh-CN": "伸懒腰2",
+                        "zh-TW": "伸懶腰2",
                         "ja-JP": "のび2"
                     }
                 },
@@ -100,6 +112,7 @@
                     "path": "a-12.mp3",
                     "description": {
                         "zh-CN": "偷心",
+                        "zh-TW": "偷心",
                         "ja-JP": "あなたのハートも頂きます"
                     }
                 },
@@ -108,6 +121,7 @@
                     "path": "a-13.mp3",
                     "description": {
                         "zh-CN": "傻笑",
+                        "zh-TW": "傻笑",
                         "ja-JP": "笑い1"
                     }
                 },
@@ -116,6 +130,7 @@
                     "path": "a-14.mp3",
                     "description": {
                         "zh-CN": "傻笑1",
+                        "zh-TW": "傻笑1",
                         "ja-JP": "笑い2"
                     }
                 },
@@ -124,6 +139,7 @@
                     "path": "a-15.mp3",
                     "description": {
                         "zh-CN": "傻笑2",
+                        "zh-TW": "傻笑2",
                         "ja-JP": "笑い3"
                     }
                 },
@@ -132,6 +148,7 @@
                     "path": "a-16.mp3",
                     "description": {
                         "zh-CN": "傻笑3",
+                        "zh-TW": "傻笑3",
                         "ja-JP": "笑い4"
                     }
                 },
@@ -140,6 +157,7 @@
                     "path": "a-17.mp3",
                     "description": {
                         "zh-CN": "傻笑4",
+                        "zh-TW": "傻笑4",
                         "ja-JP": "笑い5"
                     }
                 },
@@ -148,6 +166,7 @@
                     "path": "a-18.mp3",
                     "description": {
                         "zh-CN": "傻笑5",
+                        "zh-TW": "傻笑5",
                         "ja-JP": "笑い6"
                     }
                 },
@@ -156,6 +175,7 @@
                     "path": "a-19.mp3",
                     "description": {
                         "zh-CN": "傻笑6",
+                        "zh-TW": "傻笑6",
                         "ja-JP": "笑い7"
                     }
                 },
@@ -164,6 +184,7 @@
                     "path": "a-20.mp3",
                     "description": {
                         "zh-CN": "傻笑7",
+                        "zh-TW": "傻笑7",
                         "ja-JP": "笑い8"
                     }
                 },
@@ -172,6 +193,7 @@
                     "path": "a-21.mp3",
                     "description": {
                         "zh-CN": "傻笑8",
+                        "zh-TW": "傻笑8",
                         "ja-JP": "笑い9"
                     }
                 },
@@ -180,6 +202,7 @@
                     "path": "a-22.mp3",
                     "description": {
                         "zh-CN": "剪刀",
+                        "zh-TW": "剪刀",
                         "ja-JP": "チョキ"
                     }
                 },
@@ -188,6 +211,7 @@
                     "path": "a-23.mp3",
                     "description": {
                         "zh-CN": "吃瘪",
+                        "zh-TW": "吃癟",
                         "ja-JP": "ぐずり"
                     }
                 },
@@ -196,6 +220,7 @@
                     "path": "a-24.mp3",
                     "description": {
                         "zh-CN": "吸口水",
+                        "zh-TW": "吸口水",
                         "ja-JP": "よだれ1"
                     }
                 },
@@ -204,6 +229,7 @@
                     "path": "a-25.mp3",
                     "description": {
                         "zh-CN": "吸口水2",
+                        "zh-TW": "吸口水2",
                         "ja-JP": "よだれ2"
                     }
                 },
@@ -212,6 +238,7 @@
                     "path": "a-26.mp3",
                     "description": {
                         "zh-CN": "喵喵 我一直都最喜欢阿库娅酱喵",
+                        "zh-TW": "喵喵 我一直都最喜歡阿庫婭醬喵",
                         "ja-JP": "にゃーにゃーは、あくあちゃんのことずーっとだいすきにゃあ♪"
                     }
                 },
@@ -220,6 +247,7 @@
                     "path": "a-27.mp3",
                     "description": {
                         "zh-CN": "喵喵，阿库娅喵哒哟",
+                        "zh-TW": "喵喵，阿庫婭喵噠喲",
                         "ja-JP": "にゃんにゃん、あくあにゃんだよ～"
                     }
                 },
@@ -228,6 +256,7 @@
                     "path": "a-28.mp3",
                     "description": {
                         "zh-CN": "妈妈",
+                        "zh-TW": "媽媽",
                         "ja-JP": "マ、ママ"
                     }
                 },
@@ -236,6 +265,7 @@
                     "path": "a-29.mp3",
                     "description": {
                         "zh-CN": "妮可妮可妮",
+                        "zh-TW": "妮可妮可妮",
                         "ja-JP": "にっこにっこにー"
                     }
                 },
@@ -244,6 +274,7 @@
                     "path": "a-30.mp3",
                     "description": {
                         "zh-CN": "布",
+                        "zh-TW": "布",
                         "ja-JP": "パー"
                     }
                 },
@@ -252,6 +283,7 @@
                     "path": "a-31.mp3",
                     "description": {
                         "zh-CN": "弹舌？",
+                        "zh-TW": "彈舌？",
                         "ja-JP": "舌べらクリッカー"
                     }
                 },
@@ -260,6 +292,7 @@
                     "path": "a-32.mp3",
                     "description": {
                         "zh-CN": "打哈欠",
+                        "zh-TW": "打哈欠",
                         "ja-JP": "あくび"
                     }
                 },
@@ -268,6 +301,7 @@
                     "path": "a-33.mp3",
                     "description": {
                         "zh-CN": "打嗝",
+                        "zh-TW": "打嗝",
                         "ja-JP": "ッポ(これなんだ？)"
                     }
                 },
@@ -276,6 +310,7 @@
                     "path": "a-34.mp3",
                     "description": {
                         "zh-CN": "石头",
+                        "zh-TW": "石頭",
                         "ja-JP": "グー"
                     }
                 },
@@ -284,6 +319,7 @@
                     "path": "a-35.mp3",
                     "description": {
                         "zh-CN": "蜜汁口胡",
+                        "zh-TW": "蜜汁口胡",
                         "ja-JP": "あゆぽれぽーちょぽれぇ"
                     }
                 },
@@ -292,6 +328,7 @@
                     "path": "a-36.mp3",
                     "description": {
                         "zh-CN": "阿库碳",
+                        "zh-TW": "阿庫碳",
                         "ja-JP": "あくたん"
                     }
                 },
@@ -300,6 +337,7 @@
                     "path": "a0616-1.mp3",
                     "description": {
                         "zh-CN": "nice↑",
+                        "zh-TW": "nice↑",
                         "ja-JP": "nice↑"
                     }
                 },
@@ -308,6 +346,7 @@
                     "path": "a0616-2.mp3",
                     "description": {
                         "zh-CN": "刷牙",
+                        "zh-TW": "刷牙",
                         "ja-JP": "歯磨き～歯磨き～"
                     }
                 },
@@ -316,6 +355,7 @@
                     "path": "a0616-3.mp3",
                     "description": {
                         "zh-CN": "湊阿夸的选拔",
+                        "zh-TW": "湊阿夸的選拔",
                         "ja-JP": "湊あくあのオーディション"
                     }
                 },
@@ -324,6 +364,7 @@
                     "path": "a0930-1.mp3",
                     "description": {
                         "zh-CN": "今天也很可爱呢",
+                        "zh-TW": "今天也很可愛呢",
                         "ja-JP": "今日もかわいいね"
                     }
                 },
@@ -332,6 +373,7 @@
                     "path": "a0930-2.mp3",
                     "description": {
                         "zh-CN": "爱你哦",
+                        "zh-TW": "愛你哦",
                         "ja-JP": "愛してるよ！"
                     }
                 },
@@ -340,6 +382,7 @@
                     "path": "a0930-3.mp3",
                     "description": {
                         "zh-CN": "喜欢你",
+                        "zh-TW": "喜歡你",
                         "ja-JP": "好きだよ"
                     }
                 },
@@ -348,6 +391,7 @@
                     "path": "a20200505-1.mp3",
                     "description": {
                         "zh-CN": "笨蛋变态烦死了，钉宫三连",
+                        "zh-TW": "笨蛋變態煩死了，釘宫三連",
                         "ja-JP": "バカ、變態、煩い。釘宮三連Combo"
                     }
                 },
@@ -356,6 +400,7 @@
                     "path": "a20200505-2.mp3",
                     "description": {
                         "zh-CN": "笨蛋变态烦死了（JS 阿库碳 ver）",
+                        "zh-TW": "笨蛋變態煩死了（JS 阿庫碳 ver）",
                         "ja-JP": "バカ、變態、煩い（JS あくたん ver）"
                     }
                 }
@@ -365,6 +410,7 @@
             "categoryName": "common",
             "categoryDescription": {
                 "zh-CN": "通用",
+                "zh-TW": "通用",
                 "ja-JP": "通常"
             },
             "voiceList": [
@@ -373,6 +419,7 @@
                     "path": "a-37.mp3",
                     "description": {
                         "zh-CN": "我要吃了",
+                        "zh-TW": "我要吃了",
                         "ja-JP": "いただきます"
                     }
                 },
@@ -381,6 +428,7 @@
                     "path": "a-38.mp3",
                     "description": {
                         "zh-CN": "知道吗知道吗知道吗？",
+                        "zh-TW": "知道嗎知道嗎知道嗎？",
                         "ja-JP": "してますかしてますかしてますか？"
                     }
                 },
@@ -389,6 +437,7 @@
                     "path": "a-39.mp3",
                     "description": {
                         "zh-CN": "很厉害吧！",
+                        "zh-TW": "很厲害吧！",
                         "ja-JP": "すごいでしょう！"
                     }
                 },
@@ -397,6 +446,7 @@
                     "path": "a-40.mp3",
                     "description": {
                         "zh-CN": "可恶啊~~~",
+                        "zh-TW": "可惡啊~~~",
                         "ja-JP": "ちくしょう~~~"
                     }
                 },
@@ -405,6 +455,7 @@
                     "path": "a-41.mp3",
                     "description": {
                         "zh-CN": "那个谁稍微有点、下流吧？",
+                        "zh-TW": "那個誰稍微有點、下流吧？",
                         "ja-JP": "ちょっとだけどさ、いやらしくない？"
                     }
                 },
@@ -413,6 +464,7 @@
                     "path": "a-42.mp3",
                     "description": {
                         "zh-CN": "大家请和我交往吧",
+                        "zh-TW": "大家請和我交往吧",
                         "ja-JP": "みんなお付き合いくださいませ"
                     }
                 },
@@ -421,6 +473,7 @@
                     "path": "a-43.mp3",
                     "description": {
                         "zh-CN": "非常非常的H呢",
+                        "zh-TW": "非常非常的H呢",
                         "ja-JP": "めちゃめちゃHだった"
                     }
                 },
@@ -429,6 +482,7 @@
                     "path": "a-44.mp3",
                     "description": {
                         "zh-CN": "糟糕糟糕糟糕糟糕糟糕",
+                        "zh-TW": "糟糕糟糕糟糕糟糕糟糕",
                         "ja-JP": "やばいやばいやばいやばい"
                     }
                 },
@@ -437,6 +491,7 @@
                     "path": "a-45.mp3",
                     "description": {
                         "zh-CN": "狗狗好强",
+                        "zh-TW": "狗狗好強",
                         "ja-JP": "わんわん強い"
                     }
                 },
@@ -445,6 +500,7 @@
                     "path": "a-46.mp3",
                     "description": {
                         "zh-CN": "现充",
+                        "zh-TW": "現充",
                         "ja-JP": "リア充だし"
                     }
                 },
@@ -453,6 +509,7 @@
                     "path": "a-47.mp3",
                     "description": {
                         "zh-CN": "你丫找事吧",
+                        "zh-TW": "你丫找事吧",
                         "ja-JP": "お前何中やねん"
                     }
                 },
@@ -461,6 +518,7 @@
                     "path": "a-48.mp3",
                     "description": {
                         "zh-CN": "危险",
+                        "zh-TW": "危險",
                         "ja-JP": "危ない"
                     }
                 },
@@ -469,6 +527,7 @@
                     "path": "a-49.mp3",
                     "description": {
                         "zh-CN": "哪都行放马过来吧",
+                        "zh-TW": "哪都行放馬過來吧",
                         "ja-JP": "どっからでもかかってこいよ"
                     }
                 },
@@ -477,6 +536,7 @@
                     "path": "a-50.mp3",
                     "description": {
                         "zh-CN": "啊 好紧张啊",
+                        "zh-TW": "啊 好緊張啊",
                         "ja-JP": "はぁ…緊張した…"
                     }
                 },
@@ -485,6 +545,7 @@
                     "path": "a-51.mp3",
                     "description": {
                         "zh-CN": "好、给你",
+                        "zh-TW": "好、給你",
                         "ja-JP": "はい、どうぞ"
                     }
                 },
@@ -493,6 +554,7 @@
                     "path": "a-52.mp3",
                     "description": {
                         "zh-CN": "很厉害吧、不愧是我吧",
+                        "zh-TW": "很厲害吧、不愧是我吧",
                         "ja-JP": "すごいでしょ～流石でしょ～？"
                     }
                 },
@@ -501,6 +563,7 @@
                     "path": "a-53.mp3",
                     "description": {
                         "zh-CN": "恭喜 奇怪的女仆",
+                        "zh-TW": "恭喜 奇怪的女僕",
                         "ja-JP": "おめでとう、変なメイド"
                     }
                 },
@@ -509,6 +572,7 @@
                     "path": "a-54.mp3",
                     "description": {
                         "zh-CN": "果然要随我喜欢呢",
+                        "zh-TW": "果然要隨我喜歡呢",
                         "ja-JP": "やっぱり好き勝手やりたいよね"
                     }
                 },
@@ -517,6 +581,7 @@
                     "path": "a-55.mp3",
                     "description": {
                         "zh-CN": "湊阿库娅姐姐",
+                        "zh-TW": "湊阿庫婭姐姐",
                         "ja-JP": "湊あくあお姉さん"
                     }
                 },
@@ -525,6 +590,7 @@
                     "path": "a-56.mp3",
                     "description": {
                         "zh-CN": "湊阿库娅在这",
+                        "zh-TW": "湊阿庫婭在這",
                         "ja-JP": "湊あくあより"
                     }
                 },
@@ -533,6 +599,7 @@
                     "path": "a-57.mp3",
                     "description": {
                         "zh-CN": "灵魂rap",
+                        "zh-TW": "靈魂rap",
                         "ja-JP": "マリオ3をやりたいと思ってたんだけど(合いの手付き)"
                     }
                 },
@@ -541,6 +608,7 @@
                     "path": "a-58.mp3",
                     "description": {
                         "zh-CN": "百鬼",
+                        "zh-TW": "百鬼",
                         "ja-JP": "なきり～"
                     }
                 },
@@ -549,6 +617,7 @@
                     "path": "a-59.mp3",
                     "description": {
                         "zh-CN": "百鬼酱",
+                        "zh-TW": "百鬼醬",
                         "ja-JP": "なきちゃ～ん"
                     }
                 },
@@ -557,6 +626,7 @@
                     "path": "a-60.mp3",
                     "description": {
                         "zh-CN": "我 我很害怕呢",
+                        "zh-TW": "我 我很害怕呢",
                         "ja-JP": "私 私怖いですよ"
                     }
                 },
@@ -565,6 +635,7 @@
                     "path": "a-61.mp3",
                     "description": {
                         "zh-CN": "结束了结束了",
+                        "zh-TW": "結束了結束了",
                         "ja-JP": "終わた終わた"
                     }
                 },
@@ -573,6 +644,7 @@
                     "path": "a-62.mp3",
                     "description": {
                         "zh-CN": "紧张起来了",
+                        "zh-TW": "緊張起來了",
                         "ja-JP": "緊張してきた"
                     }
                 },
@@ -581,6 +653,7 @@
                     "path": "a-63.mp3",
                     "description": {
                         "zh-CN": "结束语",
+                        "zh-TW": "結束語",
                         "ja-JP": "あとでな～"
                     }
                 },
@@ -589,6 +662,7 @@
                     "path": "a-64.mp3",
                     "description": {
                         "zh-CN": "嘲讽了你真是对不起",
+                        "zh-TW": "嘲諷了你真是對不起",
                         "ja-JP": "煽って煽り、煽ったけどごめんなさい"
                     }
                 },
@@ -597,6 +671,7 @@
                     "path": "a-65.mp3",
                     "description": {
                         "zh-CN": "谢谢！！百鬼！！",
+                        "zh-TW": "謝謝！！百鬼！！",
                         "ja-JP": "ありがと～！！なきり～！！"
                     }
                 },
@@ -605,6 +680,7 @@
                     "path": "a-66.mp3",
                     "description": {
                         "zh-CN": "駆逐艦湊です！提督~提督？",
+                        "zh-TW": "驅逐艦湊です！提督~提督？",
                         "ja-JP": "駆逐艦湊です！提督~提督？"
                     }
                 },
@@ -613,6 +689,7 @@
                     "path": "a0616-4.mp3",
                     "description": {
                         "zh-CN": "你已经死了知道了吗",
+                        "zh-TW": "你已經死了知道了嗎",
                         "ja-JP": "あなたは死んだっていいでしょう"
                     }
                 },
@@ -621,6 +698,7 @@
                     "path": "a0616-5.mp3",
                     "description": {
                         "zh-CN": "emm比如mea酱",
+                        "zh-TW": "emm比如mea醬",
                         "ja-JP": "あの、めあちゃんとか"
                     }
                 },
@@ -629,6 +707,7 @@
                     "path": "a0616-6.mp3",
                     "description": {
                         "zh-CN": "太奇怪了吧",
+                        "zh-TW": "太奇怪了吧",
                         "ja-JP": "おかしいでしょう"
                     }
                 },
@@ -637,6 +716,7 @@
                     "path": "a0616-7.mp3",
                     "description": {
                         "zh-CN": "肚子饿了",
+                        "zh-TW": "肚子餓了",
                         "ja-JP": "お腹すいたぁ"
                     }
                 }
@@ -646,6 +726,7 @@
             "categoryName": "greeting",
             "categoryDescription": {
                 "zh-CN": "打招呼",
+                "zh-TW": "打招呼",
                 "ja-JP": "挨拶"
             },
             "voiceList": [
@@ -654,6 +735,7 @@
                     "path": "a-67.mp3",
                     "description": {
                         "zh-CN": "byebeeeeeeeee",
+                        "zh-TW": "byebeeeeeeeee",
                         "ja-JP": "バイビーーーー"
                     }
                 },
@@ -662,6 +744,7 @@
                     "path": "a-68.mp3",
                     "description": {
                         "zh-CN": "byebyebot",
+                        "zh-TW": "byebyebot",
                         "ja-JP": "バイバイbot"
                     }
                 },
@@ -670,6 +753,7 @@
                     "path": "a-69.mp3",
                     "description": {
                         "zh-CN": "Happy Halloween",
+                        "zh-TW": "Happy Halloween",
                         "ja-JP": "Happy Halloween"
                     }
                 },
@@ -678,6 +762,7 @@
                     "path": "a-70.mp3",
                     "description": {
                         "zh-CN": "欢迎欢迎",
+                        "zh-TW": "歡迎歡迎",
                         "ja-JP": "いらっしゃい～いらっしゃい"
                     }
                 },
@@ -686,6 +771,7 @@
                     "path": "a-71.mp3",
                     "description": {
                         "zh-CN": "欢迎回来，主人",
+                        "zh-TW": "歡迎回來，主人",
                         "ja-JP": "おかえりなさいませ、ご主人様"
                     }
                 },
@@ -694,6 +780,7 @@
                     "path": "a-72.mp3",
                     "description": {
                         "zh-CN": "辛苦了结束语",
+                        "zh-TW": "辛苦了結束語",
                         "ja-JP": "おつあくあ、お疲れ様でした"
                     }
                 },
@@ -702,6 +789,7 @@
                     "path": "a-73.mp3",
                     "description": {
                         "zh-CN": "心动心动",
+                        "zh-TW": "心動心動",
                         "ja-JP": "どきどき"
                     }
                 },
@@ -710,6 +798,7 @@
                     "path": "a-74.mp3",
                     "description": {
                         "zh-CN": "非常感谢",
+                        "zh-TW": "非常感謝",
                         "ja-JP": "どもありがどございました"
                     }
                 },
@@ -718,6 +807,7 @@
                     "path": "a-75.mp3",
                     "description": {
                         "zh-CN": "原来如此（池面",
+                        "zh-TW": "原來如此（池面",
                         "ja-JP": "なるほどね（キリッ"
                     }
                 },
@@ -726,6 +816,7 @@
                     "path": "a-76.mp3",
                     "description": {
                         "zh-CN": "大家、明天也拜托了",
+                        "zh-TW": "大家、明天也拜託了",
                         "ja-JP": "みんな、明日もよろしくお願いします"
                     }
                 },
@@ -734,6 +825,7 @@
                     "path": "a-77.mp3",
                     "description": {
                         "zh-CN": "喂喂",
+                        "zh-TW": "喂喂",
                         "ja-JP": "もしもし"
                     }
                 },
@@ -742,6 +834,7 @@
                     "path": "a-78.mp3",
                     "description": {
                         "zh-CN": "女仆咖啡、阿库娅偶像へ欢迎",
+                        "zh-TW": "女僕咖啡、阿庫婭偶像へ歡迎",
                         "ja-JP": "メイドカフェ、アクアイドルへようこそ"
                     }
                 },
@@ -750,6 +843,7 @@
                     "path": "a-79.mp3",
                     "description": {
                         "zh-CN": "五岁夸的byebeeeee",
+                        "zh-TW": "五歲夸的byebeeeee",
                         "ja-JP": "バイビーーーー(幼児風)"
                     }
                 },
@@ -758,6 +852,7 @@
                     "path": "a-80.mp3",
                     "description": {
                         "zh-CN": "光速道歉",
+                        "zh-TW": "光速道歉",
                         "ja-JP": "光速謝罪"
                     }
                 },
@@ -766,6 +861,7 @@
                     "path": "a-81.mp3",
                     "description": {
                         "zh-CN": "等等嘛~~",
+                        "zh-TW": "等等嘛~~",
                         "ja-JP": "待ってよ～"
                     }
                 },
@@ -774,6 +870,7 @@
                     "path": "a-82.mp3",
                     "description": {
                         "zh-CN": "拜喵~~",
+                        "zh-TW": "拜喵~~",
                         "ja-JP": "ばいにゃ～"
                     }
                 },
@@ -782,6 +879,7 @@
                     "path": "a-83.mp3",
                     "description": {
                         "zh-CN": "生日快乐喵",
+                        "zh-TW": "生日快樂喵",
                         "ja-JP": "誕生日おめでとにゃ～"
                     }
                 },
@@ -790,6 +888,7 @@
                     "path": "a-84.mp3",
                     "description": {
                         "zh-CN": "我、偶像、湊阿库娅",
+                        "zh-TW": "我、偶像、湊阿庫婭",
                         "ja-JP": "私、アイドル、湊あくあ"
                     }
                 },
@@ -798,6 +897,7 @@
                     "path": "a-85.mp3",
                     "description": {
                         "zh-CN": "虽然是这样不成器的我 今后也请多多指教了",
+                        "zh-TW": "雖然是這樣不成器的我 今後也請多多指教了",
                         "ja-JP": "こんな私ですけどもこれからもよろしくお願いします"
                     }
                 },
@@ -806,6 +906,7 @@
                     "path": "a-86.mp3",
                     "description": {
                         "zh-CN": "请收下吧 今年也祝你生日快乐",
+                        "zh-TW": "請收下吧 今年也祝你生日快樂",
                         "ja-JP": "はいどうぞ、今年も誕生日おめでとう"
                     }
                 },
@@ -814,6 +915,7 @@
                     "path": "a-87.mp3",
                     "description": {
                         "zh-CN": "阿库娅哒哟",
+                        "zh-TW": "阿庫婭噠喲",
                         "ja-JP": "あくあだよ！"
                     }
                 },
@@ -822,6 +924,7 @@
                     "path": "a0616-8.mp3",
                     "description": {
                         "zh-CN": "新春快乐（中文）",
+                        "zh-TW": "新春快樂（中文）",
                         "ja-JP": "あけおめ（中国語）"
                     }
                 },
@@ -830,6 +933,7 @@
                     "path": "a0616-9.mp3",
                     "description": {
                         "zh-CN": "谢谢（中文）",
+                        "zh-TW": "謝謝（中文）",
                         "ja-JP": "ありがとう（中国語）"
                     }
                 },
@@ -838,6 +942,7 @@
                     "path": "a0616-10.mp3",
                     "description": {
                         "zh-CN": "请多指教（初代）",
+                        "zh-TW": "請多指教（初代）",
                         "ja-JP": "よろしくお願いします（初代）"
                     }
                 },
@@ -846,6 +951,7 @@
                     "path": "a0616-11.mp3",
                     "description": {
                         "zh-CN": "新春快楽、あけおめ",
+                        "zh-TW": "新春快樂、あけおめ",
                         "ja-JP": "新春快楽、あけおめ"
                     }
                 }
@@ -855,6 +961,7 @@
             "categoryName": "modal",
             "categoryDescription": {
                 "zh-CN": "语气",
+                "zh-TW": "語氣",
                 "ja-JP": "モーダル"
             },
             "voiceList": [
@@ -863,6 +970,7 @@
                     "path": "a-88.mp3",
                     "description": {
                         "zh-CN": "mua~",
+                        "zh-TW": "mua~",
                         "ja-JP": "投げキッス1"
                     }
                 },
@@ -871,6 +979,7 @@
                     "path": "a-89.mp3",
                     "description": {
                         "zh-CN": "mua~啵~",
+                        "zh-TW": "mua~啵~",
                         "ja-JP": "投げキッス2"
                     }
                 },
@@ -879,6 +988,7 @@
                     "path": "a-90.mp3",
                     "description": {
                         "zh-CN": "nyan~",
+                        "zh-TW": "nyan~",
                         "ja-JP": "にゃん（やられ"
                     }
                 },
@@ -887,6 +997,7 @@
                     "path": "a-91.mp3",
                     "description": {
                         "zh-CN": "nya~",
+                        "zh-TW": "nya~",
                         "ja-JP": "にゃ～"
                     }
                 },
@@ -895,6 +1006,7 @@
                     "path": "a-92.mp3",
                     "description": {
                         "zh-CN": "啊咧？啊咧咧？好奇怪哦",
+                        "zh-TW": "啊咧？啊咧咧？好奇怪哦",
                         "ja-JP": "あれ？あれれ？おかしいぞ"
                     }
                 },
@@ -903,6 +1015,7 @@
                     "path": "a-93.mp3",
                     "description": {
                         "zh-CN": "完蛋ー了",
+                        "zh-TW": "完蛋ー了",
                         "ja-JP": "おわーた"
                     }
                 },
@@ -911,6 +1024,7 @@
                     "path": "a-94.mp3",
                     "description": {
                         "zh-CN": "狂气音",
+                        "zh-TW": "狂氣音",
                         "ja-JP": "くるなって、おまえ"
                     }
                 },
@@ -919,6 +1033,7 @@
                     "path": "a-95.mp3",
                     "description": {
                         "zh-CN": "别过来！别过来！别过来！",
+                        "zh-TW": "別過來！別過來！別過來！",
                         "ja-JP": "こないで！こないで！こないで！こないで！こないで！"
                     }
                 },
@@ -927,6 +1042,7 @@
                     "path": "a-96.mp3",
                     "description": {
                         "zh-CN": "好害怕（可爱",
+                        "zh-TW": "好害怕（可愛",
                         "ja-JP": "こわい（かわいい"
                     }
                 },
@@ -935,6 +1051,7 @@
                     "path": "a-97.mp3",
                     "description": {
                         "zh-CN": "所以说什么呢？（颤抖",
+                        "zh-TW": "所以說什麼呢？（顫抖",
                         "ja-JP": "だからなにってば？（震え"
                     }
                 },
@@ -943,6 +1060,7 @@
                     "path": "a-98.mp3",
                     "description": {
                         "zh-CN": "谁啊？嗯？",
+                        "zh-TW": "誰啊？嗯？",
                         "ja-JP": "だれ？はい？"
                     }
                 },
@@ -951,6 +1069,7 @@
                     "path": "a-99.mp3",
                     "description": {
                         "zh-CN": "嗯———？",
+                        "zh-TW": "嗯———？",
                         "ja-JP": "ん～～↓～～↑"
                     }
                 },
@@ -959,6 +1078,7 @@
                     "path": "a-100.mp3",
                     "description": {
                         "zh-CN": "嗯嗯、嗯嗯、嗯嗯嗯嗯",
+                        "zh-TW": "嗯嗯、嗯嗯、嗯嗯嗯嗯",
                         "ja-JP": "ふんふん、ふんふん、ふんふんふんふん"
                     }
                 },
@@ -967,6 +1087,7 @@
                     "path": "a-101.mp3",
                     "description": {
                         "zh-CN": "太好了 洋葱",
+                        "zh-TW": "太好了 洋蔥",
                         "ja-JP": "やったねー、たまねぎ"
                     }
                 },
@@ -975,6 +1096,7 @@
                     "path": "a-102.mp3",
                     "description": {
                         "zh-CN": "太好了！好开心！不得了！",
+                        "zh-TW": "太好了！好開心！不得了！",
                         "ja-JP": "やったー！嬉しい！やべえ！"
                     }
                 },
@@ -983,6 +1105,7 @@
                     "path": "a-103.mp3",
                     "description": {
                         "zh-CN": "好痛哼哼哼",
+                        "zh-TW": "好痛哼哼哼",
                         "ja-JP": "いったいぃ～↓"
                     }
                 },
@@ -991,6 +1114,7 @@
                     "path": "a-104.mp3",
                     "description": {
                         "zh-CN": "对吼",
+                        "zh-TW": "對吼",
                         "ja-JP": "にゃあああああ（怖気"
                     }
                 },
@@ -999,6 +1123,7 @@
                     "path": "a-105.mp3",
                     "description": {
                         "zh-CN": "登録～登録～登録～登録～",
+                        "zh-TW": "登錄～登錄～登錄～登錄～",
                         "ja-JP": "登録～↑登録～↑登録～↑登録～↑↑"
                     }
                 },
@@ -1007,6 +1132,7 @@
                     "path": "a-106.mp3",
                     "description": {
                         "zh-CN": "诶诶诶诶诶诶诶",
+                        "zh-TW": "欸欸欸欸欸欸欸",
                         "ja-JP": "えっえっえっえっえっえっえっえっ"
                     }
                 },
@@ -1015,6 +1141,7 @@
                     "path": "a0616-13.mp3",
                     "description": {
                         "zh-CN": "啊啊啊被诅咒了啊",
+                        "zh-TW": "啊啊啊被詛咒了啊",
                         "ja-JP": "ああぁぁ呪われている"
                     }
                 },
@@ -1023,6 +1150,7 @@
                     "path": "a0616-14.mp3",
                     "description": {
                         "zh-CN": "那个这次真的非常抱歉",
+                        "zh-TW": "那個這次真的非常抱歉",
                         "ja-JP": "えとあの、その節は大変申し訳ございません"
                     }
                 },
@@ -1031,6 +1159,7 @@
                     "path": "a0616-15.mp3",
                     "description": {
                         "zh-CN": "好、好害羞啊啊",
+                        "zh-TW": "好、好害羞啊啊",
                         "ja-JP": "は、は、恥ずかしいー"
                     }
                 }
@@ -1040,6 +1169,7 @@
             "categoryName": "nakigoe",
             "categoryDescription": {
                 "zh-CN": "叫声",
+                "zh-TW": "叫聲",
                 "ja-JP": "鳴き声"
             },
             "voiceList": [
@@ -1048,6 +1178,7 @@
                     "path": "a-107.mp3",
                     "description": {
                         "zh-CN": "pyonpyonしる",
+                        "zh-TW": "pyonpyonしる",
                         "ja-JP": "ぴょんぴょんしる～？"
                     }
                 },
@@ -1056,6 +1187,7 @@
                     "path": "a-108.mp3",
                     "description": {
                         "zh-CN": "pyon~pyon~",
+                        "zh-TW": "pyon~pyon~",
                         "ja-JP": "ぽよ～↑ぽよ～↑ぽ↑よ↓～"
                     }
                 },
@@ -1064,6 +1196,7 @@
                     "path": "a-109.mp3",
                     "description": {
                         "zh-CN": "声音很小？啊啊啊啊！",
+                        "zh-TW": "聲音很小？啊啊啊啊！",
                         "ja-JP": "おとちっちゃい？あぁぁぁ！"
                     }
                 },
@@ -1072,6 +1205,7 @@
                     "path": "a-110.mp3",
                     "description": {
                         "zh-CN": "假哭",
+                        "zh-TW": "假哭",
                         "ja-JP": "泣き1"
                     }
                 },
@@ -1080,6 +1214,7 @@
                     "path": "a-111.mp3",
                     "description": {
                         "zh-CN": "假哭2",
+                        "zh-TW": "假哭2",
                         "ja-JP": "泣き2"
                     }
                 },
@@ -1088,6 +1223,7 @@
                     "path": "a-112.mp3",
                     "description": {
                         "zh-CN": "假哭3",
+                        "zh-TW": "假哭3",
                         "ja-JP": "泣き3"
                     }
                 },
@@ -1096,6 +1232,7 @@
                     "path": "a-113.mp3",
                     "description": {
                         "zh-CN": "发Q",
+                        "zh-TW": "發Q",
                         "ja-JP": "ふぁーQ"
                     }
                 },
@@ -1104,6 +1241,7 @@
                     "path": "a-114.mp3",
                     "description": {
                         "zh-CN": "哟切克切克切克闹",
+                        "zh-TW": "喲切克切克切克鬧",
                         "ja-JP": "YO!ﾁｪｹﾁｪｹﾁｪｹﾗｯ"
                     }
                 },
@@ -1112,6 +1250,7 @@
                     "path": "a-115.mp3",
                     "description": {
                         "zh-CN": "哭腔",
+                        "zh-TW": "哭腔",
                         "ja-JP": "ガチ泣き1"
                     }
                 },
@@ -1120,6 +1259,7 @@
                     "path": "a-116.mp3",
                     "description": {
                         "zh-CN": "哭腔2",
+                        "zh-TW": "哭腔2",
                         "ja-JP": "ガチ泣き2"
                     }
                 },
@@ -1128,6 +1268,7 @@
                     "path": "a-117.mp3",
                     "description": {
                         "zh-CN": "哭腔3",
+                        "zh-TW": "哭腔3",
                         "ja-JP": "ガチ泣き3"
                     }
                 },
@@ -1136,6 +1277,7 @@
                     "path": "a-118.mp3",
                     "description": {
                         "zh-CN": "喵夸1",
+                        "zh-TW": "喵夸1",
                         "ja-JP": "猫あくあ1"
                     }
                 },
@@ -1144,6 +1286,7 @@
                     "path": "a-119.mp3",
                     "description": {
                         "zh-CN": "喵夸2",
+                        "zh-TW": "喵夸2",
                         "ja-JP": "猫あくあ2"
                     }
                 },
@@ -1152,6 +1295,7 @@
                     "path": "a-120.mp3",
                     "description": {
                         "zh-CN": "喵夸3",
+                        "zh-TW": "喵夸3",
                         "ja-JP": "猫あくあ3"
                     }
                 },
@@ -1160,6 +1304,7 @@
                     "path": "a-121.mp3",
                     "description": {
                         "zh-CN": "嗷呜~嗷呜",
+                        "zh-TW": "嗷嗚~嗷嗚",
                         "ja-JP": "あお～、あおあお～"
                     }
                 },
@@ -1168,6 +1313,7 @@
                     "path": "a-122.mp3",
                     "description": {
                         "zh-CN": "学鸡叫",
+                        "zh-TW": "學雞叫",
                         "ja-JP": "コケコッコー"
                     }
                 },
@@ -1176,6 +1322,7 @@
                     "path": "a-123.mp3",
                     "description": {
                         "zh-CN": "尖叫1",
+                        "zh-TW": "尖叫1",
                         "ja-JP": "悲鳴1"
                     }
                 },
@@ -1184,6 +1331,7 @@
                     "path": "a-124.mp3",
                     "description": {
                         "zh-CN": "尖叫2",
+                        "zh-TW": "尖叫2",
                         "ja-JP": "悲鳴2"
                     }
                 },
@@ -1192,6 +1340,7 @@
                     "path": "a-125.mp3",
                     "description": {
                         "zh-CN": "尖叫4",
+                        "zh-TW": "尖叫4",
                         "ja-JP": "悲鳴3"
                     }
                 },
@@ -1200,6 +1349,7 @@
                     "path": "a-126.mp3",
                     "description": {
                         "zh-CN": "尖叫5",
+                        "zh-TW": "尖叫5",
                         "ja-JP": "悲鳴4"
                     }
                 },
@@ -1208,6 +1358,7 @@
                     "path": "a-127.mp3",
                     "description": {
                         "zh-CN": "怪叫1",
+                        "zh-TW": "怪叫1",
                         "ja-JP": "奇声1"
                     }
                 },
@@ -1216,6 +1367,7 @@
                     "path": "a-128.mp3",
                     "description": {
                         "zh-CN": "怪叫2",
+                        "zh-TW": "怪叫2",
                         "ja-JP": "奇声2"
                     }
                 },
@@ -1224,6 +1376,7 @@
                     "path": "a-129.mp3",
                     "description": {
                         "zh-CN": "怪叫3",
+                        "zh-TW": "怪叫3",
                         "ja-JP": "奇声3"
                     }
                 },
@@ -1232,6 +1385,7 @@
                     "path": "a-130.mp3",
                     "description": {
                         "zh-CN": "怪叫4",
+                        "zh-TW": "怪叫4",
                         "ja-JP": "奇声4"
                     }
                 },
@@ -1240,6 +1394,7 @@
                     "path": "a-131.mp3",
                     "description": {
                         "zh-CN": "怪叫5",
+                        "zh-TW": "怪叫5",
                         "ja-JP": "奇声5"
                     }
                 },
@@ -1248,6 +1403,7 @@
                     "path": "a-132.mp3",
                     "description": {
                         "zh-CN": "怪叫6",
+                        "zh-TW": "怪叫6",
                         "ja-JP": "奇声6"
                     }
                 },
@@ -1256,6 +1412,7 @@
                     "path": "a-133.mp3",
                     "description": {
                         "zh-CN": "怪叫7",
+                        "zh-TW": "怪叫7",
                         "ja-JP": "奇声7"
                     }
                 },
@@ -1264,6 +1421,7 @@
                     "path": "a-134.mp3",
                     "description": {
                         "zh-CN": "打鸣",
+                        "zh-TW": "打鳴",
                         "ja-JP": "過呼吸からの奇声"
                     }
                 },
@@ -1272,6 +1430,7 @@
                     "path": "a-135.mp3",
                     "description": {
                         "zh-CN": "海鸥笑",
+                        "zh-TW": "海鷗笑",
                         "ja-JP": "引き笑い1"
                     }
                 },
@@ -1280,6 +1439,7 @@
                     "path": "a-136.mp3",
                     "description": {
                         "zh-CN": "海鸥笑2",
+                        "zh-TW": "海鷗笑2",
                         "ja-JP": "引き笑い2"
                     }
                 },
@@ -1288,6 +1448,7 @@
                     "path": "a-137.mp3",
                     "description": {
                         "zh-CN": "（音量注意）啊啊啊！！！！对不起",
+                        "zh-TW": "（音量注意）啊啊啊！！！！對不起",
                         "ja-JP": "（音量注意）あああ！！！！こめんなさい"
                     }
                 },
@@ -1296,6 +1457,7 @@
                     "path": "a0616-16.mp3",
                     "description": {
                         "zh-CN": "伽嘎伽嘎伽嘎伽嘎（怪叫）",
+                        "zh-TW": "伽嘎伽嘎伽嘎伽嘎（怪叫）",
                         "ja-JP": "じゃがじゃがじゃがじゃが"
                     }
                 },
@@ -1304,6 +1466,7 @@
                     "path": "a0616-17.mp3",
                     "description": {
                         "zh-CN": "mea酱",
+                        "zh-TW": "mea醬",
                         "ja-JP": "めあちゃん"
                     }
                 },
@@ -1312,6 +1475,7 @@
                     "path": "a0616-18.mp3",
                     "description": {
                         "zh-CN": "ping~ping~ping~ping~",
+                        "zh-TW": "ping~ping~ping~ping~",
                         "ja-JP": "ピング~ピング~ピング~ピング~"
                     }
                 },{
@@ -1319,6 +1483,7 @@
                     "path": "a-219.mp3",
                     "description": {
                         "zh-CN": "desumasu desumasu",
+                        "zh-TW": "desumasu desumasu",
                         "ja-JP": "デスマスデスマス"
                     }
                 },
@@ -1327,6 +1492,7 @@
                     "path": "a20200309-1.mp3",
                     "description": {
                         "zh-CN": "Ora ora ora ora 1",
+                        "zh-TW": "Ora ora ora ora 1",
                         "ja-JP": "オラオラオラオラ 1"
                     }
                 },
@@ -1335,6 +1501,7 @@
                     "path": "a20200309-2.mp3",
                     "description": {
                         "zh-CN": "Rua 1",
+                        "zh-TW": "Rua 1",
                         "ja-JP": "Rua 1"
                     }
                 },
@@ -1343,6 +1510,7 @@
                     "path": "a20200313-1.mp3",
                     "description": {
                         "zh-CN": "晚安喵～",
+                        "zh-TW": "晚安喵～",
                         "ja-JP": "おやすみにゃーーーー"
                     }
                 },
@@ -1351,6 +1519,7 @@
                     "path": "a20200318-1.mp3",
                     "description": {
                         "zh-CN": "（音量注意）收益化byebye 1",
+                        "zh-TW": "（音量注意）收益化byebye 1",
                         "ja-JP": "（音量注意）収益化グッバイ１"
                     }
                 },
@@ -1359,6 +1528,7 @@
                     "path": "a20200318-2.mp3",
                     "description": {
                         "zh-CN": "（音量注意）收益化byebye 2",
+                        "zh-TW": "（音量注意）收益化byebye 2",
                         "ja-JP": "（音量注意）収益化グッバイ２"
                     }
                 },
@@ -1367,6 +1537,7 @@
                     "path": "a20200624-1.mp3",
                     "description": {
                         "zh-CN": "阿夸版 Discord铃声",
+                        "zh-TW": "阿夸版 Discord鈴聲",
                         "ja-JP": "Discord通知音　あくあバージョン"
                     }
                 },
@@ -1375,6 +1546,7 @@
                     "path": "a20200624-2.mp3",
                     "description": {
                         "zh-CN": "阿夸版 Line铃声",
+                        "zh-TW": "阿夸版 Line鈴聲",
                         "ja-JP": "Line通知音　あくあバージョン"
                     }
                 },
@@ -1383,6 +1555,7 @@
                     "path": "a20200624-3.mp3",
                     "description": {
                         "zh-CN": "阿夸版 Skype铃声",
+                        "zh-TW": "阿夸版 Skype鈴聲",
                         "ja-JP": "Skype通知音　あくあバージョン"
                     }
                 },
@@ -1391,6 +1564,7 @@
                     "path": "a20200624-4.mp3",
                     "description": {
                         "zh-CN": "叭",
+                        "zh-TW": "叭",
                         "ja-JP": "パーーーー"
                     }
                 },
@@ -1399,6 +1573,7 @@
                     "path": "a20200624-5.mp3",
                     "description": {
                         "zh-CN": "阿夸版 来电铃声",
+                        "zh-TW": "阿夸版 來電鈴聲",
                         "ja-JP": "着信音 あくあバージョン"
                     }
                 },
@@ -1407,7 +1582,71 @@
                     "path": "a20200624-6.mp3",
                     "description": {
                         "zh-CN": "奇声",
+                        "zh-TW": "奇聲",
                         "ja-JP": "奇声"
+                    }
+                },
+                {
+                    "name": "a20201113-1",
+                    "path": "a20201113-1.mp3",
+                    "description": {
+                        "zh-CN": "Mo阿夸 1",
+                        "zh-TW": "Mo阿夸 1",
+                        "ja-JP": "もううううう 1"
+                    }
+                },
+                {
+                    "name": "a20201113-2",
+                    "path": "a20201113-2.mp3",
+                    "description": {
+                        "zh-CN": "Mo阿夸 2",
+                        "zh-TW": "Mo阿夸 2",
+                        "ja-JP": "もううううう 2"
+                    }
+                },
+                {
+                    "name": "a20201113-3",
+                    "path": "a20201113-3.mp3",
+                    "description": {
+                        "zh-CN": "（音量注意）Mo阿夸 3",
+                        "zh-TW": "（音量注意）Mo阿夸 3",
+                        "ja-JP": "（音量注意）もううううう 3"
+                    }
+                },
+                {
+                    "name": "a20201113-4",
+                    "path": "a20201113-4.mp3",
+                    "description": {
+                        "zh-CN": "Mooo~Neee~",
+                        "zh-TW": "Mooo~Neee~",
+                        "ja-JP": "もううううう~ねえええええ~"
+                    }
+                },
+                {
+                    "name": "a20201113-7",
+                    "path": "a20201113-7.mp3",
+                    "description": {
+                        "zh-CN": "Ne阿夸 1",
+                        "zh-TW": "Ne阿夸 1",
+                        "ja-JP": "ねえええええ 1"
+                    }
+                },
+                {
+                    "name": "a20201113-8",
+                    "path": "a20201113-8.mp3",
+                    "description": {
+                        "zh-CN": "Ne阿夸 2",
+                        "zh-TW": "Ne阿夸 2",
+                        "ja-JP": "ねえええええ 2"
+                    }
+                },
+                {
+                    "name": "a20201113-9",
+                    "path": "a20201113-9.mp3",
+                    "description": {
+                        "zh-CN": "Ne阿夸 3",
+                        "zh-TW": "Ne阿夸 3",
+                        "ja-JP": "ねえええええ 3"
                     }
                 }
             ]
@@ -1416,6 +1655,7 @@
             "categoryName": "negation",
             "categoryDescription": {
                 "zh-CN": "否定",
+                "zh-TW": "否定",
                 "ja-JP": "否定"
             },
             "voiceList": [
@@ -1424,6 +1664,7 @@
                     "path": "a-138.mp3",
                     "description": {
                         "zh-CN": "啊啊好恶心",
+                        "zh-TW": "啊啊好噁心",
                         "ja-JP": "ああ気持ち悪い"
                     }
                 },
@@ -1432,6 +1673,7 @@
                     "path": "a-139.mp3",
                     "description": {
                         "zh-CN": "不是很好吃",
+                        "zh-TW": "不是很好吃",
                         "ja-JP": "あんまりおいしくない"
                     }
                 },
@@ -1440,6 +1682,7 @@
                     "path": "a-140.mp3",
                     "description": {
                         "zh-CN": "才没有做呢",
+                        "zh-TW": "才沒有做呢",
                         "ja-JP": "ヤッテナイデスヨォ（友人A"
                     }
                 },
@@ -1448,6 +1691,7 @@
                     "path": "a-141.mp3",
                     "description": {
                         "zh-CN": "不会给你哦",
+                        "zh-TW": "不會給你哦",
                         "ja-JP": "あげないよ～"
                     }
                 },
@@ -1456,6 +1700,7 @@
                     "path": "a-142.mp3",
                     "description": {
                         "zh-CN": "不伦是不行的哦",
+                        "zh-TW": "不倫是不行的哦",
                         "ja-JP": "不倫はダメだぞ"
                     }
                 },
@@ -1464,6 +1709,7 @@
                     "path": "a-143.mp3",
                     "description": {
                         "zh-CN": "不好好吃饭可不行",
+                        "zh-TW": "不好好吃飯可不行",
                         "ja-JP": "ちゃんと食べないとダメじゃない"
                     }
                 },
@@ -1472,6 +1718,7 @@
                     "path": "a-144.mp3",
                     "description": {
                         "zh-CN": "不想当恋人，这点请饶了我吧",
+                        "zh-TW": "不想當戀人，這點請饒了我吧",
                         "ja-JP": "恋人にはなりたくない、ちょっとそれはご勘弁て感じで"
                     }
                 },
@@ -1480,6 +1727,7 @@
                     "path": "a-145.mp3",
                     "description": {
                         "zh-CN": "不读的话 不行的哦！",
+                        "zh-TW": "不讀的話 不行的哦！",
                         "ja-JP": "よんでくれなきゃ、嫌だしぃ！"
                     }
                 },
@@ -1488,6 +1736,7 @@
                     "path": "a-146.mp3",
                     "description": {
                         "zh-CN": "不需要的啊",
+                        "zh-TW": "不需要的啊",
                         "ja-JP": "いらねぇんだよなぁ"
                     }
                 }
@@ -1497,6 +1746,7 @@
             "categoryName": "other",
             "categoryDescription": {
                 "zh-CN": "其他",
+                "zh-TW": "其他",
                 "ja-JP": "その他"
             },
             "voiceList": [
@@ -1505,6 +1755,7 @@
                     "path": "a-147.mp3",
                     "description": {
                         "zh-CN": "1~2~3~4~5~6~7~8",
+                        "zh-TW": "1~2~3~4~5~6~7~8",
                         "ja-JP": "1~2~3~4~5~6~7~8"
                     }
                 },
@@ -1513,6 +1764,7 @@
                     "path": "a-148.mp3",
                     "description": {
                         "zh-CN": "2122",
+                        "zh-TW": "2122",
                         "ja-JP": "21･･･22･･･（腹筋熟成"
                     }
                 },
@@ -1521,6 +1773,7 @@
                     "path": "a-149.mp3",
                     "description": {
                         "zh-CN": "A.M.T　阿夸真是天使",
+                        "zh-TW": "A.M.T　阿夸真是天使",
                         "ja-JP": "A.M.T　あくあマジ天使"
                     }
                 },
@@ -1529,6 +1782,7 @@
                     "path": "a-153.mp3",
                     "description": {
                         "zh-CN": "I love you",
+                        "zh-TW": "I love you",
                         "ja-JP": "I love you"
                     }
                 },
@@ -1537,6 +1791,7 @@
                     "path": "a-154.mp3",
                     "description": {
                         "zh-CN": "一直都smile、全力smile会努力的",
+                        "zh-TW": "一直都smile、全力smile會努力的",
                         "ja-JP": "いつもsmile、全力smileで頑張るから"
                     }
                 },
@@ -1545,6 +1800,7 @@
                     "path": "a-155.mp3",
                     "description": {
                         "zh-CN": "要成为不良、今天",
+                        "zh-TW": "要成為不良、今天",
                         "ja-JP": "ヤンキーになるわ、今日"
                     }
                 },
@@ -1553,6 +1809,7 @@
                     "path": "a-156.mp3",
                     "description": {
                         "zh-CN": "令和跳",
+                        "zh-TW": "令和跳",
                         "ja-JP": "令和カウントダウン"
                     }
                 },
@@ -1561,6 +1818,7 @@
                     "path": "a-157.mp3",
                     "description": {
                         "zh-CN": "吃东西",
+                        "zh-TW": "吃東西",
                         "ja-JP": "あむ（咀嚼"
                     }
                 },
@@ -1569,6 +1827,7 @@
                     "path": "a-158.mp3",
                     "description": {
                         "zh-CN": "小矮人疑惑",
+                        "zh-TW": "小矮人疑惑",
                         "ja-JP": "ちんちくりん疑惑"
                     }
                 },
@@ -1577,6 +1836,7 @@
                     "path": "a-159.mp3",
                     "description": {
                         "zh-CN": "模仿兔头",
+                        "zh-TW": "模仿兔頭",
                         "ja-JP": "物真似 月ノ美兎ちゃん"
                     }
                 },
@@ -1585,6 +1845,7 @@
                     "path": "a0616-19.mp3",
                     "description": {
                         "zh-CN": "这件女仆装很可爱对吧）",
+                        "zh-TW": "這件女僕裝很可愛對吧）",
                         "ja-JP": "このメイド服可愛いでしょう！"
                     }
                 },
@@ -1593,6 +1854,7 @@
                     "path": "a0616-20.mp3",
                     "description": {
                         "zh-CN": "怎么感觉凉飕飕的",
+                        "zh-TW": "怎麼感覺涼颼颼的",
                         "ja-JP": "なんか~スースーする"
                     }
                 },
@@ -1601,6 +1863,7 @@
                     "path": "a0616-21.mp3",
                     "description": {
                         "zh-CN": "想看吗？真是没办法啊",
+                        "zh-TW": "想看嗎？真是沒辦法啊",
                         "ja-JP": "見たいですか、仕方ないですね"
                     }
                 }
@@ -1610,6 +1873,7 @@
             "categoryName": "saying",
             "categoryDescription": {
                 "zh-CN": "名言",
+                "zh-TW": "名言",
                 "ja-JP": "名言"
             },
             "voiceList": [
@@ -1618,6 +1882,7 @@
                     "path": "a-160.mp3",
                     "description": {
                         "zh-CN": "washoiwashoi 大家都washoi 一起来washoi",
+                        "zh-TW": "washoiwashoi 大家都washoi 一起來washoi",
                         "ja-JP": "ﾜｯｼｮｲﾜｯｼｮｲ皆でﾜｯｼｮｲ一緒にﾜｯｼｮｲ―ﾜｯｼｮｲﾜｯｼｮｰｲ"
                     }
                 },
@@ -1626,6 +1891,7 @@
                     "path": "a-161.mp3",
                     "description": {
                         "zh-CN": "这个好像不需要",
+                        "zh-TW": "這個好像不需要",
                         "ja-JP": "これいらないぽいっ"
                     }
                 },
@@ -1634,6 +1900,7 @@
                     "path": "a-162.mp3",
                     "description": {
                         "zh-CN": "这就是、湊阿夸的力量哦",
+                        "zh-TW": "這就是、湊阿夸的力量哦",
                         "ja-JP": "これが、湊あくあのpruawerだから"
                     }
                 },
@@ -1642,6 +1909,7 @@
                     "path": "a-163.mp3",
                     "description": {
                         "zh-CN": "我可是永远都是5岁哦",
+                        "zh-TW": "我可是永遠都是5歲哦",
                         "ja-JP": "わたくし永遠の五歳でちゅから"
                     }
                 },
@@ -1650,6 +1918,7 @@
                     "path": "a-164.mp3",
                     "description": {
                         "zh-CN": "我是单人玩家是吧",
+                        "zh-TW": "我是獨行玩家是吧",
                         "ja-JP": "わたしソロプレーヤーなんだよね"
                     }
                 },
@@ -1658,6 +1927,7 @@
                     "path": "a-165.mp3",
                     "description": {
                         "zh-CN": "不 今晚不会放你去睡觉的哦",
+                        "zh-TW": "不 今晚不會放你去睡覺的哦",
                         "ja-JP": "いや、今夜は寝かせないよ"
                     }
                 },
@@ -1666,6 +1936,7 @@
                     "path": "a-166.mp3",
                     "description": {
                         "zh-CN": "不要，别看啊，这样好色啊",
+                        "zh-TW": "不要，別看啊，這樣好色啊",
                         "ja-JP": "やめて、見ないで、えっちじゃんそんな"
                     }
                 },
@@ -1674,6 +1945,7 @@
                     "path": "a-167.mp3",
                     "description": {
                         "zh-CN": "二次元赛高",
+                        "zh-TW": "二次元賽高",
                         "ja-JP": "二次元最高！"
                     }
                 },
@@ -1682,6 +1954,7 @@
                     "path": "a-168.mp3",
                     "description": {
                         "zh-CN": "但是这样是战胜不了我的~",
+                        "zh-TW": "但是這樣是戰勝不了我的~",
                         "ja-JP": "でもわたしには敵いませ～ん"
                     }
                 },
@@ -1690,6 +1963,7 @@
                     "path": "a-169.mp3",
                     "description": {
                         "zh-CN": "余裕よ余裕",
+                        "zh-TW": "余裕よ余裕",
                         "ja-JP": "余裕よ余裕"
                     }
                 },
@@ -1698,6 +1972,7 @@
                     "path": "a-170.mp3",
                     "description": {
                         "zh-CN": "可以相信的只有自己",
+                        "zh-TW": "可以相信的只有自己",
                         "ja-JP": "信じられるのは自分だけ"
                     }
                 },
@@ -1706,6 +1981,7 @@
                     "path": "a-171.mp3",
                     "description": {
                         "zh-CN": "全てを理解",
+                        "zh-TW": "全てを理解",
                         "ja-JP": "全てを理解したわ"
                     }
                 },
@@ -1714,6 +1990,7 @@
                     "path": "a-172.mp3",
                     "description": {
                         "zh-CN": "区区汉字我还是会读的",
+                        "zh-TW": "區區漢字我還是會讀的",
                         "ja-JP": "漢字くらい読めるんですからね"
                     }
                 },
@@ -1722,6 +1999,7 @@
                     "path": "a-173.mp3",
                     "description": {
                         "zh-CN": "哇啊啊啊啊早上起床身边有别的女人",
+                        "zh-TW": "哇啊啊啊啊早上起床身邊有別的女人",
                         "ja-JP": "朝起きたら別の女が居た"
                     }
                 },
@@ -1730,6 +2008,7 @@
                     "path": "a-174.mp3",
                     "description": {
                         "zh-CN": "啊、理解理解、理解理解理解",
+                        "zh-TW": "啊、理解理解、理解理解理解",
                         "ja-JP": "あー、理解理解、理解理解理解"
                     }
                 },
@@ -1738,6 +2017,7 @@
                     "path": "a-175.mp3",
                     "description": {
                         "zh-CN": "喜欢 爱 结婚三连",
+                        "zh-TW": "喜歡 愛 結婚三連",
                         "ja-JP": "大好き、愛してる、結婚しよう"
                     }
                 },
@@ -1746,6 +2026,7 @@
                     "path": "a-176.mp3",
                     "description": {
                         "zh-CN": "因为我是偶像哦",
+                        "zh-TW": "因為我是偶像哦",
                         "ja-JP": "だって私、アイドルだもん"
                     }
                 },
@@ -1754,6 +2035,7 @@
                     "path": "a-177.mp3",
                     "description": {
                         "zh-CN": "完璧完璧",
+                        "zh-TW": "完璧完璧",
                         "ja-JP": "完璧完璧"
                     }
                 },
@@ -1762,6 +2044,7 @@
                     "path": "a-178.mp3",
                     "description": {
                         "zh-CN": "老家一样的安心感",
+                        "zh-TW": "老家一樣的安心感",
                         "ja-JP": "実家のような安心感"
                     }
                 },
@@ -1770,6 +2053,7 @@
                     "path": "a-179.mp3",
                     "description": {
                         "zh-CN": "对我的帅气感到着迷了吗",
+                        "zh-TW": "對我的帥氣感到著迷了嗎",
                         "ja-JP": "俺のカッコよさに、見惚れちまったか？"
                     }
                 },
@@ -1778,6 +2062,7 @@
                     "path": "a-180.mp3",
                     "description": {
                         "zh-CN": "想看？啊，真没辙啊",
+                        "zh-TW": "想看？啊，真沒轍啊",
                         "ja-JP": "見たい？あー、仕方ないな"
                     }
                 },
@@ -1786,6 +2071,7 @@
                     "path": "a-181.mp3",
                     "description": {
                         "zh-CN": "感觉掀起胖次也不会有罪恶感呢",
+                        "zh-TW": "感覺掀起胖次也不會有罪惡感呢",
                         "ja-JP": "なんかこうパンツをめくってても悪気がないもんね"
                     }
                 },
@@ -1794,6 +2080,7 @@
                     "path": "a-182.mp3",
                     "description": {
                         "zh-CN": "我什么都会做的",
+                        "zh-TW": "我什麼都會做的",
                         "ja-JP": "なんでもしますから・・・"
                     }
                 },
@@ -1802,6 +2089,7 @@
                     "path": "a-183.mp3",
                     "description": {
                         "zh-CN": "我会闻大家的味道就是了",
+                        "zh-TW": "我會聞大家的味道就是了",
                         "ja-JP": "私はね、皆の匂い嗅げますけど"
                     }
                 },
@@ -1810,6 +2098,7 @@
                     "path": "a-184.mp3",
                     "description": {
                         "zh-CN": "我家那孩子啊",
+                        "zh-TW": "我家那孩子啊",
                         "ja-JP": "うちの子がさああああ"
                     }
                 },
@@ -1818,6 +2107,7 @@
                     "path": "a-185.mp3",
                     "description": {
                         "zh-CN": "我跟西红柿哪个可爱一点啊！！",
+                        "zh-TW": "我跟番茄哪個可愛一點啊！！",
                         "ja-JP": "私とトマトどっちが可愛いんだよ！！"
                     }
                 },
@@ -1826,6 +2116,7 @@
                     "path": "a-186.mp3",
                     "description": {
                         "zh-CN": "我马上闭嘴",
+                        "zh-TW": "我馬上閉嘴",
                         "ja-JP": "黙らせて頂きます"
                     }
                 },
@@ -1834,6 +2125,7 @@
                     "path": "a-187.mp3",
                     "description": {
                         "zh-CN": "拜托了！这是我这辈子的愿望！什么都做的啦",
+                        "zh-TW": "拜託了！這是我這輩子的願望！什麼都做的啦",
                         "ja-JP": "お願い、一生のお願い、なんでもするから"
                     }
                 },
@@ -1842,6 +2134,7 @@
                     "path": "a-188.mp3",
                     "description": {
                         "zh-CN": "接下来 我会让大家 渐渐地渐渐地燃起来的",
+                        "zh-TW": "接下来 我會讓大家 漸漸地漸漸地燃起來的",
                         "ja-JP": "これからみんなの事、どんどんどんどん熱くしていくから"
                     }
                 },
@@ -1850,6 +2143,7 @@
                     "path": "a-189.mp3",
                     "description": {
                         "zh-CN": "无路赛！无路赛无路赛！",
+                        "zh-TW": "無路賽！無路賽無路賽！",
                         "ja-JP": "うるさい！うるさいうるさいうるさい！"
                     }
                 },
@@ -1858,6 +2152,7 @@
                     "path": "a-191.mp3",
                     "description": {
                         "zh-CN": "理解理解",
+                        "zh-TW": "理解理解",
                         "ja-JP": "理解理解"
                     }
                 },
@@ -1866,6 +2161,7 @@
                     "path": "a-192.mp3",
                     "description": {
                         "zh-CN": "男人是、有不得不跨越的山 武士",
+                        "zh-TW": "男人是、有不得不跨越的山 武士",
                         "ja-JP": "男には、越えねばならぬ、山がある 侍"
                     }
                 },
@@ -1874,6 +2170,7 @@
                     "path": "a-193.mp3",
                     "description": {
                         "zh-CN": "这真是烦人的女人啊",
+                        "zh-TW": "這真是煩人的女人啊",
                         "ja-JP": "これはうっとおしい女ですわぁ"
                     }
                 },
@@ -1882,6 +2179,7 @@
                     "path": "a-194.mp3",
                     "description": {
                         "zh-CN": "阿库娅你这家伙 已经成长成很优秀的阿库娅了呀",
+                        "zh-TW": "阿庫婭你這傢伙 已經成長成很優秀的阿庫婭了呀",
                         "ja-JP": "あクワお前、すっかり立派なあクワになっちまったな"
                     }
                 },
@@ -1890,6 +2188,7 @@
                     "path": "a-195.mp3",
                     "description": {
                         "zh-CN": "难道不是我的要求都应该接受吗？毕竟是生日嘛",
+                        "zh-TW": "難道不是我的要求都應該接受嗎？畢竟是生日嘛",
                         "ja-JP": "私の言うことなんでも聞いてくれるんじゃないんですか？やっぱ誕生日だし"
                     }
                 },
@@ -1898,6 +2197,7 @@
                     "path": "a-196.mp3",
                     "description": {
                         "zh-CN": "骗你的哦",
+                        "zh-TW": "騙你的哦",
                         "ja-JP": "うそだよ"
                     }
                 },
@@ -1906,6 +2206,7 @@
                     "path": "a0616-22.mp3",
                     "description": {
                         "zh-CN": "拜托了我什么都会做的",
+                        "zh-TW": "拜託了我什麼都會做的",
                         "ja-JP": "お願いします、何でもしますから"
                     }
                 },
@@ -1914,6 +2215,7 @@
                     "path": "a0616-23.mp3",
                     "description": {
                         "zh-CN": "因为一直在一起所以懂得",
+                        "zh-TW": "因為一直在一起所以懂得",
                         "ja-JP": "ずっと一緒におるから分かるわ"
                     }
                 },
@@ -1922,6 +2224,7 @@
                     "path": "a0616-24.mp3",
                     "description": {
                         "zh-CN": " 因为我是孤独之星",
+                        "zh-TW": " 因為我是孤獨之星",
                         "ja-JP": "そう、ぼっちだからさ"
                     }
                 },
@@ -1930,6 +2233,7 @@
                     "path": "a0616-25.mp3",
                     "description": {
                         "zh-CN": "我已经习惯了，不如说我觉得那就是爱情",
+                        "zh-TW": "我已經習慣了，不如說我覺得那就是愛情",
                         "ja-JP": "わたしはね慣れてる、むしろそれが愛情だと思ってる"
                     }
                 },
@@ -1938,6 +2242,7 @@
                     "path": "a0616-26.mp3",
                     "description": {
                         "zh-CN": "我的朋友很少，【无牙】所以【友少】",
+                        "zh-TW": "我的朋友很少，【無牙】所以【友少】",
                         "ja-JP": "僕は友達が少ない、歯がないだからはがない"
                     }
                 },
@@ -1946,6 +2251,7 @@
                     "path": "a0616-27.mp3",
                     "description": {
                         "zh-CN": "虽然白发很好但也要喜欢粉发哦",
+                        "zh-TW": "雖然白髮很好但也要喜歡粉髮哦",
                         "ja-JP": "白もいいけど、ピンクにも好きになってね"
                     }
                 },
@@ -1954,7 +2260,17 @@
                     "path": "a0616-28.mp3",
                     "description": {
                         "zh-CN": "我湊阿夸对白发的看法是喜欢啊啊啊啊",
+                        "zh-TW": "我湊阿夸對白髮的看法是喜歡啊啊啊啊",
                         "ja-JP": "私、湊あくあは白髪の女の子が好きだああ——"
+                    }
+                },
+                {
+                    "name": "a20201113-5",
+                    "path": "a20201113-5.mp3",
+                    "description": {
+                        "zh-CN": "我阿库碳是笨蛋！",
+                        "zh-TW": "我阿庫碳是笨蛋！",
+                        "ja-JP": "あくたんはバカ！"
                     }
                 }
             ]
@@ -1963,6 +2279,7 @@
             "categoryName": "high",
             "categoryDescription": {
                 "zh-CN": "精神高涨",
+                "zh-TW": "精神高漲",
                 "ja-JP": "ハイテンション"
             },
             "voiceList": [
@@ -1971,6 +2288,7 @@
                     "path": "a-197.mp3",
                     "description": {
                         "zh-CN": "moooo、你以为我是谁呢",
+                        "zh-TW": "moooo、你以為我是誰呢",
                         "ja-JP": "もー、私を誰だと思ってるんですかぁ？"
                     }
                 },
@@ -1979,6 +2297,7 @@
                     "path": "a-198.mp3",
                     "description": {
                         "zh-CN": "阿夸可爱～阿夸可爱！",
+                        "zh-TW": "阿夸可愛～阿夸可愛！",
                         "ja-JP": "あくあかわいい～？あくあかわいい！"
                     }
                 },
@@ -1987,6 +2306,7 @@
                     "path": "a-199.mp3",
                     "description": {
                         "zh-CN": "拜托了！拜托了！拜托了！",
+                        "zh-TW": "拜託了！拜託了！拜託了！",
                         "ja-JP": "お願い！お願い！お願い！"
                     }
                 },
@@ -1995,6 +2315,7 @@
                     "path": "a-200.mp3",
                     "description": {
                         "zh-CN": "麻烦了！",
+                        "zh-TW": "麻煩了！",
                         "ja-JP": "こまった！"
                     }
                 },
@@ -2003,6 +2324,7 @@
                     "path": "a-201.mp3",
                     "description": {
                         "zh-CN": "这就是凑阿夸啊啊啊！！！！！！",
+                        "zh-TW": "這就是凑阿夸啊啊啊！！！！！！",
                         "ja-JP": "これが湊あくあじゃいいいい！！！！！！"
                     }
                 },
@@ -2011,6 +2333,7 @@
                     "path": "a-202.mp3",
                     "description": {
                         "zh-CN": "为什么啊！",
+                        "zh-TW": "為什麼啊！",
                         "ja-JP": "なんでやねん！"
                     }
                 },
@@ -2019,6 +2342,7 @@
                     "path": "a-203.mp3",
                     "description": {
                         "zh-CN": "耶！！版本升级！！！",
+                        "zh-TW": "耶！！版本升級！！！",
                         "ja-JP": "イェー！！バージョンアップ！！！"
                     }
                 },
@@ -2027,6 +2351,7 @@
                     "path": "a-204.mp3",
                     "description": {
                         "zh-CN": "嘿嘿嘿、真遗憾呐",
+                        "zh-TW": "嘿嘿嘿、真遺憾吶",
                         "ja-JP": "んひひ、ざぁんねんですねぇ"
                     }
                 },
@@ -2035,6 +2360,7 @@
                     "path": "a-205.mp3",
                     "description": {
                         "zh-CN": "嘿嘿嘿嘿、期待了吗？",
+                        "zh-TW": "嘿嘿嘿嘿、期待了嗎？",
                         "ja-JP": "んひひひひひ、期待した？"
                     }
                 },
@@ -2043,6 +2369,7 @@
                     "path": "a-206.mp3",
                     "description": {
                         "zh-CN": "好—消—息—",
+                        "zh-TW": "好—消—息—",
                         "ja-JP": "ろーほー"
                     }
                 },
@@ -2051,6 +2378,7 @@
                     "path": "a0616-12.mp3",
                     "description": {
                         "zh-CN": "ガチ恋口上（mea酱へ）",
+                        "zh-TW": "ガチ恋口上（mea酱へ）",
                         "ja-JP": "ガチ恋口上（めあちゃんへ）"
                     }
                 }
@@ -2060,6 +2388,7 @@
             "categoryName": "sing",
             "categoryDescription": {
                 "zh-CN": "唱歌",
+                "zh-TW": "唱歌",
                 "ja-JP": "うた"
             },
             "voiceList": [
@@ -2068,6 +2397,7 @@
                     "path": "a-207.mp3",
                     "description": {
                         "zh-CN": "bad apple清唱",
+                        "zh-TW": "bad apple清唱",
                         "ja-JP": "bad apple"
                     }
                 },
@@ -2076,6 +2406,7 @@
                     "path": "a-208.mp3",
                     "description": {
                         "zh-CN": "儿歌",
+                        "zh-TW": "兒歌",
                         "ja-JP": "メリーさんの羊"
                     }
                 },
@@ -2084,6 +2415,7 @@
                     "path": "a-209.mp3",
                     "description": {
                         "zh-CN": "口胡生日歌",
+                        "zh-TW": "口胡生日歌",
                         "ja-JP": "Happy birthday to you"
                     }
                 },
@@ -2092,6 +2424,7 @@
                     "path": "a-210.mp3",
                     "description": {
                         "zh-CN": "夸乐器 晴天好心情",
+                        "zh-TW": "夸樂器 晴天好心情",
                         "ja-JP": "ハレ晴レユカイ(全部あくあ"
                     }
                 },
@@ -2100,6 +2433,7 @@
                     "path": "a-211.mp3",
                     "description": {
                         "zh-CN": "夸乐器1",
+                        "zh-TW": "夸樂器1",
                         "ja-JP": "ぱぱぱぱっぱぱー♪"
                     }
                 },
@@ -2108,6 +2442,7 @@
                     "path": "a-212.mp3",
                     "description": {
                         "zh-CN": "夸乐器3",
+                        "zh-TW": "夸樂器3",
                         "ja-JP": "ぷーぷーぷーぷーぷーぷーぷーぷひゃあああ"
                     }
                 },
@@ -2116,6 +2451,7 @@
                     "path": "a-213.mp3",
                     "description": {
                         "zh-CN": "夸乐器4",
+                        "zh-TW": "夸樂器4",
                         "ja-JP": "ボイパ"
                     }
                 },
@@ -2124,6 +2460,7 @@
                     "path": "a-214.mp3",
                     "description": {
                         "zh-CN": "夸乐器5",
+                        "zh-TW": "夸樂器5",
                         "ja-JP": "プンプンプンプンプンプンパー"
                     }
                 },
@@ -2132,6 +2469,7 @@
                     "path": "a-215.mp3",
                     "description": {
                         "zh-CN": "夸乐器海贼王",
+                        "zh-TW": "夸樂器海賊王",
                         "ja-JP": "ウィーアー!"
                     }
                 },
@@ -2140,6 +2478,7 @@
                     "path": "a-216.mp3",
                     "description": {
                         "zh-CN": "小星星清唱",
+                        "zh-TW": "小星星清唱",
                         "ja-JP": "きらきら星"
                     }
                 },
@@ -2148,6 +2487,7 @@
                     "path": "a-217.mp3",
                     "description": {
                         "zh-CN": "狗夸蜜汁合唱（大嘘）",
+                        "zh-TW": "狗夸蜜汁合唱（大嘘）",
                         "ja-JP": "狗夸蜜汁合唱（大嘘）"
                     }
                 },
@@ -2156,6 +2496,7 @@
                     "path": "a-218.mp3",
                     "description": {
                         "zh-CN": "现充之歌",
+                        "zh-TW": "現充之歌",
                         "ja-JP": "陽キャの歌"
                     }
                 },
@@ -2164,7 +2505,17 @@
                     "path": "a0616-29.mp3",
                     "description": {
                         "zh-CN": "夸乐器",
+                        "zh-TW": "夸樂器",
                         "ja-JP": "夸乐器"
+                    }
+                },
+                {
+                    "name": "a20201113-6",
+                    "path": "a20201113-6.mp3",
+                    "description": {
+                        "zh-CN": "夸之战歌",
+                        "zh-TW": "夸之戰歌",
+                        "ja-JP": "あくあ 戦の歌"
                     }
                 }
             ]

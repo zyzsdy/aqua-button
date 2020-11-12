@@ -6,8 +6,8 @@ import App from './App.vue'
 
 import en_US from './locales/en-US'
 import zh_CN from './locales/zh-CN'
+import zh_TW from './locales/zh-TW'
 import ja_JP from './locales/ja-JP'
-
 import $ from 'jquery'
 global.jQuery = global.$ = $;
 
@@ -19,6 +19,7 @@ import VoiceList from './voices.json'
 
 //提取标签到语言文件
 let addZh_CN = { voice: {}, voicecategory: {} };
+let addZh_TW = { voice: {}, voicecategory: {} };
 let adden_US = { voice: {}, voicecategory: {} };
 let addja_JP = { voice: {}, voicecategory: {} };
 
@@ -26,6 +27,9 @@ for (let voiceCategoryList of VoiceList.voices){
   if(voiceCategoryList.categoryDescription !== undefined){
     if(voiceCategoryList.categoryDescription['zh-CN'] !== undefined){
       addZh_CN.voicecategory[voiceCategoryList.categoryName] = voiceCategoryList.categoryDescription['zh-CN'];
+    }    
+    if(voiceCategoryList.categoryDescription['zh-TW'] !== undefined){
+      addZh_TW.voicecategory[voiceCategoryList.categoryName] = voiceCategoryList.categoryDescription['zh-TW'];
     }
     if(voiceCategoryList.categoryDescription['en-US'] !== undefined){
       adden_US.voicecategory[voiceCategoryList.categoryName] = voiceCategoryList.categoryDescription['en-US'];
@@ -39,6 +43,9 @@ for (let voiceCategoryList of VoiceList.voices){
       if(voiceItem.description['zh-CN'] !== undefined){
         addZh_CN.voice[voiceItem.name] = voiceItem.description['zh-CN'];
       }
+      if(voiceItem.description['zh-TW'] !== undefined){
+        addZh_TW.voice[voiceItem.name] = voiceItem.description['zh-TW'];
+      }
       if(voiceItem.description['en-US'] !== undefined){
         adden_US.voice[voiceItem.name] = voiceItem.description['en-US'];
       }
@@ -50,6 +57,7 @@ for (let voiceCategoryList of VoiceList.voices){
 }
 
 let emzh_CN = Object.assign(zh_CN, addZh_CN);
+let emzh_TW = Object.assign(zh_TW, addZh_TW);
 let emen_US = Object.assign(en_US, adden_US);
 let emja_JP = Object.assign(ja_JP, addja_JP);
 
@@ -61,6 +69,7 @@ Vue.use(GlobalConst);
 const messages = {
   'en-US': emen_US,
   'zh-CN': emzh_CN,
+  'zh-TW': emzh_TW,
   'ja-JP': emja_JP
 }
 
